@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Николай Коваленко](https://up.htmlacademy.ru/adaptive/15/user/194605).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Поданев](https://up.htmlacademy.ru/adaptive/15/user/63947).
 
 ---
 
