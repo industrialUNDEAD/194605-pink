@@ -89,6 +89,29 @@
           <label for="user-mail">Адрес почты</label>
           <input type="email" name="mail" id="user-mail" placeholder="Введите почту *">
         </p>
+        <fieldset class="competition-form__form-group">
+            <legend class="competition-form__title-group">С каким приложением путешествовали?</legend>
+            <p>
+              <label for="ios-filed">Pink для iOS</label>
+              <input type="radio" name="type-application" value="ios" id="ios-filed" checked>
+            </p>
+            <p>
+              <label for="android-filed">Pink на Android</label>
+              <input type="radio" name="type-application" value="android" id="android-filed">
+            </p>
+            <p>
+              <label for="windows-filed">Windows Phone</label>
+              <input type="radio" name="type-application" value="windows" id="windows-filed">
+            </p>
+        </fieldset>
+        <p>
+          <label for="emotions-description"></label>
+          <textarea name="emotions-field" id="emotions-description">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </p>
+        <button class="button" type="submit">Отправить форму</button>
+        <p class="competition-form__form-explanation">
+          <span class="competition-form__explanation-symbol explanation-symbol--all">*</span> — обязательные поля
+        </p>
       </form>
     </main>
     <footer class="main-footer">
