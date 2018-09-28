@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__top-menu">
+        <div class="main-header__logo-block">
+          <a href="index.html">
+            <img src="http://placehold.it/150x100" alt="Логотип приложения">
+          </a>
+        </div>
+        <button class="main-header__toggle" type="button">Открыть навигацию</button>
+      </div>
+      <nav class="main-nav main-header-main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="main-header__contents-description">
+        Конкурс на самое безбашенное путешествие с Пинк
+      </p>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Страница конкурса от создателей приложения Пинк</h1>
+      <p class="page-description">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+      </p>
+      <form class="competition-form">
+        <p>
+          <label for="user-surname">Фамилия</label>
+          <input type="text" name="user-surname" id="user-surname" required>
+        </p>
+        <p>
+          <label for="user-name">Имя</label>
+          <input type="text" name="user-name" id="user-name" required>
+        </p>
+        <p>
+          <label for="user-patronymic">Отчество</label>
+          <input type="text" name="user-patronymic" id="user-patronymic">
+        </p>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <section class="footer-contacts">
+        <h2 class="footer-contacts__titel">Остались вопросы?<br>Свяжитесь с нами!</h2>
+        <ul class="support-adress footer-contacts__support-adress">
+          <li class="support-adress__item">
+            <b class="support-adress__message">Звоните:</b>
+            <span class="support-adress__feedback-method">+7 (812) 555-66-66</span>
+          </li>
+          <li class="support-adress__item">
+            <b class="support-adress__message">Пишите:</b>
+            <span class="support-adress__feedback-method">mail@htmlacademy.ru</span>
+          </li>
+          <li class="support-adress__item">
+            <b class="support-adress__message">Приезжайте в гости:</b>
+            <span class="support-adress__feedback-method">ул. Большая<br>Конюшенная, 19/8</span>
+          </li>
+        </ul>
+      </section>
+      <section class="developer-location main-footer__developer-location">
+        <img src="http://placehold.it/150x100" alt="Расположение разработчиков на карте">
+      </section>
+    </footer>
+  </body>
+</html>
