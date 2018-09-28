@@ -42,15 +42,15 @@
       <form class="competition-form">
         <p>
           <label for="user-surname">Фамилия</label>
-          <input type="text" name="user-surname" id="user-surname" required>
+          <input type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию *" required>
         </p>
         <p>
           <label for="user-name">Имя</label>
-          <input type="text" name="user-name" id="user-name" required>
+          <input type="text" name="user-name" id="user-name" placeholder="Введите ваше имя *" required>
         </p>
         <p>
           <label for="user-patronymic">Отчество</label>
-          <input type="text" name="user-patronymic" id="user-patronymic">
+          <input type="text" name="user-patronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
         </p>
         <fieldset class="competition-form__form-group">
           <legend class="competition-form__title-group">Ваши безбашенные достижения в путешествии</legend>
@@ -81,6 +81,14 @@
             </li>
           </ul>
         </fieldset>
+        <p>
+          <label for="user-phone">Номер телефона</label>
+          <input type="tel" name="phone" id="user-phone" placeholder="Номер, пожалуйста">
+        </p>
+        <p>
+          <label for="user-mail">Адрес почты</label>
+          <input type="email" name="mail" id="user-mail" placeholder="Введите почту *">
+        </p>
       </form>
     </main>
     <footer class="main-footer">
