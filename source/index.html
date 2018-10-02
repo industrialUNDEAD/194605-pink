@@ -5,8 +5,195 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+    <header class="main-header">
+      <div class="main-header__top-menu">
+        <div class="main-header__logo-block">
+          <a>
+            <img src="http://placehold.it/150x100" alt="Логотип приложения">
+          </a>
+        </div>
+        <button class="main-header__toggle" type="button">Открыть навигацию</button>
+      </div>
+      <nav class="main-nav main-header-main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Официальный сайт мобильного приложения "Пинк"</h1>
+      <article class="application-download">
+        <h2 class="visually-hidden">Получение приложения на смартфон</h2>
+        <div class="application-image application-download__application-image">
+          <img src="http://placehold.it/150x100" alt="Изображение приложения">
+        </div>
+        <section class="download-section">
+          <h2 class="visually-hidden">Скачивание для конкретной платформы</h2>
+          <a class="download-section__button button">Скачать приложение</a>
+          <ul class="download-section__list">
+            <li class="download-section__item">
+              <a class="download-section__item-link item-link--ios-market"></a>
+            </li>
+            <li class="download-section__item">
+              <a class="download-section__item-link item-link--android-market"></a>
+            </li>
+            <li class="download-section__item">
+              <a class="download-section__item-link item-link--windows-market"></a>
+            </li>
+          </ul>
+          <p class="download-section__description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </section>
+      </article>
+      <div class="lead-block">
+        <b>Устали от серости мегаполиса?</b>
+        <b>Нам есть, что вам предложить!</b>
+      </div>
+      <section class="application-features">
+        <h2 class="visually-hidden">Особенности приложения</h2>
+        <ul class="application-features__list">
+          <li class="application-features__item">
+            <h3 class="application-features__sub-title">
+              Поднимает настроение
+            </h3>
+            <p class="application-features__description">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="application-features__item">
+            <h3 class="application-features__sub-title">
+                Меняет мир вокруг
+            </h3>
+            <p class="application-features__description">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="application-features__item">
+            <h3 class="application-features__sub-title">
+              Заводит новых друзей
+            </h3>
+            <p class="application-features__description">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="users-feedback">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <ul class="users-feedback__list slider-list">
+          <li class="users-feedback__item slider-item">
+            <cite class="users-feedback__author-name">Николай Петров</cite>
+            <blockquote class="users-feedback__feedback-content">
+              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+            </blockquote>
+          </li>
+          <li class="users-feedback__item slider-item">
+            <cite class="users-feedback__author-name">Николай Петров</cite>
+            <blockquote class="users-feedback__feedback-content">
+              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+            </blockquote>
+          </li>
+          <li class="users-feedback__item slider-item">
+            <cite class="users-feedback__author-name">Николай Петров</cite>
+            <blockquote class="users-feedback__feedback-content">
+              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+            </blockquote>
+          </li>
+        </ul>
+        <p class="users-feedback__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </section>
+      <section class="application-tariffs">
+        <h2 class="visually-hidden">Тарифы приложения</h2>
+        <table class="tariffs-table application-tariffs slider-list">
+            <thead class="tariffs-table__table-header">
+              <tr>
+                <td class="tariffs-table__tariff-name">Стандарт</td>
+                <td class="tariffs-table__tariff-name">Стандарт</td>
+                <td class="tariffs-table__tariff-name">Стандарт</td>
+              </tr>
+              <tr>
+                <td class="tariffs-table__tariff-cost">3,99 usd</td>
+                <td class="tariffs-table__tariff-cost">3,99 usd</td>
+                <td class="tariffs-table__tariff-cost">3,99 usd</td>
+              </tr>
+            </thead>
+            <tr>
+              <td class="tariffs-table__option">Розовый фильтр</td>
+              <td class="tariffs-table__option">Розовый фильтр</td>
+              <td class="tariffs-table__option">Розовый фильтр</td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__check-status check-status--status-yes">Входит в тариф</td>
+              <td class="tariffs-table__check-status check-status--status-yes">Входит в тариф</td>
+              <td class="tariffs-table__check-status check-status--status-yes">Входит в тариф</td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__option">Смайлики</td>
+              <td class="tariffs-table__option">Смайлики</td>
+              <td class="tariffs-table__option">Смайлики</td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__check-status check-status--status-yes">Входит в тариф</td>
+              <td class="tariffs-table__check-status check-status--status-yes">Входит в тариф</td>
+              <td class="tariffs-table__check-status check-status--status-yes">Входит в тариф</td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__option">Комментарии</td>
+              <td class="tariffs-table__option">Комментарии</td>
+              <td class="tariffs-table__option">Комментарии</td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__check-status check-status--status-no">Не входит в тариф</td>
+              <td class="tariffs-table__check-status check-status--status-no">Не входит в тариф</td>
+              <td class="tariffs-table__check-status check-status--status-no">Не входит в тариф</td>
+            </tr>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+        </table>
+        <p class="application-tariffs__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+      </section>
+    </main>
+    <section class="feedback">
+      <h2 class="visually-hidden">Контактная информация разработчиков</h2>
+      <section class="feedback-contacts">
+        <h2 class="feedback__titel">Остались вопросы? Свяжитесь с нами!</h2>
+        <ul class="support-adress feedback__support-adress">
+          <li class="support-adress__item">
+            <b class="support-adress__message">Звоните:</b>
+            <span class="support-adress__feedback-method">+7 (812) 555-66-66</span>
+          </li>
+          <li class="support-adress__item">
+            <b class="support-adress__message">Пишите:</b>
+            <span class="support-adress__feedback-method">mail@htmlacademy.ru</span>
+          </li>
+          <li class="support-adress__item">
+            <b class="support-adress__message">Приезжайте в гости:</b>
+            <span class="support-adress__feedback-method">ул. Большая<br>Конюшенная, 19/8</span>
+          </li>
+        </ul>
+      </section>
+      <div class="developer-location feedback__developer-location">
+        <img src="http://placehold.it/150x100" alt="Расположение разработчиков на карте">
+      </div>
+    </section>
   </body>
 </html>
