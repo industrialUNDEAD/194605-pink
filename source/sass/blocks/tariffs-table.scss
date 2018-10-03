@@ -1,0 +1,25 @@
+.tariffs-table {
+  border-collapse: collapse;
+}
+
+.tariffs-table__table-header {
+  background-color: #283645;
+}
+
+.tariffs-table__tariff-name {
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.tariffs-table__tariff-cost {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.tariffs-table__option {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
