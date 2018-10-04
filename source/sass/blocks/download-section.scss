@@ -1,10 +1,16 @@
+.download-section {
+  background-color: #1d2631;
+}
+
 .download-section__button {
   display: block;
+  width: 270px;
   padding: 17px 37px 14px 37px;
   font-size: 18px;
   line-height: 18px;
+  text-align: center;
   border: 3px solid #ffffff;
-  border-radius: 5px;
+  border-radius: 50px;
   color: #ffffff;
 }
 
