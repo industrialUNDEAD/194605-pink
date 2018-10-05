@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -17,16 +18,16 @@
       <nav class="main-nav main-header-main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a>Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html">Фотографии</a>
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Конкурс</a>
+            <a class="main-nav__link">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/">Html academy</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru/">Html academy</a>
           </li>
         </ul>
       </nav>
@@ -41,19 +42,19 @@
       </p>
       <form class="competition-form">
         <p>
-          <label for="user-surname">Фамилия</label>
+          <label class="competition-form__element-title" for="user-surname">Фамилия</label>
           <input type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию *" required>
         </p>
         <p>
-          <label for="user-name">Имя</label>
+          <label class="competition-form__element-title" for="user-name">Имя</label>
           <input type="text" name="user-name" id="user-name" placeholder="Введите ваше имя *" required>
         </p>
         <p>
-          <label for="user-patronymic">Отчество</label>
+          <label class="competition-form__element-title" for="user-patronymic">Отчество</label>
           <input type="text" name="user-patronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
         </p>
         <fieldset class="competition-form__form-group">
-          <legend class="competition-form__title-group">Ваши безбашенные достижения в путешествии</legend>
+          <legend class="competition-form__element-title">Ваши безбашенные достижения в путешествии</legend>
           <ul class="competition-form_list">
             <li class="competition-form_item">
               <label for="selfie-field">Сделал селфи с акулой</label>
@@ -82,15 +83,15 @@
           </ul>
         </fieldset>
         <p>
-          <label for="user-phone">Номер телефона</label>
+          <label class="competition-form__element-title" for="user-phone">Номер телефона</label>
           <input type="tel" name="phone" id="user-phone" placeholder="Номер, пожалуйста">
         </p>
         <p>
-          <label for="user-mail">Адрес почты</label>
+          <label class="competition-form__element-title" for="user-mail">Адрес почты</label>
           <input type="email" name="mail" id="user-mail" placeholder="Введите почту *">
         </p>
         <fieldset class="competition-form__form-group">
-            <legend class="competition-form__title-group">С каким приложением путешествовали?</legend>
+            <legend class="competition-form__element-title">С каким приложением путешествовали?</legend>
             <p>
               <label for="ios-filed">Pink для iOS</label>
               <input type="radio" name="type-application" value="ios" id="ios-filed" checked>
@@ -105,12 +106,12 @@
             </p>
         </fieldset>
         <p>
-          <label for="emotions-description"></label>
+          <label class="competition-form__element-title" for="emotions-description">Опишите свои эмоции</label>
           <textarea name="emotions-field" id="emotions-description">Можно прям в красках, не стесняясь в выражениях</textarea>
         </p>
-        <button class="button" type="submit">Отправить форму</button>
+        <button class="competition-form__button" type="submit">Отправить форму</button>
         <p class="competition-form__form-explanation">
-          <span class="competition-form__explanation-symbol explanation-symbol--all">*</span> — обязательные поля
+          <span class="competition-form__explanation-symbol competition-form__explanation-symbol--all">*</span> — обязательные поля
         </p>
       </form>
     </main>
@@ -121,13 +122,13 @@
       <div class="footer-social">
         <ul class="footer-social__list">
           <li class="footer-social__item">
-            <a class="footer-social__social-link social-link--twitter">Твиттер</a>
+            <a class="footer-social__social-link footer-social__social-link--twitter">Твиттер</a>
           </li>
           <li class="footer-social__item">
-            <a class="footer-social__social-link social-link--facebook">Фейсбук</a>
+            <a class="footer-social__social-link footer-social__social-link--facebook">Фейсбук</a>
           </li>
           <li class="footer-social__item">
-            <a class="footer-social__social-link social-link--youtube">Ютуб</a>
+            <a class="footer-social__social-link footer-social__social-link--youtube">Ютуб</a>
           </li>
         </ul>
       </div>

@@ -1,0 +1,25 @@
+.user-editor {
+  background-color: #f2f2f2;
+}
+
+.user-editor__promo-text {
+  background-color: #ffffff;
+}
+
+.user-editor__button {
+  padding: 15px 95px 15px 95px;
+  background-color: #f2f2f2;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 20px;
+}
+
+.user-editor__button--button-submit {
+  color: #d22856;
+  border-color: #d22856;
+}
+
+.user-editor__button--button-reset {
+  color: #dddfe0;
+  border-color: #dddfe0;
+}
