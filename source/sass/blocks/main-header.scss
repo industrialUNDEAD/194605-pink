@@ -1,6 +1,6 @@
 .main-header {
   display: block;
-  padding: 22px 19px 25px 20px;
+  width: 320px;
   background-color: #1d2631;
 }
 
@@ -8,4 +8,11 @@
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
+}
+
+.main-header__top-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  padding: 22px 19px 25px 20px;
 }
