@@ -1,27 +1,32 @@
 .download-section {
+  width: 280px;
+  padding: 0 20px;
   background-color: #1d2631;
 }
 
 .download-section__button {
   display: block;
-  width: 270px;
-  padding: 17px 37px 14px 37px;
+  padding: 15px 35px;
   font-size: 18px;
   line-height: 18px;
   text-align: center;
+  text-decoration: none;
   border: 3px solid #ffffff;
   border-radius: 50px;
   color: #ffffff;
 }
 
 .download-section__list {
+  display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
-  list-style: 0;
+  list-style: none;
 }
 
 .download-section__description {
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
   color: #ffffff;
 }
