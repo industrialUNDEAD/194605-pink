@@ -1,3 +1,7 @@
+.users-feedback {
+  width: 280px;
+}
+
 .users-feedback__list {
   margin: 0;
   padding: 0;
@@ -5,15 +9,18 @@
 }
 
 .users-feedback__author-name {
+  display: block;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   font-style: normal;
+  text-align: center;
   color: #000000;
 }
 
 .users-feedback__feedback-content {
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
   color: #283645;
 }

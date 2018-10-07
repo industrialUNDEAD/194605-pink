@@ -124,48 +124,47 @@
         <h2 class="visually-hidden">Тарифы приложения</h2>
         <table class="tariffs-table tariffs-table__application-tariffs slider-list">
             <thead class="tariffs-table__table-header">
-              <tr>
-                <td class="tariffs-table__tariff-name">Стандарт</td>
-                <td class="tariffs-table__tariff-name">Стандарт</td>
-                <td class="tariffs-table__tariff-name">Стандарт</td>
+              <tr class="tariffs-table__header-row">
+                <td class="tariffs-table__tariff-name tariffs-table__column">База</td>
+                <td class="tariffs-table__tariff-name tariffs-table__column">Стандарт</td>
+                <td class="tariffs-table__tariff-name tariffs-table__column">Анлим</td>
               </tr>
-              <tr>
-                <td class="tariffs-table__tariff-cost">3,99 usd</td>
-                <td class="tariffs-table__tariff-cost">3,99 usd</td>
-                <td class="tariffs-table__tariff-cost">3,99 usd</td>
+              <tr class="tariffs-table__header-row">
+                <td class="tariffs-table__tariff-cost tariffs-table__column">1,99 usd</td>
+                <td class="tariffs-table__tariff-cost tariffs-table__column">3,99 usd</td>
+                <td class="tariffs-table__tariff-cost tariffs-table__column">9,99 usd</td>
               </tr>
             </thead>
-            <tr>
-              <td class="tariffs-table__option">Розовый фильтр</td>
-              <td class="tariffs-table__option">Розовый фильтр</td>
-              <td class="tariffs-table__option">Розовый фильтр</td>
+            <tr class="tariffs-table__body-row">
+              <td class="tariffs-table__option tariffs-table__column">Розовый фильтр</td>
+              <td class="tariffs-table__option tariffs-table__column">Розовый фильтр</td>
+              <td class="tariffs-table__option tariffs-table__column">Розовый фильтр</td>
             </tr>
-            <tr>
-              <td class="tariffs-table__check-status tariffs-table__check-status--status-yes">Входит в тариф</td>
-              <td class="tariffs-table__check-status tariffs-table__check-status--status-yes">Входит в тариф</td>
-              <td class="tariffs-table__check-status tariffs-table__check-status--status-yes">Входит в тариф</td>
+            <tr class="tariffs-table__body-row">
+              <td class="tariffs-table__check-status tariffs-table__check-status--status-yes tariffs-table__column">Входит в тариф</td>
+              <td class="tariffs-table__check-status tariffs-table__check-status--status-yes tariffs-table__column">Входит в тариф</td>
+              <td class="tariffs-table__check-status tariffs-table__check-status--status-yes tariffs-table__column">Входит в тариф</td>
             </tr>
-            <tr>
-              <td class="tariffs-table__option">Смайлики</td>
-              <td class="tariffs-table__option">Смайлики</td>
-              <td class="tariffs-table__option">Смайлики</td>
+            <tr class="tariffs-table__body-row">
+              <td class="tariffs-table__option tariffs-table__column">Смайлики</td>
+              <td class="tariffs-table__option tariffs-table__column">Смайлики</td>
+              <td class="tariffs-table__option tariffs-table__column">Смайлики</td>
             </tr>
-            <tr>
-              <td class="tariffs-table__check-status tariffs-table__check-status--status-yes">Входит в тариф</td>
-              <td class="tariffs-table__check-status tariffs-table__check-status--status-yes">Входит в тариф</td>
-              <td class="tariffs-table__check-status tariffs-table__check-status--status-yes">Входит в тариф</td>
+            <tr class="tariffs-table__body-row">
+              <td class="tariffs-table__check-status tariffs-table__check-status--status-no tariffs-table__column">Не входит в тариф</td>
+              <td class="tariffs-table__check-status tariffs-table__check-status--status-yes tariffs-table__column">Входит в тариф</td>
+              <td class="tariffs-table__check-status tariffs-table__check-status--status-yes tariffs-table__column">Входит в тариф</td>
             </tr>
-            <tr>
-              <td class="tariffs-table__option">Комментарии</td>
-              <td class="tariffs-table__option">Комментарии</td>
-              <td class="tariffs-table__option">Комментарии</td>
+            <tr class="tariffs-table__body-row">
+              <td class="tariffs-table__option tariffs-table__column">Комментарии</td>
+              <td class="tariffs-table__option tariffs-table__column">Комментарии</td>
+              <td class="tariffs-table__option tariffs-table__column">Комментарии</td>
             </tr>
-            <tr>
-              <td class="tariffs-table__check-status tariffs-table__check-status--status-no">Не входит в тариф</td>
-              <td class="tariffs-table__check-status tariffs-table__check-status--status-no">Не входит в тариф</td>
-              <td class="tariffs-table__check-status tariffs-table__check-status--status-no">Не входит в тариф</td>
+            <tr class="tariffs-table__body-row">
+              <td class="tariffs-table__check-status tariffs-table__check-status--status-no tariffs-table__column">Не входит в тариф</td>
+              <td class="tariffs-table__check-status tariffs-table__check-status--status-no tariffs-table__column">Не входит в тариф</td>
+              <td class="tariffs-table__check-status tariffs-table__check-status--status-yes tariffs-table__column">Входит в тариф</td>
             </tr>
-
         </table>
         <p class="application-tariffs__toggles slider-toggles">
             <button class="slider-toggles__toggle" type="button">1</button>
@@ -173,29 +172,54 @@
             <button class="slider-toggles__toggle" type="button">3</button>
           </p>
       </section>
+      <section class="feedback">
+        <h2 class="visually-hidden">Контактная информация разработчиков</h2>
+        <section class="feedback-contacts">
+          <h2 class="feedback__titel">
+            Остались вопросы?
+            <span class="feedback__sub-titel">Свяжитесь с нами!</span>
+          </h2>
+          <ul class="support-adress feedback__support-adress">
+            <li class="support-adress__item">
+              <b class="support-adress__message">Звоните:</b>
+              <span class="support-adress__feedback-method">+7 (812) 555-66-66</span>
+            </li>
+            <li class="support-adress__item">
+              <b class="support-adress__message">Пишите:</b>
+              <span class="support-adress__feedback-method">mail@htmlacademy.ru</span>
+            </li>
+            <li class="support-adress__item">
+              <b class="support-adress__message">Приезжайте в гости:</b>
+              <span class="support-adress__feedback-method">ул. Большая<br>Конюшенная, 19/8</span>
+            </li>
+          </ul>
+        </section>
+        <div class="developer-location feedback__developer-location">
+          <img src="http://placehold.it/150x100" alt="Расположение разработчиков на карте">
+        </div>
+      </section>
     </main>
-    <section class="feedback">
-      <h2 class="visually-hidden">Контактная информация разработчиков</h2>
-      <section class="feedback-contacts">
-        <h2 class="feedback__titel">Остались вопросы? Свяжитесь с нами!</h2>
-        <ul class="support-adress feedback__support-adress">
-          <li class="support-adress__item">
-            <b class="support-adress__message">Звоните:</b>
-            <span class="support-adress__feedback-method">+7 (812) 555-66-66</span>
+    <footer class="main-footer">
+      <div class="glasses-logo">
+        <img src="http://placehold.it/150x100" alt="Логотип контактного блока страницы">
+      </div>
+      <div class="footer-social">
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a class="footer-social__social-link footer-social__social-link--twitter">Твиттер</a>
           </li>
-          <li class="support-adress__item">
-            <b class="support-adress__message">Пишите:</b>
-            <span class="support-adress__feedback-method">mail@htmlacademy.ru</span>
+          <li class="footer-social__item">
+            <a class="footer-social__social-link footer-social__social-link--facebook">Фейсбук</a>
           </li>
-          <li class="support-adress__item">
-            <b class="support-adress__message">Приезжайте в гости:</b>
-            <span class="support-adress__feedback-method">ул. Большая<br>Конюшенная, 19/8</span>
+          <li class="footer-social__item">
+            <a class="footer-social__social-link footer-social__social-link--youtube">Ютуб</a>
           </li>
         </ul>
-      </section>
-      <div class="developer-location feedback__developer-location">
-        <img src="http://placehold.it/150x100" alt="Расположение разработчиков на карте">
       </div>
-    </section>
+      <div class="developer">
+        <b>Разработано</b>
+        <img src="http://placehold.it/150x100" alt="html academy">
+      </div>
+    </footer>
   </body>
 </html>

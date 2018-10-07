@@ -1,8 +1,26 @@
 .feedback {
+  width: 280px;
+  padding: 0 20px;
   background-color: #ffffff;
+}
+
+.support-adress__message {
+  display: block;
+  text-align: center;
+}
+
+.support-adress__feedback-method {
+  display: block;
+  text-align: center;
 }
 
 .feedback__titel {
   font-size: 24px;
+  text-align: center;
   color: #283645;
+}
+
+.feedback__sub-titel {
+  display: block;
+  text-align: center;
 }

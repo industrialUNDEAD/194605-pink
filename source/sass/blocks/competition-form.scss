@@ -1,17 +1,27 @@
 .competition-form {
+  width: 280px;
+  padding: 0 20px;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
 }
 
 .competition-form__element-title {
+  display: block;
   font-size: 14px;
   text-transform: uppercase;
   color: #d22856;
 }
 
 .competition-form__form-group {
+  text-align: center;
   background-color: #f2f2f2;
+}
+
+.competition-form_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .competition-form__button {

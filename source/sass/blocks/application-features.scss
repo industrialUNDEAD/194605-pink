@@ -1,30 +1,45 @@
 .application-features {
   width: 280px;
-  padding: 0 20px;
-  background-color: #f2f2f2;
 }
 
 .application-features__lead-block {
+  width: 280px;
+  padding: 0 20px;
   background-color: #ffffff;
 }
 
 .application-features__title {
-  font-size: 54px;
+  margin-top: 40px;
+  font-size: 24px;
   font-weight: 400;
+  text-align: center;
+}
+
+.application-features__supplementing-title {
+  display: block;
+  margin-top: 35px;
+  padding-bottom: 40px;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .application-features__list {
+  width: 280px;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   list-style: none;
+  background-color: #f2f2f2;
 }
 
 .application-features__sub-title {
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
 }
 
 .application-features__description {
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
 }
