@@ -1,4 +1,7 @@
 .download-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 280px;
   padding: 0 20px;
   background-color: #1d2631;
@@ -36,4 +39,13 @@
   line-height: 24px;
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .download-section__slogan {
+    display: block;
+  }
+  .download-section {
+    order: 1;
+  }
 }

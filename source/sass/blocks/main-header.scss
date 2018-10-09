@@ -17,3 +17,12 @@
   width: 280px;
   padding: 22px 19px 25px 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    width: $tablet-width;
+  }
+  .main-header__top-menu {
+    width: 620px;
+  }
+}

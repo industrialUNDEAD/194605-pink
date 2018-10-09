@@ -8,3 +8,12 @@
   width: 320px;
   height: 395px;
 }
+
+@media (min-width: $tablet-width) {
+  .application-download {
+    display: flex;
+  }
+  .application-download__image-container {
+    order: 2;
+  }
+}

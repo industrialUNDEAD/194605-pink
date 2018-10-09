@@ -24,3 +24,9 @@
   color: #ffffff;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: $tablet-width;
+  }
+}
