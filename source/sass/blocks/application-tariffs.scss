@@ -1,14 +1,12 @@
 .application-tariffs {
-  width: 320px;
+  // width: ;
   padding-top: 65px;
   background-color: #f2f2f2;
 }
 
-.tariffs-table__body-row {
-  border-bottom: 2px solid #e5e5e5;
-}
-
-.tariffs-table__column {
-  border-left: 2px solid #e5e5e5;
-  border-right: #e5e5e5;
+@media (min-width: $tablet-width) {
+  .application-tariffs {
+    width: 620px;
+    padding: 0 20px;
+  }
 }

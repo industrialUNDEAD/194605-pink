@@ -1,5 +1,15 @@
 .tariffs-table {
+  // width: 620px;
   border-collapse: collapse;
+}
+
+.tariffs-table__body-row {
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.tariffs-table__column {
+  border-left: 2px solid #e5e5e5;
+  border-right: #e5e5e5;
 }
 
 .tariffs-table__table-header {
@@ -7,18 +17,27 @@
 }
 
 .tariffs-table__tariff-name {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 700;
   line-height: 30px;
+  text-align: center;
   color: #ffffff;
 }
 
 .tariffs-table__tariff-cost {
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 300;
   line-height: 30px;
+  text-align: center;
   color: #ffffff;
 }
 
 .tariffs-table__option {
+  // display: flex;
+  // flex-direction: row;
+}
+
+.tariffs-table__option-name {
   font-size: 14px;
   line-height: 30px;
   color: #283645;
