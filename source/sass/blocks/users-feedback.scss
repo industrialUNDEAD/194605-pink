@@ -18,9 +18,39 @@
   color: #000000;
 }
 
+.users-feedback__author-character {
+  display: none;
+}
+
 .users-feedback__feedback-content {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: #283645;
+}
+
+.users-feedback__toggles {
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .users-feedback {
+    width: 620px;
+    padding: 0 20px;
+  }
+  .users-feedback__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .users-feedback__feedback-content {
+    order: 1;
+  }
+  .users-feedback__author-name {
+    order: 2;
+  }
+  .users-feedback__author-character {
+    display: block;
+    order: 2;
+    text-align: center;
+  }
 }
