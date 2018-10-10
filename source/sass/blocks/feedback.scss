@@ -24,3 +24,10 @@
   display: block;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    width: 620px;
+    padding: 0 20px;
+  }
+}

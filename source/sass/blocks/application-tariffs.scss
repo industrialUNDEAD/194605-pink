@@ -5,6 +5,10 @@
   background-color: #f2f2f2;
 }
 
+.application-tariffs__toggles {
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
   .application-tariffs {
     width: 620px;
