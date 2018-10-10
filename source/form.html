@@ -44,19 +44,21 @@
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
       </p>
       <form class="competition-form">
-        <p>
-          <label class="competition-form__element-title" for="user-surname">Фамилия</label>
-          <input type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию *" required>
-        </p>
-        <p>
-          <label class="competition-form__element-title" for="user-name">Имя</label>
-          <input type="text" name="user-name" id="user-name" placeholder="Введите ваше имя *" required>
-        </p>
-        <p>
-          <label class="competition-form__element-title" for="user-patronymic">Отчество</label>
-          <input type="text" name="user-patronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
-        </p>
-        <fieldset class="competition-form__form-group">
+        <div class="competition-form__form-item competition-form__form-item--main-fields">
+          <p class="competition-form__field-wrapper">
+            <label class="competition-form__element-title" for="user-surname">Фамилия</label>
+            <input class="competition-form__text-field" type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию *" required>
+          </p>
+          <p class="competition-form__field-wrapper">
+            <label class="competition-form__element-title" for="user-name">Имя</label>
+            <input class="competition-form__text-field" type="text" name="user-name" id="user-name" placeholder="Введите ваше имя *" required>
+          </p>
+          <p class="competition-form__field-wrapper">
+            <label class="competition-form__element-title" for="user-patronymic">Отчество</label>
+            <input class="competition-form__text-field" type="text" name="user-patronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
+          </p>
+        </div>
+        <fieldset class="competition-form__form-group competition-form__form-item competition-form__form-item--travel-report">
           <legend class="competition-form__element-title">Ваши безбашенные достижения в путешествии</legend>
           <ul class="competition-form_list">
             <li class="competition-form_item">
@@ -85,15 +87,18 @@
             </li>
           </ul>
         </fieldset>
-        <p>
-          <label class="competition-form__element-title" for="user-phone">Номер телефона</label>
-          <input type="tel" name="phone" id="user-phone" placeholder="Номер, пожалуйста">
-        </p>
-        <p>
-          <label class="competition-form__element-title" for="user-mail">Адрес почты</label>
-          <input type="email" name="mail" id="user-mail" placeholder="Введите почту *">
-        </p>
-        <fieldset class="competition-form__form-group">
+        <fieldset class="competition-form__form-group competition-form__form-item competition-form__form-item--contact-details">
+          <legend class="competition-form__element-title"></legend>
+          <p>
+            <label class="competition-form__element-title" for="user-phone">Номер телефона</label>
+            <input class="competition-form__text-field" type="tel" name="phone" id="user-phone" placeholder="Номер, пожалуйста">
+          </p>
+          <p>
+            <label class="competition-form__element-title" for="user-mail">Адрес почты</label>
+            <input class="competition-form__text-field" type="email" name="mail" id="user-mail" placeholder="Введите почту *">
+          </p>
+        </fieldset>
+        <fieldset class="competition-form__form-group competition-form__form-item competition-form__form-item--used-application">
             <legend class="competition-form__element-title">С каким приложением путешествовали?</legend>
             <ul class="competition-form_list">
               <li class="competition-form_item">
@@ -110,14 +115,18 @@
               </li>
             </ul>
         </fieldset>
-        <p>
-          <label class="competition-form__element-title" for="emotions-description">Опишите свои эмоции</label>
-          <textarea name="emotions-field" id="emotions-description">Можно прям в красках, не стесняясь в выражениях</textarea>
-        </p>
-        <button class="competition-form__button" type="submit">Отправить форму</button>
-        <p class="competition-form__form-explanation">
-          <span class="competition-form__explanation-symbol competition-form__explanation-symbol--all">*</span> — обязательные поля
-        </p>
+        <fieldset class="competition-form__form-group competition-form__form-item competition-form__form-item--application-impression">
+          <p>
+            <label class="competition-form__element-title" for="emotions-description">Опишите свои эмоции</label>
+            <textarea class="competition-form__text-field" name="emotions-field" id="emotions-description">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </p>
+        </fieldset>
+        <div class="competition-form__form-item competition-form__form-item--form-footer">
+          <button class="competition-form__button" type="submit">Отправить форму</button>
+          <p class="competition-form__form-explanation">
+            <span class="competition-form__explanation-symbol competition-form__explanation-symbol--all">*</span> — обязательные поля
+          </p>
+        </div>
       </form>
     </main>
     <footer class="main-footer">
