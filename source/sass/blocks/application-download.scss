@@ -17,3 +17,11 @@
     order: 2;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .application-download {
+    justify-content: space-between;
+    width: 960px;
+    padding: 0 120px;
+  }
+}
