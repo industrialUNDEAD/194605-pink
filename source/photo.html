@@ -45,9 +45,9 @@
         Видите, как не хватает ваших?
       </p>
       <section class="users-posting">
-        <article class="user-post">
+        <article class="user-post user-post--top-day">
           <div class="post-image post-image--top-day users-posting__post-image">
-            <img src="http://placehold.it/150x100" width="320" height="137" alt="Панорама моста">
+            <img src="http://placehold.it/150x100" alt="Панорама моста">
           </div>
           <div class="user-post__post-content">
             <p class="user-post__author-info">
@@ -156,17 +156,26 @@
         <p class="user-editor__promo-text">Затмите их всех!
           Выкладывайте все, что накопилось в телефоне!
         </p>
-        <div class="processing-tools user-editor__processing-tools">
-          <label class="processing-tools__toggle processing-tools__toggle--toggle-one processing-tools__toggle--active" type="button">Инструмент обработки-1</label>
-          <label class="processing-tools__toggle processing-tools__toggle--toggle-two" type="button">Инструмент обработки-2</label>
-          <label class="processing-tools__toggle processing-tools__toggle--toggle-three" type="button">Инструмент обработки-3</label>
-        </div>
-        <div class="range-toggle user-editor__range-toggle">
-          <input class="range-toggle__range-field" type="range">
-        </div>
-        <div class="user-editor__buttons">
-          <button class="user-editor__button user-editor__button--button-submit button" type="submit">Запостить</button>
-          <input class="user-editor__button user-editor__button--button-reset button" type="reset" value="Отмена">
+        <div class="user-editor__tools-container">
+          <div class="user-editor__user-photo">
+            <img src="http://placehold.it/150x100" width="300" height="400" alt="Изображение зимней дороги">
+          </div>
+          <div class="user-editor__wrapper">
+            <div class="processing-tools user-editor__processing-tools">
+              <label class="processing-tools__toggle processing-tools__toggle--toggle-one processing-tools__toggle--active" type="button">Инструмент обработки-1</label>
+              <label class="processing-tools__toggle processing-tools__toggle--toggle-two" type="button">Инструмент обработки-2</label>
+              <label class="processing-tools__toggle processing-tools__toggle--toggle-three" type="button">Инструмент обработки-3</label>
+            </div>
+            <div class="range-toggles user-editor__range-toggles">
+              <input class="range-toggle__range-field range-toggle__range-field--toggle-one" type="range">
+              <input class="range-toggle__range-field range-toggle__range-field--toggle-two" type="range">
+              <input class="range-toggle__range-field range-toggle__range-field--toggle-three" type="range">
+            </div>
+            <div class="user-editor__buttons">
+              <button class="user-editor__button user-editor__button--button-submit button" type="submit">Запостить</button>
+              <input class="user-editor__button user-editor__button--button-reset button" type="reset" value="Отмена">
+            </div>
+          </div>
         </div>
       </section>
     </main>

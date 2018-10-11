@@ -7,12 +7,18 @@
 .post-image--top-day {
   width: 100%;
   padding: 0;
+  overflow: hidden;
   text-align: left;
+}
+
+.post-image--top-day img {
+  width: 320px;
+  height: 137px;
 }
 
 .user-post__post-content {
   width: 280px;
-  padding: 0 20px;
+  margin: 0 20px;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
@@ -31,4 +37,24 @@
 .user-post__likes-number {
   font-size: 12px;
   color: #d22856;
+}
+
+@media (min-width: $tablet-width) {
+  .post-image--top-day .user-post__post-content {
+    width: 570px;
+  }
+  .user-post {
+    width: 300px;
+    padding: 0;
+  }
+  .user-post--top-day {
+    width: 100%;
+  }
+  .user-post--top-day .user-post__post-content {
+    width: 570px;
+  }
+  .post-image--top-day img {
+    width: 700px;
+    height: 509px;
+  }
 }

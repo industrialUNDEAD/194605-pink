@@ -1,11 +1,16 @@
-.user-editor {
-  background-color: #f2f2f2;
-}
-
 .user-editor__promo-text {
   width: 280px;
   padding: 0 20px;
   background-color: #ffffff;
+}
+
+.user-editor__tools-container {
+  background-color: #f2f2f2;
+}
+
+.user-editor__user-photo {
+  widows: 300px;
+  padding: 0 20px;
 }
 
 .user-editor__processing-tools {
@@ -13,17 +18,35 @@
   padding: 0 20px;
 }
 
-.user-editor__range-toggle {
+.user-editor__range-toggles {
   width: 280px;
   padding: 0 20px;
+  border-bottom: 1px solid #dddfe0;
+  text-align: center;
+}
+
+.range-toggle__range-field {
+  display: inline-block;
+  width: 200px;
+}
+
+.range-toggle__range-field--toggle-two {
+  display: none;
+}
+
+.range-toggle__range-field--toggle-three {
+  display: none;
 }
 
 .user-editor__buttons {
   width: 280px;
+  margin-top: 50px;
   padding: 0 20px;
 }
 
 .user-editor__button {
+  width: 100%;
+  margin-bottom: 15px;
   padding: 15px 95px 15px 95px;
   background-color: #f2f2f2;
   border-width: 3px;
@@ -39,4 +62,40 @@
 .user-editor__button--button-reset {
   color: #dddfe0;
   border-color: #dddfe0;
+}
+
+@media (min-width: $tablet-width) {
+  .user-editor {
+    width: 620px;
+    padding: 0 20px;
+  }
+  .user-editor__tools-container {
+    display: flex;
+    width: 620px;
+    padding: 20px;
+  }
+  .range-toggle__range-field--toggle-two,
+  .range-toggle__range-field--toggle-three {
+    display: inline-block;
+  }
+  .user-editor__processing-tools {
+    position: relative;
+  }
+  .processing-tools__toggle {
+    position: absolute;
+  }
+  .processing-tools__toggle--toggle-one {
+    left: -15px;
+  }
+  .processing-tools__toggle--toggle-two {
+    top: 25px;
+    left: -15px;
+  }
+  .processing-tools__toggle--toggle-three {
+    top: 50px;
+    left: -15px;
+  }
+  .user-editor__buttons {
+    width: 260px;
+  }
 }
