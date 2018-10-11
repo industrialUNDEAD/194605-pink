@@ -30,3 +30,16 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    display: flex;
+    align-items: center;
+    width: 960px;
+    padding: 0 120px;
+    background-color: rgba(20, 28, 35, 0.3);
+  }
+  .main-header__toggle {
+    display: none;
+  }
+}
