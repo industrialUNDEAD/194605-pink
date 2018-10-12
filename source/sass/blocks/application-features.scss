@@ -45,8 +45,9 @@
     display: block;
     width: 157px;
     height: 330px;
-    background-color: red;
+    background-color: pink;
   }
+}
 
 .application-features__sub-title {
   font-size: 18px;
@@ -69,9 +70,15 @@
   .application-features__item {
     position: relative;
   }
-
-}
-
+  .application-features__item--new-friends {
+    &::after {
+      content: "";
+      position: absolute;
+      left: -40%;
+      bottom: 0px;
+      display: block;
+    }
+  }
   .application-features__title {
     padding-bottom: 100px;
     font-size: 40px;
@@ -84,29 +91,76 @@
     font-size: 40px;
   }
   .application-features__wrapper {
-    display: flex;
-    width: 620px;
-    margin-left: 280px;
-    padding: 0 20px;
-  }
-  .application-features__list {
-    // order: 2;
-  }
-  .application-features__image-container {
-    // order: 1;
-    // display: none;
+      display: flex;
+      width: 620px;
+      margin-left: 280px;
+      padding: 0 20px;
   }
   .application-features__sub-title {
-    text-align: left;
+      text-align: left;
   }
   .application-features__description {
-    text-align: left;
+      text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
   .application-features {
     width: 960px;
+  }
+  .application-features__wrapper {
+    margin-left: 0;
+  }
+  .application-features__wrapper {
+    width: 960px;
     padding: 0 120px;
+  }
+  .application-features__list {
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+  }
+  .application-features__item {
+    width: 280px;
+    margin-top: 360px;
+  }
+  .application-features__sub-title {
+    text-align: center;
+  }
+  .application-features__description {
+    text-align: center;
+  }
+  .application-features__item--new-friends {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 20%;
+      bottom: 100%;
+      display: block;
+    }
+  }
+  .application-features__item--world-changing {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 20%;
+      bottom: 100%;
+      display: block;
+      width: 157px;
+      height: 330px;
+      background-color: pink;
+    }
+  }
+  .application-features__item--raising-mood {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 20%;
+      bottom: 100%;
+      display: block;
+      width: 157px;
+      height: 330px;
+      background-color: pink;
+    }
   }
 }
