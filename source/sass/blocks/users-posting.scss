@@ -9,3 +9,10 @@
     width: 620px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .users-posting {
+    width: 960px;
+    padding: 0 120px;
+  }
+}

@@ -99,3 +99,23 @@
     width: 260px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .user-editor {
+    width: 960px;
+    padding: 0 120px;
+  }
+  .user-editor__promo-text {
+    width: 800px;
+    text-align: center;
+  }
+  .user-editor__tools-container {
+    justify-content: space-between;
+    width: 800px;
+    padding: 0 80px;
+  }
+  .user-editor__wrapper {
+    width: 410px;
+
+  }
+}

@@ -40,7 +40,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .post-image--top-day .user-post__post-content {
+  .user-post--top-day .user-post__post-content {
     width: 570px;
   }
   .user-post {
@@ -56,5 +56,16 @@
   .post-image--top-day img {
     width: 700px;
     height: 509px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-post--top-day .user-post__post-content {
+    width: 880px;
+    margin-bottom: 50px;
+  }
+  .post-image--top-day img {
+    width: 1200px;
+    height: 506px;
   }
 }
