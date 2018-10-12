@@ -14,3 +14,10 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-description {
+    width: 820px;
+    padding: 0 190px;
+  }
+}
