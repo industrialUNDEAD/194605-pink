@@ -33,4 +33,16 @@
   }
 }
 
-
+@media (min-width: $desktop-width) {
+  .effect-duration {
+    width: 960px;
+    padding: 0 120px;
+    background-color: #f2f2f2;
+  }
+  .effect-duration__title {
+    width: 420px;
+  }
+  .effect-duration__content-block {
+    width: 570px;
+  }
+}
