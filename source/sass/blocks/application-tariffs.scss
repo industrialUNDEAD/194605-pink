@@ -14,4 +14,14 @@
     width: 620px;
     padding: 0 20px;
   }
+  .application-tariffs__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-tariffs {
+    width: 960px;
+    padding: 0 120px;
+  }
 }
