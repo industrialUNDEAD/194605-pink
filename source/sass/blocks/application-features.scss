@@ -37,6 +37,17 @@
   list-style: none;
 }
 
+.application-features__item--new-friends {
+  &::after {
+    content: "";
+    position: relative;
+    left: 20%;
+    display: block;
+    width: 157px;
+    height: 330px;
+    background-color: red;
+  }
+
 .application-features__sub-title {
   font-size: 18px;
   line-height: 24px;
@@ -49,17 +60,18 @@
   text-align: center;
 }
 
-.application-features__image-container {
-  width: 280px;
-  text-align: center;
-}
-
 @media (min-width: $tablet-width) {
   .application-features__lead-block {
     width: 620px;
     padding: 0 20px;
     text-align: center;
   }
+  .application-features__item {
+    position: relative;
+  }
+
+}
+
   .application-features__title {
     padding-bottom: 100px;
     font-size: 40px;
@@ -74,18 +86,27 @@
   .application-features__wrapper {
     display: flex;
     width: 620px;
+    margin-left: 280px;
     padding: 0 20px;
   }
   .application-features__list {
-    order: 2;
+    // order: 2;
   }
   .application-features__image-container {
-    order: 1;
+    // order: 1;
+    // display: none;
   }
   .application-features__sub-title {
     text-align: left;
   }
   .application-features__description {
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-features {
+    width: 960px;
+    padding: 0 120px;
   }
 }
