@@ -54,3 +54,33 @@
     text-align: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .users-feedback {
+    width: 960px;
+    padding: 120px;
+  }
+  .users-feedback__item {
+    width: 720px;
+  }
+  .users-feedback__toggles {
+    display: none;
+  }
+  .users-feedback__quote-wrapper {
+    display: flex;
+    width: 940px;
+  }
+  .users-feedback__feedback-content {
+    width: 720px;
+    text-align: center;
+  }
+  .users-feedback__item {
+    width: 960px;
+  }
+  .users-feedback__button-prev {
+    order: 1;
+  }
+  .users-feedback__button-next {
+    order: 3;
+  }
+}

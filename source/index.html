@@ -114,12 +114,16 @@
       <section class="users-feedback">
         <h2 class="visually-hidden">Отзывы</h2>
         <ul class="users-feedback__list slider-list">
-          <li class="users-feedback__item slider-item">
+          <li class="users-feedback__item slider-list__slider-item">
             <cite class="users-feedback__author-name">Николай Петров</cite>
             <span class="users-feedback__author-character">25 лет, водитель трамвая</span>
-            <blockquote class="users-feedback__feedback-content">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </blockquote>
+            <div class="users-feedback__quote-wrapper">
+              <button class="slider-list__slider-toggle slider-list__slider-toggle--prev users-feedback__button-prev">Предыдущий слайд</button>
+              <blockquote class="users-feedback__feedback-content">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </blockquote>
+              <button class="slider-list__slider-toggle slider-list__slider-toggle--next users-feedback__button-next">Следующий слайд</button>
+            </div>
           </li>
           <!-- <li class="users-feedback__item slider-item">
             <cite class="users-feedback__author-name">Николай Петров</cite>
