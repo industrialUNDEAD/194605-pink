@@ -1,9 +1,30 @@
 .competition-form {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   padding: 0 20px;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+}
+
+.competition-form__form-item--main-fields {
+  order: 1;
+}
+.competition-form__form-item--travel-report {
+  order: 2;
+}
+.competition-form__form-item--contact-details {
+  order: 3;
+}
+.competition-form__form-item--used-application {
+  order: 4;
+}
+.competition-form__form-item--application-impression {
+  order: 5;
+}
+.competition-form__form-item--form-footer {
+  order: 6;
 }
 
 .competition-form__form-item {
@@ -76,5 +97,22 @@
   }
   .competition-form__field-wrapper .competition-form__element-title {
     padding-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition-form {
+    width: 960px;
+    padding: 0 120px;
+  }
+  .competition-form__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .competition-form__form-item--main-fields {
+    width: 450px;
+  }
+  .competition-form__form-item--used-application {
+    width: 450px;
   }
 }
