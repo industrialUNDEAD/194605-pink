@@ -69,32 +69,40 @@
     width: 620px;
     padding: 0 20px;
   }
+
   .user-editor__tools-container {
     display: flex;
     width: 620px;
     padding: 20px;
   }
+
   .range-toggle__range-field--toggle-two,
   .range-toggle__range-field--toggle-three {
     display: inline-block;
   }
+
   .user-editor__processing-tools {
     position: relative;
   }
+
   .processing-tools__toggle {
     position: absolute;
   }
+
   .processing-tools__toggle--toggle-one {
     left: -15px;
   }
+
   .processing-tools__toggle--toggle-two {
     top: 25px;
     left: -15px;
   }
+
   .processing-tools__toggle--toggle-three {
     top: 50px;
     left: -15px;
   }
+
   .user-editor__buttons {
     width: 260px;
   }
@@ -105,17 +113,19 @@
     width: 960px;
     padding: 0 120px;
   }
+
   .user-editor__promo-text {
     width: 800px;
     text-align: center;
   }
+
   .user-editor__tools-container {
     justify-content: space-between;
     width: 800px;
     padding: 0 80px;
   }
+
   .user-editor__wrapper {
     width: 410px;
-
   }
 }

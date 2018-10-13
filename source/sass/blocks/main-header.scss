@@ -22,9 +22,11 @@
   .main-header {
     width: $tablet-width;
   }
+
   .main-header__top-menu {
     width: 620px;
   }
+
   .main-header__contents-description {
     width: 510px;
     margin: 0 auto;
@@ -37,13 +39,16 @@
     padding: 0 120px;
     background-color: rgba(20, 28, 35, 0.3);
   }
+
   .main-header__toggle {
     display: none;
   }
+
   .main-header__wrapper {
     display: flex;
     align-items: center;
   }
+
   .main-header__contents-description {
     widows: 820px;
     padding: 0 70px;
