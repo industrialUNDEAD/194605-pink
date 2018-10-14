@@ -52,7 +52,7 @@
   padding: 20px;
 }
 
-.competition-form_list {
+.competition-form__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -122,7 +122,25 @@
 
   .competition-form__top-wrapper {
     display: flex;
+  }
+
+  .competition-form__contacts-wrapper {
+    display: flex;
     justify-content: space-between;
+    width: 820px;
+    padding: 0 60px;
+  }
+
+  .competition-form__contacts-item {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    width: 310px;
+  }
+
+  .competition-form__contacts-item .competition-form__text-field {
+    width: 310px;
+    box-sizing: border-box;
   }
 
   .competition-form__form-item--main-fields {
@@ -131,5 +149,45 @@
 
   .competition-form__form-item--used-application {
     width: 450px;
+  }
+
+  .competition-form__form-item--travel-report {
+    width: 820px;
+    padding: 0 60px;
+  }
+
+  .competition-form__list--travel-report {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  .competition-form__item--travel-report {
+    width: 260px;
+    box-sizing: border-box;
+  }
+
+  .competition-form__selfie {
+    order: 1;
+  }
+
+  .competition-form__chuck-norris {
+    order: 2;
+  }
+
+  .competition-form__tower {
+    order: 3;
+  }
+
+  .competition-form__on-beach {
+    order: 4;
+  }
+
+  .competition-form__souvenirs {
+    order: 5;
+  }
+
+  .competition-form__massacre {
+    order: 6;
   }
 }

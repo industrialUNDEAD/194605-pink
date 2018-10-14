@@ -76,7 +76,7 @@
     &::after {
       content: "";
       position: absolute;
-      left: -40%;
+      left: -80%;
       bottom: 1px;
       display: block;
     }
@@ -97,7 +97,7 @@
 
   .application-features__wrapper {
     display: flex;
-    width: 620px;
+    width: 320px;
     margin-left: 280px;
     padding: 0 20px;
   }
