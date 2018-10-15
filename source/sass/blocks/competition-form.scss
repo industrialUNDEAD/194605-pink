@@ -48,8 +48,13 @@
   color: #d22856;
 }
 
-.competition-form__form-group {
+.competition-form__element-title--group-title {
   text-align: center;
+}
+
+.competition-form__form-item--used-application,
+.competition-form__form-item--travel-report {
+  text-align: left;
   background-color: #f2f2f2;
 }
 
@@ -61,14 +66,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.competition-form__form-item--contact-details {
-  background-color: #ffffff;
-}
-
-.competition-form__form-item--application-impression {
-  background-color: #ffffff;
 }
 
 .competition-form__text-field--textarea {
@@ -94,6 +91,10 @@
     padding: 0 20px;
   }
 
+  .competition-form__form-group {
+    background-color: #ffffff;
+  }
+
   .competition-form__field-wrapper {
     display: flex;
   }
@@ -108,6 +109,11 @@
 
   .competition-form__form-item--contact-details {
     order: 3;
+  }
+
+  .competition-form__contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 
   .competition-form__form-item--used-application {
@@ -146,8 +152,6 @@
   }
 
   .competition-form__contacts-wrapper {
-    display: flex;
-    justify-content: space-between;
     width: 820px;
     padding: 0 60px;
   }
