@@ -68,6 +68,18 @@
   list-style: none;
 }
 
+.competition-form__list-item {
+  display: flex;
+}
+
+.competition-form__element-title {
+  order: 1;
+}
+
+.competition-form__item-label {
+  order: 2;
+}
+
 .competition-form__text-field--textarea {
   box-sizing: border-box;
   width: 280px;
