@@ -72,12 +72,16 @@
   display: flex;
 }
 
-.competition-form__element-title {
+.competition-form__item-label {
   order: 1;
 }
 
 .competition-form__item-label {
   order: 2;
+}
+
+.competition-form__impression-wrapper {
+  text-align: center;
 }
 
 .competition-form__text-field--textarea {
