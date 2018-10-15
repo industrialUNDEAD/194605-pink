@@ -8,6 +8,11 @@
   color: #283645;
 }
 
+.competition-form__top-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .competition-form__form-item--main-fields {
   order: 1;
 }
@@ -58,6 +63,20 @@
   list-style: none;
 }
 
+.competition-form__form-item--contact-details {
+  background-color: #ffffff;
+}
+
+.competition-form__form-item--application-impression {
+  background-color: #ffffff;
+}
+
+.competition-form__text-field--textarea {
+  box-sizing: border-box;
+  width: 280px;
+  min-height: 197px;
+}
+
 .competition-form__button {
   padding: 19px 48px 19px 48px;
   font-weight: 700;
@@ -99,6 +118,10 @@
     order: 5;
   }
 
+  .competition-form__text-field--textarea {
+    width: 495px;
+  }
+
   .competition-form__form-item--form-footer {
     order: 6;
     display: flex;
@@ -116,12 +139,10 @@
 
 @media (min-width: $desktop-width) {
   .competition-form {
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 960px;
     padding: 0 120px;
-  }
-
-  .competition-form__top-wrapper {
-    display: flex;
   }
 
   .competition-form__contacts-wrapper {
@@ -145,6 +166,7 @@
 
   .competition-form__form-item--main-fields {
     width: 450px;
+    margin-right: 25px;
   }
 
   .competition-form__form-item--used-application {
@@ -165,6 +187,18 @@
   .competition-form__item--travel-report {
     width: 260px;
     box-sizing: border-box;
+  }
+
+  .competition-form__form-item--application-impression {
+    width: 940px;
+  }
+
+  .competition-form__text-field--textarea {
+    width: 820px;
+  }
+
+  .competition-form__form-item--form-footer {
+    width: 940px;
   }
 
   .competition-form__selfie {

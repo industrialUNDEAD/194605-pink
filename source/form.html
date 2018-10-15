@@ -46,39 +46,37 @@
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
       </p>
       <form class="competition-form">
-        <div class="competition-form__top-wrapper">
-          <div class="competition-form__form-item competition-form__form-item--main-fields">
-            <p class="competition-form__field-wrapper">
-              <label class="competition-form__element-title" for="user-surname">Фамилия</label>
-              <input class="competition-form__text-field" type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию *" required>
-            </p>
-            <p class="competition-form__field-wrapper">
-              <label class="competition-form__element-title" for="user-name">Имя</label>
-              <input class="competition-form__text-field" type="text" name="user-name" id="user-name" placeholder="Введите ваше имя *" required>
-            </p>
-            <p class="competition-form__field-wrapper">
-              <label class="competition-form__element-title" for="user-patronymic">Отчество</label>
-              <input class="competition-form__text-field" type="text" name="user-patronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
-            </p>
-          </div>
-          <fieldset class="competition-form__form-group competition-form__form-item competition-form__form-item--used-application">
-            <legend class="competition-form__element-title">С каким приложением путешествовали?</legend>
-              <ul class="competition-form__list competition-form_list--used-application">
-                <li class="competition-form_item competition-form_item--used-application">
-                  <label for="ios-filed">Pink для iOS</label>
-                  <input type="radio" name="type-application" value="ios" id="ios-filed" checked>
-                </li>
-                <li class="competition-form_item competition-form_item--used-application">
-                  <label for="android-filed">Pink на Android</label>
-                  <input type="radio" name="type-application" value="android" id="android-filed">
-                </li>
-                <li class="competition-form_item competition-form_item--used-application">
-                  <label for="windows-filed">Windows Phone</label>
-                  <input type="radio" name="type-application" value="windows" id="windows-filed">
-                </li>
-              </ul>
-          </fieldset>
+        <div class="competition-form__form-item competition-form__form-item--main-fields">
+          <p class="competition-form__field-wrapper">
+            <label class="competition-form__element-title" for="user-surname">Фамилия</label>
+            <input class="competition-form__text-field" type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию *" required>
+          </p>
+          <p class="competition-form__field-wrapper">
+            <label class="competition-form__element-title" for="user-name">Имя</label>
+            <input class="competition-form__text-field" type="text" name="user-name" id="user-name" placeholder="Введите ваше имя *" required>
+          </p>
+          <p class="competition-form__field-wrapper">
+            <label class="competition-form__element-title" for="user-patronymic">Отчество</label>
+            <input class="competition-form__text-field" type="text" name="user-patronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
+          </p>
         </div>
+        <fieldset class="competition-form__form-group competition-form__form-item competition-form__form-item--used-application">
+          <legend class="competition-form__element-title">С каким приложением путешествовали?</legend>
+            <ul class="competition-form__list competition-form__list--used-application">
+              <li class="competition-form_item competition-form_item--used-application">
+                <label for="ios-filed">Pink для iOS</label>
+                <input type="radio" name="type-application" value="ios" id="ios-filed" checked>
+              </li>
+              <li class="competition-form_item competition-form_item--used-application">
+                <label for="android-filed">Pink на Android</label>
+                <input type="radio" name="type-application" value="android" id="android-filed">
+              </li>
+              <li class="competition-form_item competition-form_item--used-application">
+                <label for="windows-filed">Windows Phone</label>
+                <input type="radio" name="type-application" value="windows" id="windows-filed">
+              </li>
+            </ul>
+        </fieldset>
         <fieldset class="competition-form__form-group competition-form__form-item competition-form__form-item--contact-details">
           <legend class="competition-form__element-title">Контактная информация</legend>
           <div class="competition-form__contacts-wrapper">
@@ -124,7 +122,7 @@
         <fieldset class="competition-form__form-group competition-form__form-item competition-form__form-item--application-impression">
           <p>
             <label class="competition-form__element-title" for="emotions-description">Опишите свои эмоции</label>
-            <textarea class="competition-form__text-field" name="emotions-field" id="emotions-description">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <textarea class="competition-form__text-field competition-form__text-field--textarea" name="emotions-field" id="emotions-description">Можно прям в красках, не стесняясь в выражениях</textarea>
           </p>
         </fieldset>
         <div class="competition-form__form-item competition-form__form-item--form-footer">

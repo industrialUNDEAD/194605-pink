@@ -25,16 +25,16 @@
   text-align: center;
 }
 
-.range-toggle__range-field {
+.range-toggles__range-field {
   display: inline-block;
   width: 200px;
 }
 
-.range-toggle__range-field--toggle-two {
+.range-toggles__range-field--toggle-two {
   display: none;
 }
 
-.range-toggle__range-field--toggle-three {
+.range-toggles__range-field--toggle-three {
   display: none;
 }
 
@@ -76,8 +76,8 @@
     padding: 20px;
   }
 
-  .range-toggle__range-field--toggle-two,
-  .range-toggle__range-field--toggle-three {
+  .range-toggles__range-field--toggle-two,
+  .range-toggles__range-field--toggle-three {
     display: inline-block;
   }
 
