@@ -5,7 +5,7 @@
   background-color: #1d2631;
 }
 
-.main-header__toggle {
+.main-header--nav-closed .main-header__toggle {
   position: relative;
   width: 50px;
   height: 24px;
@@ -21,10 +21,10 @@
     width: 50px;
     height: 2px;
     background-color: #ffffff;
+    cursor: pointer;
     box-shadow:
       0 8px 0 0 #ffffff,
       0 16px 0 0 #ffffff;
-    cursor: pointer;
   }
 }
 
