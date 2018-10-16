@@ -1,4 +1,27 @@
-.application-image {
-  width: 100%;
+.application-download {
+  width: 320px;
   background-color: #1d2631;
+}
+
+.image-container__application-image {
+  width: 320px;
+  height: 395px;
+}
+
+@media (min-width: $tablet-width) {
+  .application-download {
+    display: flex;
+  }
+
+  .application-download__image-container {
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-download {
+    justify-content: space-between;
+    width: 960px;
+    padding: 0 120px;
+  }
 }

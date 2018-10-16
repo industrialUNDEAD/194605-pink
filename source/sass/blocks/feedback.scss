@@ -1,8 +1,49 @@
 .feedback {
+  position: relative;  //test
+  width: 280px;
+  padding: 0 20px;
   background-color: #ffffff;
+}
+
+.support-adress__message {
+  display: block;
+  text-align: center;
+}
+
+.support-adress__feedback-method {
+  display: block;
+  text-align: center;
 }
 
 .feedback__titel {
   font-size: 24px;
+  text-align: center;
   color: #283645;
+}
+
+.feedback__sub-titel {
+  display: block;
+  text-align: center;
+}
+
+.feedback__developer-location img {  //test
+  position: absolute;
+  left: 1px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    width: 620px;
+    margin-bottom: 470px; //test
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    width: 960px;
+    margin-bottom: 840px; //test
+    padding: 0 120px;
+  }
 }

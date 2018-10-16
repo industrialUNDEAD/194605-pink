@@ -1,4 +1,5 @@
 .main-nav {
+  width: 320px;
   background-color: #283645;
 }
 
@@ -22,4 +23,32 @@
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: flex;
+    background-color: rgba(20, 28, 35, 0.3);
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 650px;
+  }
+
+  .main-nav__item {
+    border: none;
+  }
+
+  .main-nav__link {
+    vertical-align: middle;
+  }
 }

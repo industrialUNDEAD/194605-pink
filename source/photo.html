@@ -4,37 +4,42 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header class="main-header">
-      <div class="main-header__top-menu">
-        <div class="main-header__logo-block">
-          <a href="index.html">
-            <img src="http://placehold.it/150x100" alt="Логотип приложения">
-          </a>
+      <header class="main-header">
+        <div class="main-header__wrapper">
+          <div class="main-header__top-menu">
+            <div class="main-header__logo-block">
+              <a href="index.html">
+                <img src="http://placehold.it/150x100" alt="Логотип приложения">
+              </a>
+            </div>
+            <button class="main-header__toggle" type="button">Открыть навигацию</button>
+          </div>
+          <nav class="main-nav main-header-main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru/">Html academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <button class="main-header__toggle" type="button">Открыть навигацию</button>
-      </div>
-      <nav class="main-nav main-header-main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">Html academy</a>
-          </li>
-        </ul>
-      </nav>
-      <p class="main-header__contents-description">
-        Фотографии пользователей
-      </p>
-    </header>
+        <p class="main-header__contents-description">
+          Фотографии пользователей
+        </p>
+      </header>
     <main class="page-photo">
       <h1 class="visually-hidden">Страница фотографий пользователей приложения Пинк</h1>
       <p class="page-description">
@@ -42,7 +47,7 @@
         Видите, как не хватает ваших?
       </p>
       <section class="users-posting">
-        <article class="user-post">
+        <article class="user-post user-post--top-day">
           <div class="post-image post-image--top-day users-posting__post-image">
             <img src="http://placehold.it/150x100" alt="Панорама моста">
           </div>
@@ -58,8 +63,8 @@
           </div>
         </article>
         <article class="user-post">
-          <div class="post-image post-image--top-day users-posting__post-image">
-            <img src="http://placehold.it/150x100" alt="Изображения автомобиля">
+          <div class="post-image users-posting__post-image">
+            <img src="http://placehold.it/150x100" width="280" height="180" alt="Изображения автомобиля">
           </div>
           <div class="user-post__post-content">
             <p class="user-post__author-info">
@@ -73,8 +78,8 @@
           </div>
         </article>
         <article class="user-post">
-          <div class="post-image post-image--top-day users-posting__post-image">
-            <img src="http://placehold.it/150x100" alt="Изображения ударной установки">
+          <div class="post-image users-posting__post-image">
+            <img src="http://placehold.it/150x100" width="280" height="180" alt="Изображения ударной установки">
           </div>
           <div class="user-post__post-content">
             <p class="user-post__author-info">
@@ -88,8 +93,8 @@
           </div>
         </article>
         <article class="user-post">
-          <div class="post-image post-image--top-day users-posting__post-image">
-            <img src="http://placehold.it/150x100" alt="Изображения стеклянной комнаты">
+          <div class="post-image users-posting__post-image">
+            <img src="http://placehold.it/150x100" width="280" height="180" alt="Изображения стеклянной комнаты">
           </div>
           <div class="user-post__post-content">
             <p class="user-post__author-info">
@@ -103,8 +108,8 @@
           </div>
         </article>
         <article class="user-post">
-          <div class="post-image post-image--top-day users-posting__post-image">
-            <img src="http://placehold.it/150x100" alt="Изображения выставки сельхоз-продукции">
+          <div class="post-image users-posting__post-image">
+            <img src="http://placehold.it/150x100" width="280" height="180" alt="Изображения выставки сельхоз-продукции">
           </div>
           <div class="user-post__post-content">
             <p class="user-post__author-info">
@@ -118,8 +123,8 @@
           </div>
         </article>
         <article class="user-post">
-          <div class="post-image post-image--top-day users-posting__post-image">
-            <img src="http://placehold.it/150x100" alt="Изображения выставки сельхоз-продукции">
+          <div class="post-image users-posting__post-image">
+            <img src="http://placehold.it/150x100" width="280" height="180" alt="Изображения выставки сельхоз-продукции">
           </div>
           <div class="user-post__post-content">
             <p class="user-post__author-info">
@@ -133,8 +138,8 @@
           </div>
         </article>
         <article class="user-post">
-          <div class="post-image post-image--top-day users-posting__post-image">
-            <img src="http://placehold.it/150x100" alt="Изображения выставки сельхоз-продукции">
+          <div class="post-image users-posting__post-image">
+            <img src="http://placehold.it/150x100" width="280" height="180" alt="Изображения выставки сельхоз-продукции">
           </div>
           <div class="user-post__post-content">
             <p class="user-post__author-info">
@@ -153,17 +158,26 @@
         <p class="user-editor__promo-text">Затмите их всех!
           Выкладывайте все, что накопилось в телефоне!
         </p>
-        <div class="processing-tools user-editor__processing-tools">
-          <label class="processing-tools__toggle processing-tools__toggle--toggle-one processing-tools__toggle--active" type="button">Инструмент обработки-1</label>
-          <label class="processing-tools__toggle processing-tools__toggle--toggle-two" type="button">Инструмент обработки-2</label>
-          <label class="processing-tools__toggle processing-tools__toggle--toggle-three" type="button">Инструмент обработки-3</label>
-        </div>
-        <div class="range-toggle user-editor__range-toggle">
-          <input class="range-toggle__range-field" type="range">
-        </div>
-        <div class="user-editor__buttons">
-          <button class="user-editor__button user-editor__button--button-submit button" type="submit">Запостить</button>
-          <input class="user-editor__button user-editor__button--button-reset button" type="reset" value="Отмена">
+        <div class="user-editor__tools-container">
+          <div class="user-editor__user-photo">
+            <img src="http://placehold.it/150x100" width="300" height="400" alt="Изображение зимней дороги">
+          </div>
+          <div class="user-editor__wrapper">
+            <div class="processing-tools user-editor__processing-tools">
+              <label class="processing-tools__toggle processing-tools__toggle--toggle-one processing-tools__toggle--active" for="tool-1">Инструмент обработки-1</label>
+              <label class="processing-tools__toggle processing-tools__toggle--toggle-two" for="tool-2">Инструмент обработки-2</label>
+              <label class="processing-tools__toggle processing-tools__toggle--toggle-three" for="tool-3">Инструмент обработки-3</label>
+            </div>
+            <div class="range-toggles user-editor__range-toggles">
+              <input class="range-toggles__range-field range-toggles__range-field--toggle-one" type="range" id="tool-1">
+              <input class="range-toggles__range-field range-toggles__range-field--toggle-two" type="range" id="tool-2">
+              <input class="range-toggles__range-field range-toggles__range-field--toggle-three" type="range" id="tool-3">
+            </div>
+            <div class="user-editor__buttons">
+              <button class="user-editor__button user-editor__button--button-submit button" type="submit">Запостить</button>
+              <input class="user-editor__button user-editor__button--button-reset button" type="reset" value="Отмена">
+            </div>
+          </div>
         </div>
       </section>
     </main>

@@ -1,0 +1,9 @@
+.slider-list__slider-toggle {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .slider-list__slider-toggle {
+    display: inline;
+  }
+}

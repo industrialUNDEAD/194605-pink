@@ -1,3 +1,46 @@
 .application-tariffs {
+  position: relative;
+  width: 320px;
+  min-height: 375px;
   background-color: #f2f2f2;
+}
+
+.application-tariffs__tariffs-table { //test
+  position: absolute;
+  left: -250px;
+  width: 620px;
+}
+
+.application-tariffs__toggles {
+  position: absolute; //test
+  top: 300px;
+  left: 40%;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .application-tariffs {
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .application-tariffs__tariffs-table {
+    left: 20px;
+  }
+
+  .application-tariffs__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-tariffs {
+    width: 960px;
+    padding: 0 120px;
+  }
+
+  .application-tariffs__tariffs-table {
+    left: 130px;
+    width: 940px;
+  }
 }

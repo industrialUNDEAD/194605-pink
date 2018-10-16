@@ -1,0 +1,18 @@
+.users-posting {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .users-posting {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .users-posting {
+    width: 960px;
+    padding: 0 120px;
+  }
+}

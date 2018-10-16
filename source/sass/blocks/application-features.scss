@@ -1,5 +1,34 @@
 .application-features {
+  position: relative;
+  width: 280px;
+}
+
+.application-features__lead-block {
+  width: 280px;
+  padding: 0 20px;
+  background-color: #ffffff;
+}
+
+.application-features__wrapper {
+  width: 280px;
+  padding: 0 20px;
   background-color: #f2f2f2;
+}
+
+.application-features__title {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.application-features__supplementing-title {
+  display: block;
+  margin-top: 35px;
+  padding-bottom: 40px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .application-features__list {
@@ -8,12 +37,152 @@
   list-style: none;
 }
 
+.application-features__item--new-friends {
+  &::after {
+    content: "";
+    position: relative;
+    left: 20%;
+    display: block;
+    width: 157px;
+    height: 330px;
+    background-color: pink;
+  }
+}
+
 .application-features__sub-title {
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
 }
 
 .application-features__description {
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .application-features__lead-block {
+    width: 620px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .application-features__item {
+    position: relative;
+  }
+
+  .application-features__item--new-friends {
+    &::after {
+      content: "";
+      position: absolute;
+      left: -80%;
+      bottom: 1px;
+      display: block;
+    }
+  }
+
+  .application-features__title {
+    padding-bottom: 100px;
+    font-size: 40px;
+  }
+
+  .application-features__supplementing-title {
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    width: 350px;
+    font-size: 40px;
+  }
+
+  .application-features__wrapper {
+    display: flex;
+    width: 320px;
+    margin-left: 280px;
+    padding: 0 20px;
+  }
+
+  .application-features__sub-title {
+    text-align: left;
+  }
+
+  .application-features__description {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-features {
+    width: 960px;
+  }
+
+  .application-features__lead-block {
+    width: 960px;
+    padding: 0 120px;
+  }
+
+  .application-features__supplementing-title {
+    left: 45%;
+  }
+
+  .application-features__wrapper {
+    width: 960px;
+    margin-left: 0;
+    padding: 0 120px;
+  }
+
+  .application-features__list {
+    display: flex;
+    justify-content: space-around;
+    width: 960px;
+  }
+
+  .application-features__item {
+    width: 280px;
+    margin-top: 360px;
+  }
+
+  .application-features__sub-title {
+    text-align: center;
+  }
+
+  .application-features__description {
+    text-align: center;
+  }
+
+  .application-features__item--new-friends {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 20%;
+      bottom: 100%;
+      display: block;
+    }
+  }
+
+  .application-features__item--world-changing {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 20%;
+      bottom: 100%;
+      display: block;
+      width: 157px;
+      height: 330px;
+      background-color: pink;
+    }
+  }
+
+  .application-features__item--raising-mood {
+    &::after {
+      content: "";
+      position: absolute;
+      left: 20%;
+      bottom: 100%;
+      display: block;
+      width: 157px;
+      height: 330px;
+      background-color: pink;
+    }
+  }
 }

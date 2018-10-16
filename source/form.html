@@ -4,33 +4,38 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__top-menu">
-        <div class="main-header__logo-block">
-          <a href="index.html">
-            <img src="http://placehold.it/150x100" alt="Логотип приложения">
-          </a>
-        </div>
+      <div class="main-header__wrapper">
+        <div class="main-header__top-menu">
+          <div class="main-header__logo-block">
+            <a href="index.html">
+              <img src="http://placehold.it/150x100" alt="Логотип приложения">
+            </a>
+          </div>
         <button class="main-header__toggle" type="button">Открыть навигацию</button>
+        </div>
+        <nav class="main-nav main-header-main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">Html academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-nav main-header-main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">Html academy</a>
-          </li>
-        </ul>
-      </nav>
       <p class="main-header__contents-description">
         Конкурс на самое безбашенное путешествие с Пинк
       </p>
@@ -38,81 +43,94 @@
     <main class="page-form">
       <h1 class="visually-hidden">Страница конкурса от создателей приложения Пинк</h1>
       <p class="page-description">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
       </p>
       <form class="competition-form">
-        <p>
-          <label class="competition-form__element-title" for="user-surname">Фамилия</label>
-          <input type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию *" required>
-        </p>
-        <p>
-          <label class="competition-form__element-title" for="user-name">Имя</label>
-          <input type="text" name="user-name" id="user-name" placeholder="Введите ваше имя *" required>
-        </p>
-        <p>
-          <label class="competition-form__element-title" for="user-patronymic">Отчество</label>
-          <input type="text" name="user-patronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
-        </p>
-        <fieldset class="competition-form__form-group">
-          <legend class="competition-form__element-title">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="competition-form_list">
-            <li class="competition-form_item">
-              <label for="selfie-field">Сделал селфи с акулой</label>
-              <input type="checkbox" name="selfie" id="selfie-field">
-            </li>
-            <li class="competition-form_item">
-              <label for="on-beach">Обгорел на пляже</label>
-              <input type="checkbox" name="on-beach" id="on-beach">
-            </li>
-            <li class="competition-form_item">
-              <label for="chuck-norris">Видел Чака Норриса</label>
-              <input type="checkbox" name="chuck-norris" id="chuck-norris">
-            </li>
-            <li class="competition-form_item">
-              <label for="souvenirs">Накупил сувениров</label>
-              <input type="checkbox" name="souvenirs" id="souvenirs">
-            </li>
-            <li class="competition-form_item">
-              <label for="tower">Держал башню</label>
-              <input type="checkbox" name="tower" id="tower">
-            </li>
-            <li class="competition-form_item">
-              <label for="massacre">Разгромил отель</label>
-              <input type="checkbox" name="massacre" id="massacre">
-            </li>
-          </ul>
+        <div class="competition-form__form-item competition-form__form-item--main-fields">
+          <p class="competition-form__field-wrapper">
+            <label class="competition-form__element-title" for="user-surname">Фамилия</label>
+            <input class="competition-form__text-field" type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию *" required>
+          </p>
+          <p class="competition-form__field-wrapper">
+            <label class="competition-form__element-title" for="user-name">Имя</label>
+            <input class="competition-form__text-field" type="text" name="user-name" id="user-name" placeholder="Введите ваше имя *" required>
+          </p>
+          <p class="competition-form__field-wrapper">
+            <label class="competition-form__element-title" for="user-patronymic">Отчество</label>
+            <input class="competition-form__text-field" type="text" name="user-patronymic" id="user-patronymic" placeholder="Ну и отчество тоже">
+          </p>
+        </div>
+        <fieldset class="competition-form__form-group competition-form__form-item competition-form__form-item--used-application">
+          <legend class="competition-form__element-title competition-form__element-title--group-title">С каким приложением путешествовали?</legend>
+            <ul class="competition-form__list competition-form__list--used-application">
+              <li class="competition-form__list-item competition-form__item--used-application">
+                <label class="competition-form__item-label" for="ios-filed">Pink для iOS</label>
+                <input class="competition-form__item-field" type="radio" name="type-application" value="ios" id="ios-filed" checked>
+              </li>
+              <li class="competition-form__list-item competition-form__item--used-application">
+                <label class="competition-form__item-label" for="android-filed">Pink на Android</label>
+                <input class="competition-form__item-field" type="radio" name="type-application" value="android" id="android-filed">
+              </li>
+              <li class="competition-form__list-item competition-form__item--used-application">
+                <label class="competition-form__item-label" for="windows-filed">Windows Phone</label>
+                <input class="competition-form__item-field" type="radio" name="type-application" value="windows" id="windows-filed">
+              </li>
+            </ul>
         </fieldset>
-        <p>
-          <label class="competition-form__element-title" for="user-phone">Номер телефона</label>
-          <input type="tel" name="phone" id="user-phone" placeholder="Номер, пожалуйста">
-        </p>
-        <p>
-          <label class="competition-form__element-title" for="user-mail">Адрес почты</label>
-          <input type="email" name="mail" id="user-mail" placeholder="Введите почту *">
-        </p>
-        <fieldset class="competition-form__form-group">
-            <legend class="competition-form__element-title">С каким приложением путешествовали?</legend>
-            <p>
-              <label for="ios-filed">Pink для iOS</label>
-              <input type="radio" name="type-application" value="ios" id="ios-filed" checked>
+        <fieldset class="competition-form__form-group competition-form__form-item competition-form__form-item--contact-details">
+          <legend class="competition-form__element-title competition-form__element-title--group-title">Контактная информация</legend>
+          <div class="competition-form__contacts-wrapper">
+            <p class="competition-form__contacts-item">
+              <label class="competition-form__element-title" for="user-phone">Номер телефона</label>
+              <input class="competition-form__text-field" type="tel" name="phone" id="user-phone" placeholder="Номер, пожалуйста">
             </p>
-            <p>
-              <label for="android-filed">Pink на Android</label>
-              <input type="radio" name="type-application" value="android" id="android-filed">
+            <p class="competition-form__contacts-item">
+              <label class="competition-form__element-title" for="user-mail">Адрес почты</label>
+              <input class="competition-form__text-field " type="email" name="mail" id="user-mail" placeholder="Введите почту *">
             </p>
-            <p>
-              <label for="windows-filed">Windows Phone</label>
-              <input type="radio" name="type-application" value="windows" id="windows-filed">
-            </p>
+          </div>
         </fieldset>
-        <p>
-          <label class="competition-form__element-title" for="emotions-description">Опишите свои эмоции</label>
-          <textarea name="emotions-field" id="emotions-description">Можно прям в красках, не стесняясь в выражениях</textarea>
-        </p>
-        <button class="competition-form__button" type="submit">Отправить форму</button>
-        <p class="competition-form__form-explanation">
-          <span class="competition-form__explanation-symbol competition-form__explanation-symbol--all">*</span> — обязательные поля
-        </p>
+        <fieldset class="competition-form__form-group competition-form__form-item competition-form__form-item--travel-report">
+          <legend class="competition-form__element-title competition-form__element-title--group-title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="competition-form__list competition-form__list--travel-report">
+              <li class="competition-form__list-item competition-form__item--travel-report competition-form__selfie">
+                <label class="competition-form__item-label" for="selfie-field">Сделал селфи с акулой</label>
+                <input class="competition-form__item-field" type="checkbox" name="selfie" id="selfie-field">
+              </li>
+              <li class="competition-form__list-item competition-form__item--travel-report competition-form__on-beach">
+                <label class="competition-form__item-label" for="on-beach">Обгорел на пляже</label>
+                <input class="competition-form__item-field" type="checkbox" name="on-beach" id="on-beach">
+              </li>
+              <li class="competition-form__list-item competition-form__item--travel-report competition-form__chuck-norris">
+                <label class="competition-form__item-label" for="chuck-norris">Видел Чака Норриса</label>
+                <input class="competition-form__item-field" type="checkbox" name="chuck-norris" id="chuck-norris">
+              </li>
+              <li class="competition-form__list-item competition-form__item--travel-report competition-form__souvenirs">
+                <label class="competition-form__item-label" for="souvenirs">Накупил сувениров</label>
+                <input class="competition-form__item-field" type="checkbox" name="souvenirs" id="souvenirs">
+              </li>
+              <li class="competition-form__list-item competition-form__item--travel-report competition-form__tower">
+                <label class="competition-form__item-label" for="tower">Держал башню</label>
+                <input class="competition-form__item-field" type="checkbox" name="tower" id="tower">
+              </li>
+              <li class="competition-form__list-item competition-form__item--travel-report competition-form__massacre">
+                <label class="competition-form__item-label" for="massacre">Разгромил отель</label>
+                <input class="competition-form__item-field" type="checkbox" name="massacre" id="massacre">
+              </li>
+            </ul>
+          </fieldset>
+        <fieldset class="competition-form__form-group competition-form__form-item competition-form__form-item--application-impression">
+          <p class="competition-form__impression-wrapper">
+            <label class="competition-form__element-title competition-form__element-title--group-title" for="emotions-description">Опишите свои эмоции</label>
+            <textarea class="competition-form__text-field competition-form__text-field--textarea" name="emotions-field" id="emotions-description">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </p>
+        </fieldset>
+        <div class="competition-form__form-item competition-form__form-item--form-footer">
+          <button class="competition-form__button" type="submit">Отправить форму</button>
+          <p class="competition-form__form-explanation">
+            <span class="competition-form__explanation-symbol competition-form__explanation-symbol--all">*</span> — обязательные поля
+          </p>
+        </div>
       </form>
     </main>
     <footer class="main-footer">

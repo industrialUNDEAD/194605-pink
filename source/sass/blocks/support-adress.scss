@@ -13,3 +13,16 @@
   font-size: 24px;
   color: #d22856;
 }
+
+@media (min-width: $tablet-width) {
+  .support-adress {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .support-adress__item {
+    width: 300px;
+    margin-bottom: 50px;
+  }
+}

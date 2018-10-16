@@ -1,0 +1,50 @@
+.effect-duration {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect-duration {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .effect-duration__content-block {
+    width: 320px;
+  }
+
+  .effect-duration__title {
+    width: 170px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+  }
+
+  .effect-duration__description {
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+  }
+
+  .effect-duration__link {
+    text-decoration: underline;
+    color: #d22856;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect-duration {
+    width: 960px;
+    padding: 0 120px;
+    background-color: #f2f2f2;
+  }
+
+  .effect-duration__title {
+    width: 420px;
+  }
+
+  .effect-duration__content-block {
+    width: 570px;
+  }
+}
