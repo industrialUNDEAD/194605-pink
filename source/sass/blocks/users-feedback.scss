@@ -1,5 +1,6 @@
 .users-feedback {
   width: 280px;
+  padding: 0 20px;
 }
 
 .users-feedback__list {
@@ -23,6 +24,9 @@
 }
 
 .users-feedback__feedback-content {
+  width: 280px;
+  margin: 0;
+  margin-top: 15px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
