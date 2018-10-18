@@ -9,26 +9,40 @@
   background-color: #ffffff;
 }
 
-.application-features__wrapper {
-  width: 280px;
-  padding: 0 20px;
-  background-color: #f2f2f2;
-}
-
 .application-features__title {
   margin-top: 40px;
   font-size: 24px;
+  line-height: 30px;
   font-weight: 400;
   text-align: center;
 }
 
 .application-features__supplementing-title {
   display: block;
-  margin-top: 35px;
-  padding-bottom: 40px;
+  margin-top: 30px;
+  padding-bottom: 10px;
   font-size: 24px;
+  line-height: 28px;
   font-weight: 300;
   text-align: center;
+}
+
+.application-features__wrapper {
+  position: relative;
+  width: 280px;
+  padding: 0 20px;
+  padding-top: 40px;
+  background-color: #f2f2f2;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 320px;
+    height: 32px;
+    background-image: linear-gradient(to left top, #f2f2f2 50%, #ffffff 50%);
+  }
 }
 
 .application-features__list {
