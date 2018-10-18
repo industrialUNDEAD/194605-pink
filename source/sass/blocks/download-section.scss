@@ -29,10 +29,44 @@
 
 .download-section__list {
   display: flex;
-  justify-content: space-around;
-  margin: 0;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 0;
+  width: 210px;
   list-style: none;
+}
+
+.download-section__item {
+  display: flex;
+  align-items: flex-end;
+  width: 50px;
+  height: 60px;
+}
+
+.download-section__item-link {
+  display: inline-block;
+  margin: auto 0;
+}
+
+.download-section__item-link--ios-market {
+  width: 47px; //47
+  height: 56px; //56
+  background-image: url("../img/logo-apple.svg");
+  background-position: 50% 50%;
+}
+
+.download-section__item-link--android-market {
+  width: 43px;
+  height: 47px;
+  background-image: url("../img/logo-android.svg");
+  background-position: 50% 50%;
+}
+
+.download-section__item-link--windows-market {
+  width: 44px;
+  height: 41px;
+  background-image: url("../img/logo-microsoft.svg");
+  background-position: 50% 50%;
 }
 
 .download-section__description {
