@@ -29,6 +29,7 @@
 
 .application-features__wrapper {
   position: relative;
+  overflow: hidden;
   width: 280px;
   padding: 0 20px;
   padding-top: 40px;
@@ -48,22 +49,31 @@
 .application-features__list {
   margin: 0;
   padding: 0;
+  padding-top: 25px;
   list-style: none;
 }
 
+.application-features__item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
 .application-features__item--new-friends {
+  padding-bottom: 270px;
   &::after {
     content: "";
-    position: relative;
-    left: 20%;
+    position: absolute;
+    left: 22%;
+    top: 145px;
     display: block;
     width: 157px;
     height: 330px;
-    background-color: pink;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
   }
 }
 
 .application-features__sub-title {
+  margin-bottom: 12px;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
