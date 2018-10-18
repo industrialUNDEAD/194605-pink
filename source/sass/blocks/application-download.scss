@@ -11,8 +11,10 @@
 }
 
 .image-container__application-image {
-  width: 320px;
-  height: 396px;
+  position: relative;
+  top: 110px;
+  width: 258px; //320px
+  height: 286px;  //396px
 }
 
 @media (min-width: $tablet-width) {
