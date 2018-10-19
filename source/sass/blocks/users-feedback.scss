@@ -5,6 +5,7 @@
 
 .users-feedback__list {
   margin: 0;
+  margin-bottom: 33px;
   padding: 0;
   list-style: none;
 }
@@ -34,6 +35,12 @@
 }
 
 .users-feedback__toggles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+  margin: 0 auto;
+  margin-bottom: 45px;
   text-align: center;
 }
 
