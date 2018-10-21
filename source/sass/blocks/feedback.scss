@@ -5,6 +5,10 @@
   background-color: #ffffff;
 }
 
+.feedback-contacts {
+  margin-top: 42px;
+}
+
 .support-adress__message {
   display: block;
   text-align: center;
@@ -16,7 +20,10 @@
 }
 
 .feedback__titel {
+  margin-bottom: 35px;
   font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
   text-align: center;
   color: #283645;
 }
@@ -26,10 +33,39 @@
   text-align: center;
 }
 
+.feedback__developer-location {
+  position: absolute;
+  left: 0;
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
+  &::before {
+    content: "";
+    z-index: 3;
+    position: absolute;
+    top: 115px;
+    left: 142px;
+    display: block;
+    width: 36px;
+    height: 35px;
+    background-image: url("../img/icon-map-marker.svg");
+  }
+}
+
 .feedback__developer-location img {  //test
+  z-index: 1;
   position: absolute;
   left: 1px;
+  top: -425px;
   width: 100%;
+}
+
+.feedback__developer-location svg {
+  z-index: 2;
+  position: absolute;
+  top: -70px;
+  left: -440px;
+  fill: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
