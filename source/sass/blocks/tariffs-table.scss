@@ -77,6 +77,16 @@
   color: #283645;
 }
 
+.tariffs-table__option-status {
+  display: block;
+  width: 31px;
+  height: 21px;
+}
+
+.tariffs-table__option-status--on {
+  background-image: url("../img/icon-yes.svg");
+}
+
 @media (min-width: $tablet-width) {
   .tariffs-table__no-mobile {
     width: 155px;
