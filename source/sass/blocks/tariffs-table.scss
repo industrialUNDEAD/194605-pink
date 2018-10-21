@@ -64,27 +64,40 @@
 }
 
 .tariffs-table__option {
-  width: 275px;
+  width: 274px;
   border-top: 2px solid #e5e5e5;
   border-bottom: 2px solid #e5e5e5;
   border-left: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
 }
 
+.tariffs-table__wrapper-td {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 13px;
+  padding-left: 22px;
+  padding-bottom: 8px;
+}
+
 .tariffs-table__option-name {
   font-size: 14px;
   line-height: 30px;
+  text-transform: uppercase;
   color: #283645;
 }
 
 .tariffs-table__option-status {
-  display: block;
-  width: 31px;
-  height: 21px;
+  display: inline-block;
+  width: 42px;
+  height: 35px;
 }
 
-.tariffs-table__option-status--on {
-  background-image: url("../img/icon-yes.svg");
+.tariffs-table__option-status--on svg {
+  fill: #3dc644;
+}
+
+.tariffs-table__option-status--off svg {
+  fill: #f25b26;
 }
 
 @media (min-width: $tablet-width) {
