@@ -80,8 +80,37 @@
 }
 
 @media (min-width: $tablet-width) {
-  .download-section__slogan {
+  .download-section {
     display: block;
+    background-color: transparent;
+  }
+
+  .download-section__slogan {
+    width: 200px;
+    display: block;
+    margin-top: 90px;
+    margin-bottom: 33px;
+    padding-left: 50px;
+    text-align: center;
+    line-height: 48px;
+  }
+
+  .download-section__button {
+    width: 205px;
+    margin-bottom: 45px;
+    padding: 15px 45px 15px 45px;
+    font-weight: 700;
+  }
+
+  .download-section__list {
+    margin-left: 45px;
+    margin-bottom: 35px;
+  }
+
+  .download-section__description {
+    width: 300px;
+    font-size: 18px;
+    font-weight: 300;
   }
 
   .download-section {
