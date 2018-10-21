@@ -167,7 +167,7 @@
               <tr class="tariffs-table__header-row">
                 <td class="tariffs-table__transparent-cell"></td>
                 <td class="tariffs-table__tariff-name tariffs-table__column">База</td>
-                <td class="tariffs-table__tariff-name tariffs-table__column">Стандарт</td>
+                <td class="tariffs-table__tariff-name tariffs-table__tariff-name--hit-sales tariffs-table__column">Стандарт</td>
                 <td class="tariffs-table__tariff-name tariffs-table__column">Анлим</td>
               </tr>
               <tr class="tariffs-table__header-row">
@@ -224,9 +224,15 @@
             </tr>
         </table>
         <p class="application-tariffs__toggles slider-toggles">
-          <button class="slider-toggles__toggle" type="button">1</button>
-          <button class="slider-toggles__toggle" type="button">2</button>
-          <button class="slider-toggles__toggle" type="button">3</button>
+          <button class="slider-toggles__toggle" type="button">
+            <span class="visually-hidden">1-й слайд</span>
+          </button>
+          <button class="slider-toggles__toggle slider-toggles__toggle--active" type="button">
+            <span class="visually-hidden">2-й слайд</span>
+          </button>
+          <button class="slider-toggles__toggle" type="button">
+            <span class="visually-hidden">3-й слайд</span>
+          </button>
         </p>
       </section>
       <section class="feedback">

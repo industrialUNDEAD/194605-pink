@@ -3,12 +3,24 @@
   width: 320px;
   min-height: 375px;
   background-color: #f2f2f2;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 320px;
+    height: 27px;
+    background-image: linear-gradient(to left top, #f2f2f2 50%, #ffffff 50%);
+  }
 }
 
 .application-tariffs__tariffs-table { //test
   position: absolute;
-  left: -250px;
+  left: -255px;
+  top: 90px;
   width: 620px;
+  table-layout: fixed;
 }
 
 .application-tariffs__toggles {

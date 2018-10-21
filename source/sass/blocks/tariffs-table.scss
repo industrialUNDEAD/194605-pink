@@ -1,5 +1,6 @@
 .tariffs-table {
   border-collapse: collapse;
+  border: 1px solid transparent;
 }
 
 .tariffs-table__table-header {
@@ -7,18 +8,49 @@
 }
 
 .tariffs-table__tariff-name {
-  font-size: 16px;
+  padding-top: 19px;
+  width: 276px;
+  border-left: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
+.tariffs-table__tariff-name--hit-sales {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "Хит";
+    position: absolute;
+    width: 120px; //74
+    top: 80px;
+    left: 5px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(-45deg) translateX(-10px) translateY(-40px);
+    transform-origin: 0 0;
+    background-color: #d22856;
+    color: #ffffff;
+  }
+}
+
 .tariffs-table__tariff-cost {
-  font-size: 18px;
+  padding-bottom: 17px;
+  width: 276px;
+  border-left: 2px solid #e5e5e5;
+  box-sizing: border-box;
+  font-size: 24px;
   font-weight: 300;
   line-height: 30px;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -51,9 +83,9 @@
     padding: 15px;
     font-size: 14px;
     line-height: 30px;
-    border-left: 2px solid #e5e5e5;
-    border-top: 2px solid #e5e5e5;
-    border-bottom: 2px solid #e5e5e5;
+    // border-left: 2px solid #e5e5e5;
+    // border-top: 2px solid #e5e5e5;
+    // border-bottom: 2px solid #e5e5e5;
     color: #283645;
     opacity: 1;
   }
