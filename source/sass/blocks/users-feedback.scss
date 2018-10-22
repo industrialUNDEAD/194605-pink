@@ -57,15 +57,24 @@
 
   .users-feedback__feedback-content {
     order: 1;
+    width: 620px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    text-align: center;
+    // text-indent: 25px;
   }
 
   .users-feedback__author-name {
     order: 2;
+    margin-bottom: 7px;
+    font-size: 20px;
   }
 
   .users-feedback__author-character {
     display: block;
+    margin-bottom: 10px;
     order: 2;
+    font-size: 14px;
     text-align: center;
   }
 }
