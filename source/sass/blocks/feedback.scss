@@ -71,7 +71,8 @@
 @media (min-width: $tablet-width) {
   .feedback {
     width: 620px;
-    margin-bottom: 470px; //test
+    height: 780px;
+    // margin-bottom: 470px; //test
     padding: 0 20px;
   }
 
@@ -83,6 +84,17 @@
 
   .feedback__sub-titel {
     padding-top: 18px;
+  }
+
+  .feedback__developer-location {
+    top: 365px;
+    width: 660px;
+    height: 376px;
+  }
+
+  .feedback__developer-location svg {
+    top: -57px;
+    left: -274px;
   }
 }
 
