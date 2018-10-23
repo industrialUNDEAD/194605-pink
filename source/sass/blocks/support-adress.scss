@@ -19,18 +19,42 @@
 
 .support-adress__feedback-method {
   font-size: 24px;
+  font-weight: 300;
   color: #d22856;
 }
 
 @media (min-width: $tablet-width) {
   .support-adress {
     display: flex;
+    width: 620px;
+    margin: 0 auto;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .support-adress__item {
-    width: 300px;
-    margin-bottom: 50px;
+    width: 300px; //225
+    margin-bottom: 45px;
+  }
+
+  .support-adress__message {
+    // width: 85px;
+    margin: 0 auto;
+    margin-bottom: 2px;
+  }
+
+  .support-adress__item:nth-child(2) .support-adress__message {
+    margin-bottom: 4px;
+  }
+
+  .support-adress__item:nth-child(3) {
+    margin-left: 160px;
+    .support-adress__message {
+      margin-bottom: 4px;
+    }
+  }
+
+  .support-adress__feedback-method {
+    text-align: center;
   }
 }
