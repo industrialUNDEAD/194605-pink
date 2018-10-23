@@ -101,16 +101,59 @@
 }
 
 @media (min-width: $tablet-width) {
+  .tariffs-table__transparent-cell {
+    width: 153px;
+  }
+
   .tariffs-table__no-mobile {
     width: 155px;
-    padding: 15px;
+    padding-left: 15px;
     font-size: 14px;
     line-height: 30px;
-    // border-left: 2px solid #e5e5e5;
-    // border-top: 2px solid #e5e5e5;
-    // border-bottom: 2px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
+    border-top: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
     color: #283645;
     opacity: 1;
+  }
+
+  .tariffs-table__tariff-name {
+    width: 154px;
+    padding: 0;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+
+  .tariffs-table__tariff-cost {
+    padding: 0;
+    padding-bottom: 5px;
+    font-size: 18px;
+  }
+
+  .tariffs-table__tariff-name--hit-sales {
+    &::before {
+      top: 70px;
+      left: 3px;
+    }
+  }
+
+  .tariffs-table__wrapper-td {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .tariffs-table__option {
+    padding: 0;
+    text-align: center;
+  }
+
+  .tariffs-table__option-status {
+    position: relative;
+    top: 5px;
   }
 
   .tariffs-table__option-name {

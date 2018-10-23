@@ -37,7 +37,12 @@
 @media (min-width: $tablet-width) {
   .application-tariffs {
     width: 620px;
+    min-height: 375px;
     padding: 0 20px;
+    &::before {
+      width: 660px;
+      height: 55px;
+    }
   }
 
   .application-tariffs__tariffs-table {
