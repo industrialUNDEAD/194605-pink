@@ -10,7 +10,7 @@
   width: 280px;
 }
 
-.footer-social__list {
+.main-footer__list {
   display: flex;
   justify-content: space-between;
   width: 180px;
@@ -19,16 +19,75 @@
   list-style: none;
 }
 
+.main-footer__developer-block {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer__developer-service {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #283645;
+}
+
 @media (min-width: $tablet-width) {
   .page-main + .main-footer {
     display: flex;
   }
 
   .main-footer {
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-direction: row;
+    align-items: flex-start;
     width: 620px;
+    min-height: 90px;
     padding: 0 20px;
+    // padding-bottom: 37px;
+  }
+
+  .main-footer__glasses-logo {
+    margin-right: 73px;
+  }
+
+  .main-footer__footer-social {
+    margin-right: 90px;
+    padding-top: 5px;
+  }
+
+  .main-footer__developer-block {
+    width: 130px;
+    padding-top: 15px;
+  }
+
+  .main-footer__developer-service {
+    margin-right: 15px;
+  }
+
+  .main-footer__social-link {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border: 3px solid #e9ebec;
+    border-radius: 50%;
+  }
+
+  .main-footer__social-link--twitter {
+    background-image: url("../img/icon-twitter-red.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .main-footer__social-link--facebook {
+    background-image: url("../img/icon-facebook-red.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .main-footer__social-link--youtube {
+    background-image: url("../img/icon-youtube-red.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 }
 
