@@ -122,9 +122,17 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
+    z-index: 2;
+    position: absolute; //test
     width: 960px;
     padding: 0 120px;
-    background-color: rgba(20, 28, 35, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .main-header__top-menu {
+    width: 150px;
+    margin-left: 10px;
+    padding-right: 0;
   }
 
   .main-header__toggle {
@@ -133,7 +141,12 @@
 
   .main-header__wrapper {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  .main-header__main-nav {
+    margin-right: 10px;
   }
 
   .main-header__contents-description {

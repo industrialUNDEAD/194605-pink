@@ -34,7 +34,8 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     display: flex;
-    background-color: rgba(20, 28, 35, 0.3);
+    width: 620px;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .main-nav__list {
@@ -49,6 +50,7 @@
   }
 
   .main-nav__link {
+    text-transform: none;
     vertical-align: middle;
   }
 }
