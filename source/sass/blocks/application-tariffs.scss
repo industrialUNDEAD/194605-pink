@@ -58,9 +58,14 @@
   .application-tariffs {
     width: 960px;
     padding: 0 120px;
+    &::before {
+      width: 1200px;
+      height: 88px;
+    }
   }
 
   .application-tariffs__tariffs-table {
+    top: 150px;
     left: 130px;
     width: 940px;
   }
