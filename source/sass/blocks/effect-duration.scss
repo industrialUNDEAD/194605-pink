@@ -72,15 +72,44 @@
 @media (min-width: $desktop-width) {
   .effect-duration {
     width: 960px;
+    min-height: 425px;
     padding: 0 120px;
     background-color: #f2f2f2;
   }
 
-  .effect-duration__title {
-    width: 420px;
+  .effect-duration::before {
+    top: 11px;
+    left: 160px;
+  }
+
+  .effect-duration::after {
+    top: 55px;
+    left: 170px;
+  }
+
+  .effect-duration__tablet-space {
+    display: none;
   }
 
   .effect-duration__content-block {
+    margin-top: 0;
+    margin-left: 378px;
+    padding-top: 105px;
     width: 570px;
+  }
+
+  .effect-duration__title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    width: 420px;
+  }
+
+  .effect-duration__description {
+    margin-bottom: 45px;
+    font-size: 18px;
+  }
+
+  .effect-duration__link {
+    font-size: 18px;
   }
 }

@@ -186,47 +186,75 @@
     width: 960px;
   }
 
+  .main-page .application-features {
+    margin-bottom: 0;
+  }
+
   .application-features__lead-block {
     width: 960px;
+    margin-bottom: 115px;
     padding: 0 120px;
   }
 
+  .application-features__title {
+    margin-top: 80px;
+    font-size: 50px;
+  }
+
   .application-features__supplementing-title {
-    left: 45%;
+    width: 420px;
+    top: 19px;
+    left: 390px;
+    font-size: 50px;
+    line-height: 60px;
   }
 
   .application-features__wrapper {
     width: 960px;
     margin-left: 0;
     padding: 0 120px;
+    &::before {
+      width: 1200px;
+      height: 96px;
+    }
   }
 
   .application-features__list {
     display: flex;
     justify-content: space-around;
     width: 960px;
+    margin-left: 0;
   }
 
   .application-features__item {
     width: 280px;
-    margin-top: 360px;
+    margin-top: 272px;
   }
 
   .application-features__sub-title {
+    font-size: 30px;
+    line-height: 30px;
     text-align: center;
   }
 
   .application-features__description {
+    margin-top: 22px;
+    font-size: 18px;
+    line-height: 30px;
     text-align: center;
   }
+
 
   .application-features__item--new-friends {
     &::after {
       content: "";
       position: absolute;
-      left: 20%;
-      bottom: 100%;
+      top: -327px;
+      left: -4px;
       display: block;
+      width: 280px;
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+      background-repeat: no-repeat;
     }
   }
 
@@ -234,12 +262,13 @@
     &::after {
       content: "";
       position: absolute;
-      left: 20%;
-      bottom: 100%;
+      top: -327px;
+      left: -4px;
       display: block;
-      width: 157px;
+      width: 280px;
       height: 330px;
-      background-color: pink;
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+      background-repeat: no-repeat;
     }
   }
 
@@ -247,12 +276,13 @@
     &::after {
       content: "";
       position: absolute;
-      left: 20%;
-      bottom: 100%;
+      top: -327px;
+      left: -4px;
       display: block;
-      width: 157px;
+      width: 280px;
       height: 330px;
-      background-color: pink;
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+      background-repeat: no-repeat;
     }
   }
 }
