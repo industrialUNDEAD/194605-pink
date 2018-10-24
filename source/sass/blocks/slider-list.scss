@@ -6,4 +6,24 @@
   .slider-list__slider-toggle {
     display: inline;
   }
+
+  .slider-list__slider-toggle {
+    width: 60px;
+    box-sizing: content-box;
+    padding: 0;
+    border: 0;
+    background-color: #ffffff;
+  }
+
+  .slider-list__slider-toggle--prev svg {
+    position: relative;
+    top: -5px;
+    right: 8px;
+  }
+
+  .slider-list__slider-toggle--next svg {
+    position: relative;
+    top: -4px;
+    left: 30px;
+  }
 }

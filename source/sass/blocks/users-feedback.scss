@@ -87,6 +87,7 @@
   .users-feedback {
     width: 960px;
     padding: 120px;
+    padding-top: 60px;
   }
 
   .users-feedback__toggles {
@@ -94,13 +95,33 @@
   }
 
   .users-feedback__quote-wrapper {
+    position: relative;
     display: flex;
+    justify-content: space-between;
     width: 940px;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: -100px;
+      left: 445px;
+      width: 79px;
+      height: 63px;
+      background-image: url("../img/icon-quotes-red.svg");
+    }
   }
 
   .users-feedback__feedback-content {
-    width: 720px;
+    width: 690px;
     text-align: center;
+  }
+
+  .users-feedback__author-name {
+    font-size: 24px;
+  }
+
+  .users-feedback__author-character {
+    font-size: 18px;
   }
 
   .users-feedback__item {
