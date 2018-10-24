@@ -116,4 +116,33 @@
   .download-section {
     order: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    .download-section {
+      padding: 0;
+      padding-left: 10px;
+      min-height: 510px;
+    }
+
+    .download-section__slogan {
+      width: 260px;
+      margin-top: 215px;
+      margin-bottom: 50px;
+      padding-left: 20px;
+      font-size: 50px;
+      line-height: 62px; // для попадания в макет
+    }
+
+    .download-section__button {
+      width: 237px;
+      margin-bottom: 65px;
+      padding-left: 27px;
+      padding-right: 29px;
+      font-size: 21px;
+    }
+
+    .download-section__list {
+      margin-bottom: 52px;
+    }
+  }
 }
