@@ -43,11 +43,11 @@
     margin-bottom: 2px;
   }
 
-  .support-adress__item:nth-child(2) .support-adress__message {
+  .support-adress__item--mail .support-adress__message {
     margin-bottom: 4px;
   }
 
-  .support-adress__item:nth-child(3) {
+  .support-adress__item--visit {
     margin-left: 160px;
     .support-adress__message {
       margin-bottom: 4px;
@@ -56,5 +56,36 @@
 
   .support-adress__feedback-method {
     text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .support-adress {
+    margin: 0;
+    width: 940px;
+    justify-content: flex-start;
+  }
+
+  .support-adress__item--call {
+    order: 1;
+    width: 210px;
+    margin-left: 55px;
+  }
+
+  .support-adress__item--visit {
+    order: 2;
+    margin: 0;
+    width: 215px;
+    margin-left: 110px;
+  }
+
+  .support-adress__item--mail {
+    order: 3;
+    width: 240px;
+    margin-left: 95px;
+  }
+
+  .support-adress__feedback-method {
+    margin-top: 20px;
   }
 }

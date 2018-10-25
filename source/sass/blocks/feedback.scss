@@ -101,7 +101,28 @@
 @media (min-width: $desktop-width) {
   .feedback {
     width: 960px;
-    margin-bottom: 840px; //test
+    margin-bottom: 100px; //test
     padding: 0 120px;
+  }
+
+  .feedback__titel {
+    margin-top: 62px;
+    margin-bottom: 70px;
+    font-size: 50px;
+  }
+
+  .feedback__sub-titel {
+    margin-top: 12px;
+  }
+
+  .feedback__developer-location {
+    top: 305px;
+    width: 1200px;
+    min-height: 502px;
+  }
+
+  .feedback__developer-location svg {
+    top: -20px;
+    left: 1px;
   }
 }

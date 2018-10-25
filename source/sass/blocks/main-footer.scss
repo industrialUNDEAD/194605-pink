@@ -94,6 +94,23 @@
 @media (min-width: $desktop-width) {
   .main-footer {
     width: 960px;
-    padding: 0 120px;
+    margin: 0 120px;
+    padding: 0 10px;
+  }
+
+  .main-footer__glasses-logo {
+    margin-right: 230px;
+  }
+
+  .main-footer__footer-social {
+    margin-right: 230px;
+  }
+
+  .main-footer__developer-block {
+    width: 155px;
+  }
+
+  .main-footer__developer-service {
+    font-size: 18px;
   }
 }
