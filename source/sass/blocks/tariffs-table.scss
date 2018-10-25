@@ -160,3 +160,33 @@
     display: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .tariffs-table__tariff-name--hit-sales {
+    &::before {
+      top: 79px;
+    }
+  }
+
+  .tariffs-table__tariff-name {
+    padding-top: 12px;
+    font-size: 18px;
+  }
+
+  .tariffs-table__tariff-cost {
+    font-size: 24px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+
+  .tariffs-table__no-mobile {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    font-size: 18px;
+  }
+
+  .tariffs-table__option-status {
+    left: -3px;
+  }
+}

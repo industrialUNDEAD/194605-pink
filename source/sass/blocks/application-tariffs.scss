@@ -57,6 +57,7 @@
 @media (min-width: $desktop-width) {
   .application-tariffs {
     width: 960px;
+    min-height: 526px;
     padding: 0 120px;
     &::before {
       width: 1200px;
