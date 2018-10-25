@@ -9,15 +9,17 @@
       content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header main-header--nav-opened">
       <div class="main-header__wrapper">
         <div class="main-header__top-menu">
           <div class="main-header__logo-block">
             <a href="index.html">
-              <img src="http://placehold.it/150x100" alt="Логотип приложения">
+              <img class="main-header__logo-image" src="../img/logo-pink-white-mobile.svg" alt="Логотип приложения">
             </a>
           </div>
-        <button class="main-header__toggle" type="button">Открыть навигацию</button>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть навигацию</span>
+          </button>
         </div>
         <nav class="main-nav main-header-main-nav">
           <ul class="main-nav__list">
