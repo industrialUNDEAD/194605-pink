@@ -1,3 +1,29 @@
+.main-footer__social-link {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+}
+
+.main-footer__social-link--twitter {
+  background-image: url("../img/icon-twitter-red.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.main-footer__social-link--facebook {
+  background-image: url("../img/icon-facebook-red.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.main-footer__social-link--youtube {
+  background-image: url("../img/icon-youtube-red.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .page-main + .main-footer {
   display: none;
 }
