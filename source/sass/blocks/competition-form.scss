@@ -37,11 +37,23 @@
   order: 6;
 }
 
+.competition-form__form-item--main-fields {
+  margin-top: 17px;
+}
+
+.competition-form__field-wrapper {
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
 .competition-form__form-item {
   margin-bottom: 40px;
 }
 
 .competition-form__element-title {
+  margin-left: 22px;
+  padding-top: 2px;
+  padding-bottom: 5px;
   display: block;
   font-size: 14px;
   text-transform: uppercase;
@@ -59,7 +71,13 @@
 }
 
 .competition-form__text-field {
-  padding: 20px;
+  box-sizing: border-box;
+  width: 280px;
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-bottom: 14px;
+  font-size: inherit;
+  line-height: 30px;
 }
 
 .competition-form__list {

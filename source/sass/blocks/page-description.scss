@@ -1,4 +1,5 @@
 .page-description {
+  margin-top: 47px;
   width: 280px;
   padding: 0 20px;
   font-size: 14px;
@@ -8,10 +9,18 @@
   background-color: #ffffff;
 }
 
+.page-description__no-mobile {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .page-description {
     width: 510px;
     padding: 0 55px;
+  }
+
+  .page-description__no-mobile {
+    display: inline;
   }
 }
 
