@@ -1,3 +1,21 @@
+.main-footer__glasses-logo {
+  margin-bottom: 35px;
+}
+
+.main-footer__footer-social {
+  margin-bottom: 35px;
+}
+
+.main-footer__developer-block {
+  width: 130px;
+  display: flex;
+  margin-bottom: 40px;
+  svg {
+    margin-top: 5px;
+    margin-left: 13px;
+  }
+}
+
 .main-footer__social-link {
   display: block;
   width: 45px;
@@ -34,6 +52,8 @@
   align-items: center;
   align-content: center;
   width: 280px;
+  padding: 0 20px;
+  padding-top: 55px;
 }
 
 .main-footer__list {
