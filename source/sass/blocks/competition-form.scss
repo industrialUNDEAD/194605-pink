@@ -309,6 +309,7 @@
     order: 5;
     width: 500px;
     margin: 0;
+    margin-bottom: 67px;
     padding: 0 58px;
     padding-top: 20px;
     padding-bottom: 42px;
@@ -321,8 +322,19 @@
 
   .competition-form__form-item--form-footer {
     order: 6;
+    width: 620px;
+    margin-bottom: 50px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .competition-form__button {
+    box-sizing: content-box;
+    width: 185px;
+    padding: 17px 55px 17px 58px;
+    border: 0;
   }
 
   .competition-form__field-wrapper .competition-form__text-field {
