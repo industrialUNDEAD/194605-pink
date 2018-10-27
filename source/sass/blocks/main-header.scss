@@ -120,7 +120,17 @@
   }
 
   .main-header__contents-description {
-    width: 510px;
+    width: 660px;
+    padding: 70px 0px 77px 0px;
+    font-size: 50px;
+    line-height: 60px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 28%;
+  }
+
+  .main-header__description-wrapper {
+    display: block;
+    width: 475px;
     margin: 0 auto;
   }
 }

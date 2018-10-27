@@ -15,8 +15,10 @@
 
 @media (min-width: $tablet-width) {
   .page-description {
-    width: 510px;
-    padding: 0 55px;
+    width: 492px;
+    margin: 0 auto;
+    margin-top: 94px;
+    font-size: 18px;
   }
 
   .page-description__no-mobile {
