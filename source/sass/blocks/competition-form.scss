@@ -210,10 +210,20 @@
 
   .competition-form__field-wrapper {
     display: flex;
+    margin-bottom: 52px;
   }
 
   .competition-form__form-item--main-fields {
     order: 1;
+    width: 620px;
+    margin-top: 70px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .competition-form__element-title {
+    margin-left: 0;
+    padding-top: 18px;
   }
 
   .competition-form__form-item--travel-report {
