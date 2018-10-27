@@ -204,6 +204,10 @@
     display: block;
   }
 
+  .competition-form__text-field {
+    width: 100%;
+  }
+
   .competition-form__form-group { // возвращение дефолтных стилей групп формы
     border: 2px solid #e5e5e5;
     background-color: #ffffff;
@@ -218,6 +222,9 @@
   .competition-form__field-wrapper {
     display: flex;
     margin-bottom: 52px;
+    .competition-form__element-title {
+      padding-top: 18px;
+    }
   }
 
   .competition-form__form-item--main-fields {
@@ -230,30 +237,57 @@
 
   .competition-form__element-title {
     margin-left: 0;
-    padding-top: 18px;
   }
 
   .competition-form__form-item--travel-report {
     order: 4;
+    .competition-form__element-title--group-title {
+      background-color: #ffffff;
+    }
   }
 
   .competition-form__form-item--contact-details {
+    width: 500px;
+    min-height: 315px;
+    margin: 0;
+    padding: 0 60px;
     order: 3;
   }
 
   .competition-form__contacts-wrapper {
     display: flex;
-    justify-content: space-between;
+    width: 500px;
+    flex-direction: column;
+    padding-top: 37px;
+  }
+
+  .competition-form__contacts-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 28px;
+    .competition-form__text-field {
+      order: 1;
+    }
+
+    .competition-form__element-title {
+      order: 2;
+      padding: 0;
+      padding-left: 18px;
+      padding-top: 10px;
+    }
   }
 
   .competition-form__form-item--used-application {
     width: 620px;
     min-height: 305px;
     margin: 0;
+    margin-bottom: 55px;
     padding: 0;
     order: 2;
     .competition-form__element-title--group-title {
       padding: 0;
+      background-color: #ffffff;
     }
   }
 
