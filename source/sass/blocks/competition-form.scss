@@ -204,7 +204,14 @@
     display: block;
   }
 
-  .competition-form__form-group {
+  .competition-form__form-group { // возвращение дефолтных стилей групп формы
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+
+  .competition-form__element-title--group-title {  // возвращение дефолтных стилей заголовков гурпп
+    width: auto;
+    padding: 0;
     background-color: #ffffff;
   }
 
@@ -217,7 +224,7 @@
     order: 1;
     width: 620px;
     margin-top: 70px;
-    margin-bottom: 0;
+    margin-bottom: 2px;
     padding: 0;
   }
 
@@ -240,7 +247,22 @@
   }
 
   .competition-form__form-item--used-application {
+    width: 620px;
+    min-height: 305px;
+    margin: 0;
+    padding: 0;
     order: 2;
+    .competition-form__element-title--group-title {
+      padding: 0;
+    }
+  }
+
+  .competition-form__list--used-application {
+    padding-top: 52px;
+  }
+
+  .competition-form__item--used-application {
+    margin-bottom: 36px;
   }
 
   .competition-form__form-item--application-impression {
