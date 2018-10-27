@@ -41,7 +41,7 @@
 .competition-form__form-item--used-application {
   width: 280px;
   min-height: 340px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   padding: 0 20px;
   order: 4;
 }
@@ -51,6 +51,10 @@
   margin-bottom: 40px;
   padding: 0 20px;
   order: 5;
+}
+
+.competition-form__form-item--application-impression .competition-form__element-title--group-title {
+  margin-bottom: 18px;
 }
 
 .competition-form__form-item--form-footer {
@@ -151,16 +155,6 @@
   order: 2;
 }
 
-.competition-form__impression-wrapper {
-  margin: 0;
-  text-align: center;
-  .competition-form__element-title--group-title {
-    margin-left: 0;
-    margin-bottom: 10px;
-    line-height: 30px;
-  }
-}
-
 .competition-form__text-field--textarea {
   box-sizing: border-box;
   width: 280px;
@@ -242,8 +236,9 @@
   .competition-form__form-item--travel-report {
     order: 4;
     width: 620px;
-    min-height: 550px;
+    min-height: 555px;
     margin: 0;
+    margin-bottom: 60px;
     padding: 0;
     .competition-form__element-title--group-title {
       padding: 0;
@@ -312,10 +307,16 @@
 
   .competition-form__form-item--application-impression {
     order: 5;
+    width: 500px;
+    margin: 0;
+    padding: 0 58px;
+    padding-top: 20px;
+    padding-bottom: 42px;
   }
 
   .competition-form__text-field--textarea {
-    width: 495px;
+    width: 500px;
+    min-height: 190px;
   }
 
   .competition-form__form-item--form-footer {
