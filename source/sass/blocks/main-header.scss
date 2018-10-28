@@ -88,18 +88,6 @@
   background-color: rgba(210, 40, 86, 0.3);
 }
 
-.main-header__contents-description {
-  margin: 0;
-  padding: 28px 20px 50px 20px;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 300;
-  text-align: center;
-  color: #ffffff;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: 50% 23%;
-}
-
 .main-header__top-menu {
   display: flex;
   justify-content: space-between;
@@ -118,27 +106,13 @@
     padding-top: 41.5px;
     padding-bottom: 41.5px;
   }
-
-  .main-header__contents-description {
-    width: 660px;
-    padding: 70px 0px 77px 0px;
-    font-size: 50px;
-    line-height: 60px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% 28%;
-  }
-
-  .main-header__description-wrapper {
-    display: block;
-    width: 475px;
-    margin: 0 auto;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
     z-index: 2;
     position: absolute; //test
+    top: 0;
     width: 960px;
     padding: 0 120px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -164,8 +138,11 @@
     margin-right: 10px;
   }
 
-  .main-header__contents-description {
-    widows: 820px;
-    padding: 0 70px;
+  .main-header--no-index {
+    background: none;
+  }
+
+  .main-header__wrapper--no-index {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
