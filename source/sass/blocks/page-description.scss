@@ -29,6 +29,15 @@
   background-position: 50% 23%;
 }
 
+.page-description__paragraph-1--photo-page {
+  padding-bottom: 81px;
+}
+
+.page-description__paragraph-2--photo-page {
+  width: 247px;
+  padding: 0 35px;
+}
+
 @media (min-width: $tablet-width) {
   .page-description {
     width: 660px;
