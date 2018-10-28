@@ -373,11 +373,41 @@
 
   .competition-form__form-item--main-fields {
     width: 450px;
+    margin-top: 80px;
+    margin-left: 10px;
     margin-right: 25px;
   }
 
   .competition-form__form-item--used-application {
-    width: 450px;
+    margin-top: 70px;
+    margin-left: 28px;
+    width: 443px;
+  }
+
+  .competition-form__form-item--contact-details {
+    width: 940px;
+    min-height: 168px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+  }
+
+  .competition-form__contacts-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .competition-form__contacts-item {
+    margin: 0;
+    margin-top: 35px;
+    width: 375px;
+    .competition-form__text-field {
+      order: 2;
+    }
+
+    .competition-form__element-title {
+      order: 1;
+    }
   }
 
   .competition-form__form-item--travel-report {
