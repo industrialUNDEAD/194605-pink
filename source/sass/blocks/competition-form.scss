@@ -411,19 +411,41 @@
   }
 
   .competition-form__form-item--travel-report {
-    width: 820px;
-    padding: 0 60px;
+    width: 940px;
+    min-height: 235px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px;
   }
 
   .competition-form__list--travel-report {
     display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
     flex-wrap: wrap;
     text-align: left;
   }
 
   .competition-form__item--travel-report {
-    width: 260px;
+    width: auto;
+    margin-right: 55px;
     box-sizing: border-box;
+    .competition-form__item-label {
+      margin-left: 39px;
+    }
+  }
+
+  .competition-form__form-item--travel-report .competition-form__tower,
+  .competition-form__form-item--travel-report .competition-form__massacre {
+    margin-right: 0;
+  }
+
+  .competition-form__form-item--travel-report .competition-form__on-beach {
+    margin-right: 95px;
+  }
+
+  .competition-form__form-item--travel-report .competition-form__souvenirs {
+    margin-right: 62px;
   }
 
   .competition-form__form-item--application-impression {
