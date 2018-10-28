@@ -1,7 +1,24 @@
+.user-post {
+  margin-bottom: 20px;
+}
+
 .post-image {
   width: 280px;
   padding: 0 20px;
   text-align: center;
+}
+
+.users-posting__post-image {
+  height: 180px;
+}
+
+.post-image--top-day {
+  height: 137px;
+}
+
+.user-post--top-day {
+  position: absolute;
+  top: 35px;
 }
 
 .post-image--top-day {
@@ -18,11 +35,26 @@
 
 .user-post__post-content {
   width: 280px;
+  // min-height: 192px;
   margin: 0 20px;
+  padding-top: 18px;
+  padding-bottom: 22px;
+  padding-left: 18px;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
   background-color: #f2f2f2;
+}
+
+.user-post__post-description {
+  width: 245px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.user-post__author-info {
+  margin-top: 0px;
+  margin-bottom: 0;
 }
 
 .user-post__author-name {
@@ -32,10 +64,14 @@
 
 .user-post__post-time {
   font-size: 12px;
+  text-transform: uppercase;
 }
 
 .user-post__likes-number {
+  display: block;
+  margin-left: 30px;
   font-size: 12px;
+  text-transform: uppercase;
   color: #d22856;
 }
 
