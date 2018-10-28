@@ -175,6 +175,10 @@
   background-color: #2aab6d;
 }
 
+.competition-form__additional-description {
+  display: none;
+}
+
 .competition-form__form-explanation {
   margin: 0;
   font-size: 14px;
@@ -449,15 +453,27 @@
   }
 
   .competition-form__form-item--application-impression {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 18px;
+    padding-bottom: 38px;
     width: 940px;
   }
 
   .competition-form__text-field--textarea {
     width: 820px;
+    min-height: 123px;
   }
 
   .competition-form__form-item--form-footer {
     width: 940px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+
+  .competition-form__additional-description {
+    display: inline;
   }
 
   .competition-form__selfie {
