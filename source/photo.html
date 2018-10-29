@@ -159,23 +159,43 @@
       </section>
       <section class="user-editor">
         <h2 class="visually-hidden">Редактор фотографий</h2>
-        <p class="user-editor__promo-text">Затмите их всех!
+        <p class="user-editor__promo-text">
+          <span class="user-editor__subtitle">Затмите их всех!</span>
           Выкладывайте все, что накопилось в телефоне!
         </p>
         <div class="user-editor__tools-container">
           <div class="user-editor__user-photo">
-            <img src="http://placehold.it/150x100" width="300" height="400" alt="Изображение зимней дороги">
+            <img src="../img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Изображение зимней дороги">
           </div>
           <div class="user-editor__wrapper">
             <div class="processing-tools user-editor__processing-tools">
-              <label class="processing-tools__toggle processing-tools__toggle--toggle-one processing-tools__toggle--active" for="tool-1">Инструмент обработки-1</label>
-              <label class="processing-tools__toggle processing-tools__toggle--toggle-two" for="tool-2">Инструмент обработки-2</label>
-              <label class="processing-tools__toggle processing-tools__toggle--toggle-three" for="tool-3">Инструмент обработки-3</label>
+              <label class="processing-tools__toggle processing-tools__toggle--toggle-one processing-tools__toggle--active" for="tool-crop">
+                <span class="visually-hidden">Инструмент кадрирования</span>
+                <svg fill="#d22856" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                </svg>
+              </label>
+              <label class="processing-tools__toggle processing-tools__toggle--toggle-two" for="tool-fill">
+                <span class="visually-hidden">Инструмент обработки цвета</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                  <rect y="40" width="48" height="3"/>
+                </svg>
+              </label>
+              <label class="processing-tools__toggle processing-tools__toggle--toggle-three" for="tool-contrast">
+                <span class="visually-hidden">Инструмент обработки контрастности</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                  <path fill="#231F20" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                </svg>
+              </label>
             </div>
             <div class="range-toggles user-editor__range-toggles">
-              <input class="range-toggles__range-field range-toggles__range-field--toggle-one" type="range" id="tool-1">
-              <input class="range-toggles__range-field range-toggles__range-field--toggle-two" type="range" id="tool-2">
-              <input class="range-toggles__range-field range-toggles__range-field--toggle-three" type="range" id="tool-3">
+              <input class="range-toggles__range-field range-toggles__range-field--toggle-one" type="range" id="tool-crop">
+              <input class="range-toggles__range-field range-toggles__range-field--toggle-two" type="range" id="tool-fill">
+              <input class="range-toggles__range-field range-toggles__range-field--toggle-three" type="range" id="tool-contrast">
             </div>
             <div class="user-editor__buttons">
               <button class="user-editor__button user-editor__button--button-submit button" type="submit">Запостить</button>

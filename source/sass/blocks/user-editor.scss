@@ -1,7 +1,28 @@
+.user-editor {
+  width: 320px;
+  // padding: 0 20px;
+  padding-top: 10px;
+}
+
+.user-editor__subtitle {
+  display: block;
+  text-align: center;
+}
+
 .user-editor__promo-text {
-  width: 280px;
-  padding: 0 20px;
+  width: 260px; // 280px
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 42px;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
   background-color: #ffffff;
+}
+
+.user-editor__wrapper {
+  padding: 0 20px;
 }
 
 .user-editor__tools-container {
@@ -9,18 +30,28 @@
 }
 
 .user-editor__user-photo {
-  widows: 300px;
-  padding: 0 20px;
+  margin-bottom: 35px;
+  padding: 20px 20px 0 20px; ///////////////////////
 }
 
 .user-editor__processing-tools {
+  display: flex;
   width: 280px;
-  padding: 0 20px;
+  align-items: center;
+  padding-left: 36px;
+}
+
+.processing-tools__toggle--toggle-one {
+  margin-right: 25px;
+}
+
+.processing-tools__toggle--toggle-two {
+  margin-right: 36px;
 }
 
 .user-editor__range-toggles {
-  width: 280px;
-  padding: 0 20px;
+  // width: 280px;
+  // padding: 0 20px;
   border-bottom: 1px solid #dddfe0;
   text-align: center;
 }
@@ -28,6 +59,67 @@
 .range-toggles__range-field {
   display: inline-block;
   width: 200px;
+}
+
+.range-toggles__range-field {
+  -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+  width: 100%; /* Указание параметра ширины требуется для Firefox. */
+}
+
+.range-toggles__range-field::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.range-toggles__range-field:focus {
+  outline: none; /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
+}
+
+.range-toggles__range-field::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+  border-color: transparent;
+  color: transparent;
+}
+
+.range-toggles__range-field::-webkit-slider-thumb {
+  margin-top: -5px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.range-toggles__range-field::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.range-toggles__range-field::-ms-thumb {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.range-toggles__range-field::-webkit-slider-runnable-track {
+  width: 240px;
+  height: 2px;
+  background: #000000;
+}
+
+.range-toggles__range-field::-moz-range-track {
+  width: 240px;
+  height: 2px;
+  background: #000000;
 }
 
 .range-toggles__range-field--toggle-two {
@@ -39,9 +131,9 @@
 }
 
 .user-editor__buttons {
-  width: 280px;
+  // width: 280px;
   margin-top: 50px;
-  padding: 0 20px;
+  // padding: 0 20px;
 }
 
 .user-editor__button {
