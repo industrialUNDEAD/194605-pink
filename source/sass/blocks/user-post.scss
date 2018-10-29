@@ -1,5 +1,5 @@
 .user-post {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .post-image {
@@ -19,6 +19,23 @@
 .user-post--top-day {
   position: absolute;
   top: 35px;
+  &::before {
+    content: "Понорама дня";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 38px;
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #d22856;
+  }
 }
 
 .post-image--top-day {
