@@ -39,10 +39,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-description {
-    width: 660px;
-  }
-
   .page-description__paragraph-2 {
     width: 492px;
     margin: 0 auto;
@@ -63,10 +59,30 @@
     background-position: 50% 28%;
   }
 
+  .page-description__paragraph-1--photo-page {
+    width: 660px;
+    padding-bottom: 140px;
+  }
+
+  .page-description__paragraph-2--photo-page {
+    width: 445px;
+    margin-top: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 87px;
+    padding-right: 87px;
+  }
+
   .page-description__description-wrapper {
     display: block;
     width: 475px;
     margin: 0 auto;
+  }
+
+  .page-description__photo-wrapper {
+    display: block;
+    width: 630px;
+    margin-left: 15px;
   }
 }
 

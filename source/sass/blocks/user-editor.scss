@@ -34,9 +34,14 @@
   padding: 20px 20px 0 20px;
 }
 
+.user-editor__edited-picture {
+  width: 280px;
+  height: 374px;
+}
+
 .user-editor__processing-tools {
   display: flex;
-  width: 280px;
+  width: 240px;
   align-items: center;
   margin-left: 20px;
   margin-right: 20px;
@@ -56,7 +61,6 @@
   width: 240px;
   margin: 0 auto;
   margin-bottom: 30px;
-  border-bottom: 1px solid #dddfe0;
   text-align: center;
 }
 
