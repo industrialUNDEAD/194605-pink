@@ -10,10 +10,11 @@
   width: 130px;
   display: flex;
   margin-bottom: 40px;
-  svg {
-    margin-top: 5px;
-    margin-left: 13px;
-  }
+}
+
+.main-footer__academy-icon {
+  margin-top: 5px;
+  margin-left: 13px;
 }
 
 .main-footer__social-link {
@@ -97,6 +98,10 @@
     // padding-bottom: 37px;
   }
 
+  .main-footer--form-page {
+    margin-top: 35px;
+  }
+
   .main-footer__glasses-logo {
     margin-right: 73px;
   }
@@ -108,11 +113,15 @@
 
   .main-footer__developer-block {
     width: 130px;
-    padding-top: 15px;
+    padding-top: 13px;
   }
 
   .main-footer__developer-service {
     margin-right: 15px;
+  }
+
+  .main-footer__academy-icon {
+    margin-left: 0;
   }
 
   .main-footer__social-link {
