@@ -172,18 +172,67 @@
 @media (min-width: $tablet-width) {
   .user-editor {
     width: 620px;
-    padding: 0 20px;
+    padding: 0;
+  }
+
+  .user-editor__promo-text {
+    width: 430px;
+    margin-top: 45px;
+    margin-left: 105px;
+    margin-right: 0;
+    margin-bottom: 68px;
+    font-size: 18px;
   }
 
   .user-editor__tools-container {
     display: flex;
     width: 620px;
-    padding: 20px;
+    min-height: 472px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f2f2f2;
+  }
+
+  .user-editor__edited-picture {
+    width: 300px;
+    height: 400px;
+  }
+
+  .user-editor__user-photo {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .user-editor__range-toggles {
+    margin-bottom: 25px;
   }
 
   .range-toggles__range-field--toggle-two,
   .range-toggles__range-field--toggle-three {
     display: inline-block;
+  }
+
+  .range-toggles__range-field {
+    width: 202px;
+    margin-left: 62px;
+    border-bottom: 1px solid #dddfe0;
+    background-color: #f2f2f2;
+  }
+
+  .range-toggles__range-field--toggle-one {
+    padding-top: 19px;
+    padding-bottom: 34px;
+  }
+
+  .range-toggles__range-field--toggle-two {
+    padding-top: 29px;
+    padding-bottom: 34px;
+  }
+
+  .range-toggles__range-field--toggle-three {
+    padding-top: 26px;
+    padding-bottom: 34px;
   }
 
   .user-editor__processing-tools {
@@ -194,22 +243,40 @@
     position: absolute;
   }
 
+  .processing-tools__icon {
+    width: 24px;
+    height: 24px;
+    fill: #d22856;
+  }
+
+  .processing-tools__icon--contrast {
+    width: 16px;
+    height: 16px;
+  }
+
   .processing-tools__toggle--toggle-one {
-    left: -15px;
+    top: 27px;
+    left: 27px;
   }
 
   .processing-tools__toggle--toggle-two {
-    top: 25px;
-    left: -15px;
+    top: 102px;
+    left: 30px;
   }
 
   .processing-tools__toggle--toggle-three {
-    top: 50px;
-    left: -15px;
+    top: 173px;
+    left: 35px;
   }
 
   .user-editor__buttons {
     width: 260px;
+    padding-left: 45px;
+    padding-right: 0;
+  }
+
+  .user-editor__button--button-submit {
+    margin-bottom: 22px;
   }
 }
 
