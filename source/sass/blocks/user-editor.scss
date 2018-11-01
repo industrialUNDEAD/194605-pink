@@ -283,21 +283,99 @@
 @media (min-width: $desktop-width) {
   .user-editor {
     width: 960px;
-    padding: 0 120px;
+    margin: 0 120px;
   }
 
   .user-editor__promo-text {
-    width: 800px;
+    width: 425px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
 
   .user-editor__tools-container {
     justify-content: space-between;
     width: 800px;
-    padding: 0 80px;
+    padding-left: 80px;
+    padding-right: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .user-editor__user-photo {
+    padding-top: 15px;
   }
 
   .user-editor__wrapper {
     width: 410px;
+  }
+
+  .processing-tools__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .processing-tools__icon--contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+  .processing-tools__toggle--toggle-one {
+    top: 12px;
+    left: -22px;
+  }
+
+  .processing-tools__toggle--toggle-two {
+    top: 86px;
+    left: -20px;
+  }
+
+  .processing-tools__toggle--toggle-three {
+    top: 163px;
+    left: -14px;
+  }
+
+  .range-toggles__range-field {
+    position: relative;
+    width: 288px;
+    margin-left: 8px;
+    border: none;
+    &::after {
+      content: "";
+      position: absolute;
+      right: -28px;
+      bottom: 1px;
+      width: 410px;
+      height: 1px;
+      background-color: #dddfe0;
+    }
+  }
+
+  .range-toggles__range-field--toggle-one {
+    padding-top: 15px;
+  }
+
+  .user-editor__buttons {
+    width: 410px;
+    min-height: 80px;
+    padding-top: 115px;
+    padding-left: 0;
+    border: none;
+  }
+
+  .user-editor__button {
+    width: 183px;
+    padding-left: 42px;
+    padding-right: 38px;
+    box-sizing: border-box;
+  }
+
+  .user-editor__button--button-submit {
+    width: 183px;
+    margin-right: 38px;
+    padding-left: 42px;
+    padding-right: 38px;
+    box-sizing: border-box;
   }
 }
