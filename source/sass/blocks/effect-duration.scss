@@ -22,19 +22,20 @@
       display: block;
       background-image: url("../img/icon-timer-red.svg");
     }
+
     &::after {
       content: "24";
       position: absolute;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       top: 20px;
       left: 37px;
       width: 202px; //202
       height: 202px; //202
       font-size: 96px;
       font-weight: 700;
-      line-height: 149.47;
+      line-height: 190px;
       color: #d22856;
       background-image: url("../img/icon-editor-diagram-fill-red.svg");
     }
@@ -80,16 +81,23 @@
     min-height: 425px;
     padding: 0 120px;
     background-color: #f2f2f2;
-  }
+    &::before {
+      top: 15px;
+      left: 130px;
+      width: 298px;
+      height: 345px;
+      background-image: url("../img/icon-timer-red-big.svg");
+    }
 
-  .effect-duration::before {
-    top: 11px;
-    left: 160px;
-  }
-
-  .effect-duration::after {
-    top: 55px;
-    left: 170px;
+    &::after {
+      top: 82px;
+      left: 153px;
+      width: 253px;
+      height: 253px;
+      font-size: 120px;
+      line-height: 240px;
+      background-image: url("../img/icon-editor-diagram-fill-red-big.svg");
+    }
   }
 
   .effect-duration__tablet-space {
