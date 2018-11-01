@@ -216,13 +216,38 @@
 }
 
 @media (min-width: $desktop-width) {
-  .user-post--top-day .user-post__post-content {
-    width: 880px;
-    margin-bottom: 50px;
+  .user-post--top-day {
+    top: 87px;
+    left: 0;
+    width: 1200px;
+  }
+
+  .post-image--top-day {
+    width: 1200px;
   }
 
   .post-image--top-day img {
     width: 1200px;
     height: 506px;
   }
+
+  .user-post__post-content--top-day {
+    width: 895px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-bottom: 0;
+    .user-post__author-info {
+      padding-top: 5px;
+    }
+
+    .user-post__likes-number {
+      left: 890px;
+    }
+
+    .user-post__top-element {
+      right: 130px;
+    }
+  }
+
 }
