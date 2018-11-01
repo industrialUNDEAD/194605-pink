@@ -23,15 +23,20 @@
       background-image: url("../img/icon-timer-red.svg");
     }
     &::after {
-      content: "";
+      content: "24";
       position: absolute;
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       top: 20px;
-      left: 30px;
-      width: 189px; //202
-      height: 189px; //202
-      border: 13px solid #d22856;
-      border-radius: 50%;
+      left: 37px;
+      width: 202px; //202
+      height: 202px; //202
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 149.47;
+      color: #d22856;
+      background-image: url("../img/icon-editor-diagram-fill-red.svg");
     }
   }
 
