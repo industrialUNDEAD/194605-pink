@@ -347,10 +347,22 @@
   }
 
   .competition-form__contacts-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 0;
     margin-bottom: 28px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: -1px;
+      width: 60px;
+      height: 60px;
+      background-color: #e5e5e5;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
     .competition-form__text-field {
       order: 1;
     }
@@ -360,6 +372,18 @@
       padding: 0;
       padding-left: 18px;
       padding-top: 10px;
+    }
+  }
+
+  .competition-form__contacts-item--phone {
+    &::before {
+      background-image: url("../img/icon-phone-red.svg");
+    }
+  }
+
+  .competition-form__contacts-item--mail {
+    &::before {
+      background-image: url("../img/icon-mail.svg");
     }
   }
 
