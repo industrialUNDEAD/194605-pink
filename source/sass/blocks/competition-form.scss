@@ -89,8 +89,8 @@
 
 .competition-form__form-group {
     border: 0;
-    // padding: 0;
-    // margin: 0;
+    margin-left: 0;
+    margin-right: 0;
     min-width: 0;
 }
 
@@ -147,12 +147,46 @@
 }
 
 .competition-form__list-item { /////////////
+  position: relative;
   display: flex;
 }
 
 .competition-form__item-label {
-  margin-left: 48px;
+  // margin-left: 48px;
+  z-index: 3;
+  position: relative;
   order: 2;
+}
+
+.competition-form__label-text {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+.competition-form__item-field {
+  z-index: 2;
+  position: relative;
+}
+
+.competition-form__radio-indicator {
+  z-index: 1;
+  position: absolute;
+  left: 1px;
+  bottom: 5px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.competition-form__item-field:checked + .competition-form__radio-indicator::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-image:url("../img/icon-map-marker-red.svg");
 }
 
 .competition-form__text-field--textarea {

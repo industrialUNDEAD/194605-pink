@@ -233,6 +233,7 @@
     display: flex;
     justify-content: space-around;
     width: 960px;
+    min-height: 555px;
     margin-left: 0;
   }
 
@@ -250,6 +251,7 @@
 
   .application-features__description {
     margin-top: 22px;
+    margin-bottom: 0;
     font-size: 18px;
     line-height: 30px;
     text-align: center;

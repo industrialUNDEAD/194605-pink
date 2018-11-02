@@ -106,23 +106,29 @@
 
   .effect-duration__content-block {
     margin-top: 0;
-    margin-left: 378px;
+    margin-left: 375px;
     padding-top: 105px;
     width: 570px;
   }
 
   .effect-duration__title {
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     width: 420px;
   }
 
   .effect-duration__description {
-    margin-bottom: 45px;
+    width: 532px;
+    margin-bottom: 30px;
     font-size: 18px;
+    line-height: 30px;
+    &::first-line {
+      width: 490px;
+    }
   }
 
   .effect-duration__link {
     font-size: 18px;
+    line-height: 30px;
   }
 }

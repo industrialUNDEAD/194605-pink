@@ -104,8 +104,8 @@
       content: "";
       position: absolute;
       display: block;
-      top: -100px;
-      left: 445px;
+      top: -97px;
+      left: 443px;
       width: 79px;
       height: 63px;
       background-image: url("../img/icon-quotes-red.svg");
@@ -114,6 +114,8 @@
 
   .users-feedback__feedback-content {
     width: 690px;
+    margin-top: 17px;
+    padding-left: 20px;
     text-align: center;
   }
 
