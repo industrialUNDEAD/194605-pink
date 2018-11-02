@@ -166,23 +166,29 @@
 
   .application-features__item:nth-child(3) {
     margin-bottom: 40px;
-    .application-features__sub-title {
-      width: 225px;
-      padding-left: 25px;
-    }
+    // .application-features__sub-title {
+    //   width: 225px;
+    //   padding-left: 25px;
+    // }
 
-    .application-features__description {
-      width: 240px;
-      padding-left: 20px;
-    }
+    // .application-features__description {
+    //   width: 240px;
+    //   padding-left: 20px;
+    // }
   }
 
   .application-features__sub-title {
+    padding: 0;
     text-align: left;
   }
 
   .application-features__description {
+    padding: 0;
     text-align: left;
+  }
+
+  .effect-duration__wrap {
+    display: none;
   }
 
   // .application-features__tablet-space {
@@ -194,6 +200,10 @@
   .application-features {
     width: 960px;
     min-height: 855px;
+  }
+
+  .effect-duration__wrap {
+    display: inline;
   }
 
   .main-page .application-features {
@@ -241,6 +251,18 @@
     width: 280px;
     margin-top: 272px;
     margin-bottom: 0;
+  }
+
+  .application-features__item:nth-child(3) {
+    .application-features__sub-title {
+      width: 225px;
+      padding-left: 25px;
+    }
+
+    .application-features__description {
+      width: 240px;
+      padding-left: 20px;
+    }
   }
 
   .application-features__sub-title {
