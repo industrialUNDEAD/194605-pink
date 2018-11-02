@@ -312,7 +312,10 @@
     margin-bottom: 60px;
     padding: 0;
     .competition-form__element-title--group-title {
+      width: 380px;
       padding: 0;
+      padding-left: 30px;
+      padding-right: 30px;
       background-color: #ffffff;
     }
   }
@@ -320,6 +323,11 @@
   .competition-form__list--travel-report {
     padding-top: 50px;
     padding-left: 50px;
+
+  }
+
+  .competition-form__checkbox-indicator {
+    left: 7px;
   }
 
   .competition-form__form-item--contact-details {
@@ -368,12 +376,17 @@
     }
   }
 
+  .competition-form__label-radio {
+    margin-left: 62px;
+  }
+
   .competition-form__list--used-application {
-    padding-top: 52px;
+    padding-top: 50px;
+    padding-left: 55px;
   }
 
   .competition-form__item--used-application {
-    margin-bottom: 36px;
+    margin-bottom: 30px;
   }
 
   .competition-form__form-item--application-impression {
