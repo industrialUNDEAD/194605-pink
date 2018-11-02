@@ -490,6 +490,14 @@
     margin-top: 70px;
     margin-left: 28px;
     width: 443px;
+    .competition-form__element-title--group-title {
+      padding-left: 26px;
+      padding-right: 26px;
+    }
+  }
+
+  .competition-form__item--used-application {
+    margin-left: 18px;
   }
 
   .competition-form__form-item--contact-details {
@@ -498,6 +506,10 @@
     margin-left: 10px;
     margin-right: 10px;
     padding: 0;
+    .competition-form__element-title--group-title {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
   }
 
   .competition-form__contacts-wrapper {
@@ -509,6 +521,9 @@
     margin: 0;
     margin-top: 35px;
     width: 375px;
+    &::before {
+      right: 8px;
+    }
     .competition-form__text-field {
       order: 2;
     }
@@ -539,8 +554,16 @@
     margin-right: 55px;
     box-sizing: border-box;
     .competition-form__item-label {
-      margin-left: 39px;
+      margin: 0; // margin-left: 39px;
     }
+  }
+
+  .competition-form__label-checkbox {
+    margin-left: 60px;
+  }
+
+  .competition-form__checkbox-indicator {
+    left: -1px;
   }
 
   .competition-form__form-item--travel-report .competition-form__tower,
@@ -550,10 +573,6 @@
 
   .competition-form__form-item--travel-report .competition-form__on-beach {
     margin-right: 95px;
-  }
-
-  .competition-form__form-item--travel-report .competition-form__souvenirs {
-    margin-right: 62px;
   }
 
   .competition-form__form-item--application-impression {
@@ -598,6 +617,7 @@
 
   .competition-form__souvenirs {
     order: 5;
+    margin-right: 58px;
   }
 
   .competition-form__massacre {
