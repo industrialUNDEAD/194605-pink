@@ -9,6 +9,7 @@
 .main-footer__developer-block {
   width: 130px;
   display: flex;
+  align-items: center;
   margin-bottom: 40px;
 }
 
@@ -71,10 +72,10 @@
   list-style: none;
 }
 
-.main-footer__developer-block {
-  display: flex;
-  align-items: center;
-}
+// .main-footer__developer-block {
+//   display: flex;
+//   align-items: center;
+// }
 
 .main-footer__developer-service {
   font-size: 14px;

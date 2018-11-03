@@ -16,6 +16,8 @@
 .competition-form__form-item--main-fields {
   order: 1;
   width: 280px;
+  margin-top: 17px;
+  margin-bottom: 30px;
   padding: 0 20px;
 }
 
@@ -34,6 +36,7 @@
   margin-bottom: 10px;
   padding: 0 20px;
   order: 2;
+
   .competition-form__list-item {
     min-height: 40px;
     margin-bottom: 43px;
@@ -79,10 +82,10 @@
   order: 6;
 }
 
-.competition-form__form-item--main-fields {
-  margin-top: 17px;
-  margin-bottom: 30px;
-}
+// .competition-form__form-item--main-fields { ////////////////
+//   margin-top: 17px;
+//   margin-bottom: 30px;
+// }
 
 .competition-form__field-wrapper {
   margin-top: 0;
@@ -104,10 +107,10 @@
 }
 
 .competition-form__form-group {
-    border: 0;
-    margin-left: 0;
-    margin-right: 0;
-    min-width: 0;
+  border: 0;
+  margin-left: 0;
+  margin-right: 0;
+  min-width: 0;
 }
 
 .competition-form__element-title--group-title {
@@ -190,11 +193,11 @@
 }
 
 .competition-form__item-field:checked + .competition-form__radio-indicator::before {
-    content: "";
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    background-image:url("../img/icon-map-marker-red.svg");
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-image:url("../img/icon-map-marker-red.svg");
 }
 
 .competition-form__checkbox-indicator {
@@ -287,6 +290,7 @@
   .competition-form__field-wrapper {
     display: flex;
     margin-bottom: 52px;
+
     .competition-form__element-title {
       padding-top: 18px;
     }
@@ -311,6 +315,7 @@
     margin: 0;
     margin-bottom: 60px;
     padding: 0;
+
     .competition-form__element-title--group-title {
       width: 380px;
       padding: 0;
@@ -323,7 +328,6 @@
   .competition-form__list--travel-report {
     padding-top: 50px;
     padding-left: 50px;
-
   }
 
   .competition-form__checkbox-indicator {
@@ -352,6 +356,7 @@
     flex-direction: column;
     margin: 0;
     margin-bottom: 28px;
+
     &::before {
       content: "";
       position: absolute;
@@ -376,12 +381,14 @@
   }
 
   .competition-form__contacts-item--phone {
+
     &::before {
       background-image: url("../img/icon-phone-red.svg");
     }
   }
 
   .competition-form__contacts-item--mail {
+
     &::before {
       background-image: url("../img/icon-mail.svg");
     }
@@ -394,6 +401,7 @@
     margin-bottom: 55px;
     padding: 0;
     order: 2;
+
     .competition-form__element-title--group-title {
       padding: 0;
       background-color: #ffffff;
@@ -445,12 +453,22 @@
     border: 0;
   }
 
-  .competition-form__field-wrapper .competition-form__text-field {
-    flex-grow: 1;
-  }
+  // .competition-form__field-wrapper .competition-form__text-field { //// если вариант нижн не сработает
+  //   flex-grow: 1;
+  // }
 
-  .competition-form__field-wrapper .competition-form__element-title {
-    padding-right: 20px;
+  // .competition-form__field-wrapper .competition-form__element-title {
+  //   padding-right: 20px;
+  // }
+
+  .competition-form__field-wrapper {
+    .competition-form__text-field {
+      flex-grow: 1;
+    }
+
+    .competition-form__element-title {
+      padding-right: 20px;
+    }
   }
 }
 
@@ -490,6 +508,7 @@
     margin-top: 70px;
     margin-left: 28px;
     width: 443px;
+
     .competition-form__element-title--group-title {
       padding-left: 26px;
       padding-right: 26px;
@@ -506,6 +525,7 @@
     margin-left: 10px;
     margin-right: 10px;
     padding: 0;
+
     .competition-form__element-title--group-title {
       padding-left: 32px;
       padding-right: 32px;
@@ -521,9 +541,11 @@
     margin: 0;
     margin-top: 35px;
     width: 375px;
+
     &::before {
       right: 8px;
     }
+
     .competition-form__text-field {
       order: 2;
     }
@@ -553,6 +575,7 @@
     width: auto;
     margin-right: 55px;
     box-sizing: border-box;
+
     .competition-form__item-label {
       margin: 0; // margin-left: 39px;
     }

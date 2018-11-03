@@ -16,6 +16,7 @@
   height: 24px;
   border: none;
   background-color: #1c2530;
+
   &::before {
     content: "";
     position: absolute;
@@ -38,6 +39,7 @@
   height: 24px;
   border: none;
   background-color: #283645;
+
   &::before,
   &::after {
     content: "";
@@ -80,7 +82,6 @@
 .main-header__toggle:hover.main-header__toggle::before,
 .main-header__toggle:hover.main-header__toggle::after {
   background-color: #d22856;
-
 }
 
 .main-header__toggle:active.main-header__toggle::before,

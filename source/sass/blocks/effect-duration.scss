@@ -12,6 +12,7 @@
     display: block;
     width: 620px;
     padding: 0 20px;
+
     &::before {
       content: "";
       position: absolute;
@@ -81,6 +82,7 @@
     min-height: 425px;
     padding: 0 120px;
     background-color: #f2f2f2;
+
     &::before {
       top: 15px;
       left: 130px;
@@ -122,6 +124,7 @@
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 30px;
+
     &::first-line {
       width: 490px;
     }
