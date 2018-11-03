@@ -65,15 +65,15 @@
 }
 
 .range-toggles__range-field {
-  // -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+  -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
   display: inline-block;
-  width: 200px;
+  // width: 200px;
   width: 100%; /* Указание параметра ширины требуется для Firefox. */
 }
 
-// .range-toggles__range-field::-webkit-slider-thumb {
-//   -webkit-appearance: none;
-// }
+.range-toggles__range-field::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
 
 .range-toggles__range-field:focus {
   outline: none; /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
@@ -342,6 +342,7 @@
     width: 288px;
     margin-left: 8px;
     border: none;
+
     &::after {
       content: "";
       position: absolute;

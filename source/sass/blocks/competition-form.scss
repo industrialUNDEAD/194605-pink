@@ -197,7 +197,7 @@
   position: absolute;
   width: 35px;
   height: 35px;
-  background-image:url("../img/icon-map-marker-red.svg");
+  background-image: url("../img/icon-map-marker-red.svg");
 }
 
 .competition-form__checkbox-indicator {
@@ -294,6 +294,14 @@
     .competition-form__element-title {
       padding-top: 18px;
     }
+
+    .competition-form__text-field {
+      flex-grow: 1;
+    }
+
+    .competition-form__element-title {
+      padding-right: 20px;
+    }
   }
 
   .competition-form__form-item--main-fields {
@@ -368,6 +376,7 @@
       background-repeat: no-repeat;
       background-position: 50% 50%;
     }
+
     .competition-form__text-field {
       order: 1;
     }
@@ -381,14 +390,12 @@
   }
 
   .competition-form__contacts-item--phone {
-
     &::before {
       background-image: url("../img/icon-phone-red.svg");
     }
   }
 
   .competition-form__contacts-item--mail {
-
     &::before {
       background-image: url("../img/icon-mail.svg");
     }
@@ -461,15 +468,15 @@
   //   padding-right: 20px;
   // }
 
-  .competition-form__field-wrapper {
-    .competition-form__text-field {
-      flex-grow: 1;
-    }
+  // .competition-form__field-wrapper {
+  //   .competition-form__text-field {
+  //     flex-grow: 1;
+  //   }
 
-    .competition-form__element-title {
-      padding-right: 20px;
-    }
-  }
+  //   .competition-form__element-title {
+  //     padding-right: 20px;
+  //   }
+  // }
 }
 
 @media (min-width: $desktop-width) {
@@ -481,21 +488,23 @@
   }
 
   .competition-form__contacts-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
     width: 820px;
     padding: 0 60px;
   }
 
-  .competition-form__contacts-item {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    width: 310px;
-  }
+  // .competition-form__contacts-item {
+  //   display: flex;
+  //   flex-direction: column-reverse;
+  //   align-items: flex-start;
+  //   width: 310px;
+  // }
 
-  .competition-form__contacts-item .competition-form__text-field {
-    width: 310px;
-    box-sizing: border-box;
-  }
+  // .competition-form__contacts-item .competition-form__text-field {
+  //   width: 310px;
+  //   box-sizing: border-box;
+  // }
 
   .competition-form__form-item--main-fields {
     width: 450px;
@@ -532,12 +541,16 @@
     }
   }
 
-  .competition-form__contacts-wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  // .competition-form__contacts-wrapper {
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  // }
 
   .competition-form__contacts-item {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    width: 310px;
     margin: 0;
     margin-top: 35px;
     width: 375px;
@@ -548,6 +561,8 @@
 
     .competition-form__text-field {
       order: 2;
+      width: 310px;
+      box-sizing: border-box;
     }
 
     .competition-form__element-title {
@@ -560,7 +575,7 @@
     min-height: 235px;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 0px;
+    padding: 0;
   }
 
   .competition-form__list--travel-report {

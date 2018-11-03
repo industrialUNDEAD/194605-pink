@@ -193,7 +193,7 @@
     }
   }
 
-  .user-post__post-content--top-day  .user-post__likes-number {
+  .user-post__likes-number--top-day {
     position: absolute;
     top: 535px;
     left: 462px;
@@ -203,6 +203,17 @@
       left: 105px;
     }
   }
+
+  // .user-post__post-content--top-day  .user-post__likes-number {
+  //   position: absolute;
+  //   top: 535px;
+  //   left: 462px;
+
+  //   &::before {
+  //     top: 4px;
+  //     left: 105px;
+  //   }
+  // }
 
   // .user-post {
   //   width: 300px;
