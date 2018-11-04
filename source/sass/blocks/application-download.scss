@@ -1,4 +1,4 @@
-.application-download {
+.application-download-wrapper { //.application-download
   width: 320px;
   background-color: #1d2631;
 }
@@ -18,7 +18,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .application-download {
+  .application-download-wrapper { //.application-download
     display: flex;
     width: 660px;
     min-height: 618px;
@@ -34,10 +34,19 @@
 
 @media (min-width: $desktop-width) {
   .application-download {
-    justify-content: space-between;
-    width: 960px;
-    min-height: 853px;
-    padding: 0 120px;
+    width: 100%;
+    // margin-left: auto;
+    // margin-right: auto;
     background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .application-download-wrapper { //.application-download
+    justify-content: space-between;
+    width: 940px;
+    min-height: 853px;
+    padding: 0 10px; // padding: 0 120px;
+    margin-left: auto;
+    margin-right: auto;
+    // background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }

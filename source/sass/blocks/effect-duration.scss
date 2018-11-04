@@ -8,6 +8,10 @@
 
 @media (min-width: $tablet-width) {
   .effect-duration {
+    display: block;
+  }
+
+  .effect-duration__wrapper { //.effect-duration
     position: relative;
     display: block;
     width: 620px;
@@ -78,6 +82,10 @@
 
 @media (min-width: $desktop-width) {
   .effect-duration {
+    background-color: #f2f2f2;
+  }
+
+  .effect-duration__wrapper { //.effect-duration
     width: 960px;
     min-height: 425px;
     padding: 0 120px;
@@ -100,6 +108,10 @@
       line-height: 240px;
       background-image: url("../img/icon-editor-diagram-fill-red-big.svg");
     }
+  }
+
+  .effect-duration__wrap {
+    display: inline;
   }
 
   .effect-duration__tablet-space {

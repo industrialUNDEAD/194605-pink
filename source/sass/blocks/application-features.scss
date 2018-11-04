@@ -1,4 +1,4 @@
-.application-features {
+.application-features__block-wrapper { //.application-features
   position: relative;
   width: 280px;
 }
@@ -96,7 +96,7 @@
 // }
 
 @media (min-width: $tablet-width) {
-  .application-features {
+  .application-features__block-wrapper {  //.application-features
     width: 660px;
   }
 
@@ -196,12 +196,14 @@
 
 @media (min-width: $desktop-width) {
   .application-features {
-    width: 960px;
-    min-height: 855px;
+    width: 100%;
   }
 
-  .effect-duration__wrap {
-    display: inline;
+  .application-features__block-wrapper {  //application-features
+    width: 100%; // width: 940px;
+    padding: 0 auto; //
+    // margin: 0 auto;
+    min-height: 855px;
   }
 
   .main-page .application-features {
@@ -228,9 +230,9 @@
   }
 
   .application-features__wrapper {
-    width: 960px;
-    margin-left: 0;
-    padding: 0 120px;
+    width: 100%; //width: 960px;
+    // margin-left: 0;
+    padding: 0; //padding: 0 120px;
 
     &::before {
       width: 1200px;
@@ -241,9 +243,12 @@
   .application-features__list {
     display: flex;
     justify-content: space-around;
-    width: 960px;
+    width: 960px; // 960px
+    margin-left: auto;
+    margin-right: auto; //
+    padding: 0 10px;
     min-height: 555px;
-    margin-left: 0;
+    // margin-left: 0;
   }
 
   .application-features__item {
