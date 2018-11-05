@@ -53,7 +53,7 @@
   }
 }
 
-.feedback__developer-location img {  //test
+.developer-location__map-image {  //test  .feedback__developer-location img
   z-index: 1;
   position: absolute;
   left: 1px;
@@ -61,7 +61,7 @@
   width: 100%;
 }
 
-.feedback__developer-location svg {
+.developer-location__white-background { //.feedback__developer-location svg
   z-index: 2;
   position: absolute;
   top: -70px;
@@ -93,7 +93,7 @@
     height: 376px;
   }
 
-  .feedback__developer-location svg {
+  .developer-location__white-background { // .feedback__developer-location svg
     top: -57px;
     left: -274px;
   }
@@ -129,8 +129,8 @@
     min-height: 502px;
   }
 
-  .feedback__developer-location svg {
-    top: -20px;
-    left: 1px;
+  .developer-location__white-background { // .feedback__developer-location svg
+    top: -5px; // -20px
+    left: 1px; // 1px
   }
 }

@@ -277,11 +277,15 @@
   }
 
   .competition-form__form-group { // возвращение дефолтных стилей групп формы
+    position: relative;
     border: 2px solid #e5e5e5;
     background-color: #ffffff;
   }
 
   .competition-form__element-title--group-title {  // возвращение дефолтных стилей заголовков гурпп
+    position: absolute;
+    // top: -10px;
+    // left: 85px;
     width: auto;
     padding: 0;
     background-color: #ffffff;
@@ -308,7 +312,7 @@
     order: 1;
     width: 620px;
     margin-top: 70px;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
     padding: 0;
   }
 
@@ -325,6 +329,8 @@
     padding: 0;
 
     .competition-form__element-title--group-title {
+      top: -7px;
+      left: 88px;
       width: 380px;
       padding: 0;
       padding-left: 30px;
@@ -344,18 +350,25 @@
 
   .competition-form__form-item--contact-details {
     width: 500px;
-    min-height: 315px;
+    min-height: 310px;
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 62px;
     padding: 0 60px;
     order: 3;
+    .competition-form__element-title--group-title {
+      top: -10px;
+      left: 177px;
+      width: 200px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 
   .competition-form__contacts-wrapper {
     display: flex;
     width: 500px;
     flex-direction: column;
-    padding-top: 37px;
+    padding-top: 45px;
   }
 
   .competition-form__contacts-item {
@@ -403,14 +416,18 @@
 
   .competition-form__form-item--used-application {
     width: 620px;
-    min-height: 305px;
+    min-height: 295px;
     margin: 0;
-    margin-bottom: 55px;
+    margin-bottom: 65px;
     padding: 0;
     order: 2;
 
     .competition-form__element-title--group-title {
-      padding: 0;
+      top: -42px;
+      left: 125px;
+      width: 320px;
+      padding-left: 24px;
+      padding-right: 24px;
       background-color: #ffffff;
     }
   }
@@ -420,7 +437,7 @@
   }
 
   .competition-form__list--used-application {
-    padding-top: 50px;
+    padding-top: 55px;
     padding-left: 55px;
   }
 
@@ -434,8 +451,16 @@
     margin: 0;
     margin-bottom: 67px;
     padding: 0 58px;
-    padding-top: 20px;
+    padding-top: 45px;
     padding-bottom: 42px;
+
+    .competition-form__element-title--group-title {
+      top: -10px;
+      left: 178px;
+      width: 190px;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
   }
 
   .competition-form__text-field--textarea {
@@ -514,11 +539,12 @@
   }
 
   .competition-form__form-item--used-application {
-    margin-top: 70px;
+    margin-top: 77px;
     margin-left: 28px;
     width: 443px;
 
     .competition-form__element-title--group-title {
+      left: 30px;
       padding-left: 26px;
       padding-right: 26px;
     }
@@ -536,6 +562,7 @@
     padding: 0;
 
     .competition-form__element-title--group-title {
+      left: 335px;
       padding-left: 32px;
       padding-right: 32px;
     }
@@ -576,6 +603,10 @@
     margin-left: 10px;
     margin-right: 10px;
     padding: 0;
+
+    .competition-form__element-title--group-title {
+      left: 248px;
+    }
   }
 
   .competition-form__list--travel-report {
@@ -619,6 +650,10 @@
     padding-top: 18px;
     padding-bottom: 38px;
     width: 940px;
+
+    .competition-form__element-title--group-title {
+      left: 337px;
+    }
   }
 
   .competition-form__text-field--textarea {

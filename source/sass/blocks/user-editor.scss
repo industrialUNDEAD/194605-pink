@@ -64,68 +64,85 @@
   text-align: center;
 }
 
+.range-toggles__input {
+  position: relative;
+  border-bottom: 2px solid #283645;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-top: -7px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+  }
+}
+
 .range-toggles__range-field {
-  -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+  // -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
   display: inline-block;
   // width: 200px;
   width: 100%; /* Указание параметра ширины требуется для Firefox. */
 }
 
-.range-toggles__range-field::-webkit-slider-thumb {
-  -webkit-appearance: none;
-}
+// .range-toggles__range-field::-webkit-slider-thumb {
+//   // -webkit-appearance: none;
+// }
 
-.range-toggles__range-field:focus {
-  outline: none; /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
-}
+// .range-toggles__range-field:focus {
+//   outline: none; /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
+// }
 
-.range-toggles__range-field::-ms-track {
-  width: 100%;
-  cursor: pointer;
-  background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
-  border-color: transparent;
-  color: transparent;
-}
+// .range-toggles__range-field::-ms-track {
+//   width: 100%;
+//   cursor: pointer;
+//   background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+//   border-color: transparent;
+//   color: transparent;
+// }
 
-.range-toggles__range-field::-webkit-slider-thumb {
-  margin-top: -5px;
-  width: 12px;
-  height: 12px;
-  border: 2px solid #d22856;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
-}
+// .range-toggles__range-field::-webkit-slider-thumb {
+//   margin-top: -5px;
+//   width: 12px;
+//   height: 12px;
+//   border: 2px solid #d22856;
+//   border-radius: 50%;
+//   background: #ffffff;
+//   cursor: pointer;
+// }
 
-.range-toggles__range-field::-moz-range-thumb {
-  width: 12px;
-  height: 12px;
-  border: 2px solid #d22856;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
-}
+// .range-toggles__range-field::-moz-range-thumb {
+//   width: 12px;
+//   height: 12px;
+//   border: 2px solid #d22856;
+//   border-radius: 50%;
+//   background: #ffffff;
+//   cursor: pointer;
+// }
 
-.range-toggles__range-field::-ms-thumb {
-  width: 12px;
-  height: 12px;
-  border: 2px solid #d22856;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
-}
+// .range-toggles__range-field::-ms-thumb {
+//   width: 12px;
+//   height: 12px;
+//   border: 2px solid #d22856;
+//   border-radius: 50%;
+//   background: #ffffff;
+//   cursor: pointer;
+// }
 
-.range-toggles__range-field::-webkit-slider-runnable-track {
-  width: 240px;
-  height: 2px;
-  background: #000000;
-}
+// .range-toggles__range-field::-webkit-slider-runnable-track {
+//   width: 240px;
+//   height: 2px;
+//   background: #000000;
+// }
 
-.range-toggles__range-field::-moz-range-track {
-  width: 240px;
-  height: 2px;
-  background: #000000;
-}
+// .range-toggles__range-field::-moz-range-track {
+//   width: 240px;
+//   height: 2px;
+//   background: #000000;
+// }
 
 .range-toggles__range-field--toggle-two {
   display: none;
