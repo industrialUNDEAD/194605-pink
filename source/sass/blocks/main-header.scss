@@ -5,9 +5,17 @@
   background-color: #283645;
 }
 
-.main-header__logo-image {
-  width: 75px;
-  height: 22px;
+// .main-header__logo-image {
+//   width: 75px;
+//   height: 22px;
+// }
+
+.main-header__logo-tablet {
+  display: none;
+}
+
+.main-header__logo-desktop {
+  display: none;
 }
 
 .main-header--nav-closed .main-header__toggle {
@@ -102,6 +110,14 @@
     width: $tablet-width;
   }
 
+  .main-header__logo-mobile {
+    display: none;
+  }
+
+  .main-header__logo-tablet {
+    display: block;
+  }
+
   .main-header__top-menu {
     width: 620px;
     padding-top: 41.5px;
@@ -117,6 +133,14 @@
     width: 100%;
     // padding: 0 120px;
     background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .main-header__logo-tablet {
+    display: none;
+  }
+
+  .main-header__logo-desktop {
+    display: block;
   }
 
   .main-header__wrapper {
