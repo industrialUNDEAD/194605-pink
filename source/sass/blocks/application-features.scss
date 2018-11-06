@@ -91,9 +91,9 @@
   text-align: center;
 }
 
-// .application-features__tablet-space {
-//   display: none;
-// }
+.application-features__word-space {
+  display: none;
+}
 
 @media (min-width: $tablet-width) {
   .application-features__block-wrapper {  //.application-features
@@ -113,6 +113,10 @@
     width: 350px;
     font-size: 40px;
     line-height: 50px;
+  }
+
+  .application-features__word-space {
+    display: inline;
   }
 
   .application-features__item--new-friends {
@@ -197,6 +201,10 @@
 @media (min-width: $desktop-width) {
   .application-features {
     width: 100%;
+  }
+
+  .application-features__word-space {
+    display: none;
   }
 
   .application-features__block-wrapper {  //application-features

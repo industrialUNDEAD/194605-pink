@@ -148,6 +148,11 @@
       top: 70px;
       left: 3px;
     }
+
+    &::after {
+      top: -1px;
+      left: -2px;
+    }
   }
 
   .tariffs-table__wrapper-td {
@@ -178,6 +183,11 @@
   .tariffs-table__tariff-name--hit-sales {
     &::before {
       top: 79px;
+    }
+
+    &::after {
+      top: -1px;
+      left: 1px;
     }
   }
 
