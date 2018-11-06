@@ -19,7 +19,9 @@
 
 @media (min-width: $tablet-width) {
   .application-download-wrapper { //.application-download
+    position: relative;
     display: flex;
+    overflow: hidden;
     width: 660px;
     min-height: 618px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -27,8 +29,25 @@
   }
 
   .application-download__image-container {
+    z-index: 1;
+    position: relative;
+    width: 840px;
+    height: 549px;
     order: 2;
     background: none;
+  }
+
+  .image-container__application-image {
+    position: absolute;
+    top: 73px;
+    left: -340px;
+    width: 700px;
+    height: auto;
+  }
+
+  .application-download__download-section {
+    z-index: 2;
+    position: relative;
   }
 }
 

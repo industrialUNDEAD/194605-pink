@@ -97,6 +97,16 @@
     top: -57px;
     left: -274px;
   }
+
+  .developer-location__map-image {
+    top: -320px;
+    left: 0;
+  }
+
+  .feedback__developer-location::before {
+    top: 190px;
+    left: 310px;
+  }
 }
 
 @media (min-width: $desktop-width) {
