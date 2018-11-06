@@ -12,15 +12,20 @@
     background-color: #ffffff;
   }
 
-  .slider-list__slider-toggle--prev svg {
+  .slider-list__slider-toggle--prev .slider-list__icon {
     position: relative;
     top: -5px;
     right: 8px;
   }
 
-  .slider-list__slider-toggle--next svg {
+  .slider-list__slider-toggle--next {
+    position: relative;
+    left: 28px;
+  }
+
+  .slider-list__slider-toggle--next .slider-list__icon {
     position: relative;
     top: -4px;
-    left: 30px;
+    // left: 30px;
   }
 }

@@ -299,12 +299,16 @@
     }
 
     .user-post__likes-number {
-      left: 890px;
+      left: 890px; //890px
       padding-top: 0;
     }
 
     .user-post__top-element {
       right: 130px;
     }
+  }
+
+  .user-post__likes-number--top-day::before {
+    left: 107px;
   }
 }
