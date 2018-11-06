@@ -57,6 +57,13 @@
     // margin-left: auto;
     // margin-right: auto;
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: 50% 50%;
+  }
+
+  .image-container__application-image {
+    top: 210px;
+    left: -265px;
+    width: 1050px;
   }
 
   .application-download-wrapper { //.application-download
@@ -66,6 +73,8 @@
     padding: 0 10px; // padding: 0 120px;
     margin-left: auto;
     margin-right: auto;
+    background-color: transparent;
+    background-image: none;
     // background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }
