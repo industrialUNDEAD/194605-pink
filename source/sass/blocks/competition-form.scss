@@ -46,7 +46,7 @@
     width: 225px;
     // padding-left: 75px;
     // padding-right: 75px;
-    padding: 40px 75px;
+    padding: 40px 47px; // 40px 75px
   }
 }
 
@@ -344,6 +344,14 @@
     padding-left: 50px;
   }
 
+  .competition-form__label-checkbox {
+    margin-left: 67px;
+  }
+
+  .competition-form__selfie {
+    margin-top: 5px;
+  }
+
   .competition-form__checkbox-indicator {
     left: 7px;
   }
@@ -519,6 +527,10 @@
     padding: 0 60px;
   }
 
+  .competition-form__field-wrapper {
+    width: 435px;
+  }
+
   // .competition-form__contacts-item {
   //   display: flex;
   //   flex-direction: column-reverse;
@@ -556,10 +568,11 @@
 
   .competition-form__form-item--contact-details {
     width: 940px;
-    min-height: 168px;
+    min-height: 155px; //168px
     margin-left: 10px;
     margin-right: 10px;
     padding: 0;
+    padding-top: 7px;
 
     .competition-form__element-title--group-title {
       left: 335px;
@@ -647,7 +660,7 @@
   .competition-form__form-item--application-impression {
     margin-left: 10px;
     margin-right: 10px;
-    padding-top: 18px;
+    padding-top: 40px; //18px
     padding-bottom: 38px;
     width: 940px;
 
@@ -677,10 +690,12 @@
   }
 
   .competition-form__chuck-norris {
+    margin-top: 7px;
     order: 2;
   }
 
   .competition-form__tower {
+    margin-top: 7px;
     order: 3;
   }
 
