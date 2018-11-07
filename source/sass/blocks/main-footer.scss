@@ -84,6 +84,10 @@
   color: #283645;
 }
 
+.main-footer__logo-desktop {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .page-main + .main-footer {
     display: flex;
@@ -161,6 +165,14 @@
 
   .main-footer__glasses-logo {
     margin-right: 230px;
+  }
+
+  .main-footer__logo-tablet {
+    display: none;
+  }
+
+  .main-footer__logo-desktop {
+    display: block;
   }
 
   .main-footer__footer-social {
