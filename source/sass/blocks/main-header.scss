@@ -120,8 +120,12 @@
 
   .main-header__top-menu {
     width: 620px;
-    padding-top: 41.5px;
-    padding-bottom: 41.5px;
+    padding-top: 25px;
+    padding-bottom: 45px;
+  }
+
+  .main-header__toggle {
+    top: 20px;
   }
 }
 
