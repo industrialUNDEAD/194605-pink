@@ -1,5 +1,6 @@
 .main-footer__glasses-logo {
   margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .main-footer__footer-social {
@@ -86,6 +87,22 @@
 
 .main-footer__logo-desktop {
   display: none;
+}
+
+.main-footer__logo-tablet:hover .main-footer__logo-figure {
+  fill: #d22856;
+}
+
+.main-footer__logo-tablet:active .main-footer__logo-figure {
+  opacity: 0.3;
+}
+
+.main-footer__logo-desktop:hover .main-footer__logo-figure {
+  fill: #d22856;
+}
+
+.main-footer__logo-desktop:active .main-footer__logo-figure {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
