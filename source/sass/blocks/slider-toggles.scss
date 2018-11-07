@@ -7,6 +7,14 @@
   border-radius: 50%;
   display: inline-block;
   background-color: #bec2c7;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .slider-toggles__toggle--active {
