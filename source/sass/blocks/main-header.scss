@@ -10,12 +10,43 @@
 //   height: 22px;
 // }
 
+.main-header__logo-mobile {
+  display: block;
+  cursor: pointer;
+
+  &:hover .main-header__logo-figure {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-header__logo-tablet {
   display: none;
+  cursor: pointer;
+
+  &:hover .main-header__logo-figure {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-header__logo-desktop {
   display: none;
+  cursor: pointer;
+
+  &:hover .main-header__logo-figure {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-header--nav-closed .main-header__toggle {
@@ -131,7 +162,7 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
-    z-index: 2;
+    z-index: 5; //2
     position: absolute; //test
     top: 0;
     width: 100%;
