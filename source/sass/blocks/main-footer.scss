@@ -17,6 +17,16 @@
 .main-footer__academy-icon {
   margin-top: 5px;
   margin-left: 13px;
+  cursor: pointer;
+}
+
+.main-footer__academy-icon:hover .main-footer__academy-figure {
+  fill: #283645;
+}
+
+.main-footer__academy-icon:active .main-footer__academy-figure {
+  fill: #283645;
+  opacity: 0.3;
 }
 
 .main-footer__social-link {
@@ -25,6 +35,15 @@
   height: 45px;
   border: 3px solid #e9ebec;
   border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .main-footer__social-link--twitter {
