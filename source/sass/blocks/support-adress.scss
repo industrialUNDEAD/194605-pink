@@ -12,6 +12,19 @@
   margin-bottom: 20px;
 }
 
+.support-adress__feedback-method--mail {
+  &:hover {
+    text-decoration: underline;
+    color: #283645;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+}
+
 .support-adress__message {
   font-size: 18px;
   color: #283645;
