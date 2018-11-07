@@ -10,6 +10,17 @@
     padding: 0;
     border: 0;
     background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  .slider-list__icon {
+    &:hover {
+      fill: #7e868f;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 
   .slider-list__slider-toggle--prev .slider-list__icon {

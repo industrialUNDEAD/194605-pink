@@ -57,6 +57,23 @@
   margin-right: 40px;
 }
 
+.processing-tools__icon-figures {
+  fill: #b5b9be;
+}
+
+.processing-tools__toggle:hover {
+  cursor: pointer;
+  .processing-tools__icon-figures {
+    fill: #8d949b;
+  }
+}
+
+.processing-tools__toggle:active {
+  .processing-tools__icon-figures {
+    fill: #d22856;
+  }
+}
+
 .user-editor__range-toggles {
   width: 240px;
   margin: 0 auto;
@@ -278,9 +295,9 @@
     width: 16px;
     height: 16px;
 
-    .processing-tools__icon-figures {
-      fill: #d22856;
-    }
+    // .processing-tools__icon-figures {
+    //   fill: #d22856;
+    // }
   }
 
   .processing-tools__toggle--toggle-one {
