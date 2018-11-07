@@ -25,6 +25,15 @@
   border: 3px solid #ffffff;
   border-radius: 50px;
   color: #ffffff;
+
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: #f1becc;
+  }
 }
 
 .download-section__list {

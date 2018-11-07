@@ -23,6 +23,14 @@
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -47,6 +55,10 @@
 
   .main-nav__item {
     border: none;
+  }
+
+  .main-nav__item--active {
+    border-bottom: 2px solid #ffffff;
   }
 
   .main-nav__link {
