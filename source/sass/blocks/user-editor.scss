@@ -63,6 +63,7 @@
 
 .processing-tools__toggle:hover {
   cursor: pointer;
+
   .processing-tools__icon-figures {
     fill: #8d949b;
   }
@@ -84,6 +85,7 @@
 .range-toggles__input {
   position: relative;
   border-bottom: 2px solid #283645;
+
   &::before {
     content: "";
     position: absolute;
