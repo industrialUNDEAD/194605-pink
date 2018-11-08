@@ -23,7 +23,10 @@
 
 .competition-form__form-item--travel-report .competition-form__element-title--group-title,
 .competition-form__form-item--used-application .competition-form__element-title--group-title {
-  padding: 0 20px;
+  // padding: 0 20px;
+  position: absolute; //////////////////////////////
+  padding-left: 0;
+  padding-right: 0;
   padding-top: 35px;
   padding-bottom: 48px;
   background-color: #f2f2f2;
@@ -31,6 +34,7 @@
 
 
 .competition-form__form-item--travel-report {
+  position: relative; //////////////////////////////////
   width: 280px;
   min-height: 604px;
   margin-bottom: 10px;
@@ -43,12 +47,14 @@
   }
 
   .competition-form__element-title--group-title {
+    left: 45px; //////////////////////////////////////////
     width: 225px;
     // padding-left: 75px;
     // padding-right: 75px;
-    padding: 40px 47px; // 40px 75px
+    // padding: 40px 47px; // 40px 75px
   }
 }
+
 
 .competition-form__form-item--contact-details {
   width: 280px;
@@ -58,6 +64,7 @@
 }
 
 .competition-form__form-item--used-application {
+  position: relative; /////////////////////////////////////////////
   width: 280px;
   min-height: 340px;
   margin-bottom: 35px;
@@ -116,13 +123,15 @@
 .competition-form__element-title--group-title {
   display: table;
   // margin: 0;
+  margin-left: 0;
   padding: 0;
-  width: 100%;
+  // width: 100%; ///////////////////////////////////////////////////////
   line-height: 18px;
   text-align: center;
 }
 
 .competition-form__form-item--used-application .competition-form__element-title--group-title {
+  width: 280px;
   padding-bottom: 40px;
 }
 
@@ -170,6 +179,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.competition-form__list--used-application, //////////////////////////////////////
+.competition-form__list--travel-report {
+  margin-top: 120px;
 }
 
 .competition-form__item--travel-report:last-child {
@@ -268,7 +282,7 @@
 }
 
 .competition-form__button {
-  width: 280px;
+  width: 285px;
   margin-bottom: 35px;
   padding: 15px 45px 15px 45px;
   border-radius: 5px;
@@ -387,6 +401,7 @@
   }
 
   .competition-form__list--travel-report {
+    margin-top: 0; //////////////////////
     padding-top: 50px;
     padding-left: 50px;
   }
@@ -493,6 +508,7 @@
   }
 
   .competition-form__list--used-application {
+    margin-top: 0; ////////////////////////////////////////
     padding-top: 55px;
     padding-left: 55px;
   }
@@ -536,7 +552,7 @@
 
   .competition-form__button {
     box-sizing: content-box;
-    width: 185px;
+    width: 188px;
     padding: 17px 55px 17px 58px;
     border: 0;
   }

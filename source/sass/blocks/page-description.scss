@@ -27,6 +27,11 @@
   color: #ffffff;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 23%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .page-description__paragraph-1--photo-page {
