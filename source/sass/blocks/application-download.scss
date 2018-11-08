@@ -9,10 +9,10 @@
   height: 396px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 100%;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: cover;
   }
 }
 
@@ -34,16 +34,9 @@
     background-position: 50% 100%;
     background-size: 320px auto;
 
-    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    //   background-image: url("../img/bg-back-tablet@2x.jpg");
-    //   background-size: cover;
-    // }
-  }
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .application-download-wrapper {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      // background-size: cover;
+      background-size: cover;
     }
   }
 

@@ -62,6 +62,11 @@
     line-height: 60px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 28%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .page-description__paragraph-2--form-page {
@@ -112,6 +117,11 @@
     padding-bottom: 105px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: 50% 0%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .page-description__paragraph-2--form-page {
