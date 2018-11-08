@@ -5,13 +5,14 @@
 
 .application-download__image-container {
   margin-bottom: 28px;
+  width: 320px;
   height: 396px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 320px auto;
+    background-size: cover;
   }
 }
 
@@ -34,7 +35,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 660px auto;
+      background-size: cover;
     }
   }
 
@@ -71,7 +72,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: 1200px auto;
+      background-size: cover; // 1200px uato
     }
   }
 
