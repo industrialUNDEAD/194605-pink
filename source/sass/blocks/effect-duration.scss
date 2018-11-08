@@ -2,49 +2,149 @@
   display: none;
 }
 
+.effect-duration__tablet-space {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .effect-duration {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+  }
+
+  .effect-duration__wrapper { //.effect-duration
+    position: relative;
+    display: block;
     width: 620px;
     padding: 0 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -35px;
+      left: 20px;
+      width: 238px;
+      height: 276px;
+      display: block;
+      background-image: url("../img/icon-timer-red.svg");
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      top: 20px;
+      left: 37px;
+      width: 202px; //202
+      height: 202px; //202
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 190px;
+      color: #d22856;
+      background-image: url("../img/icon-editor-diagram-fill-red.svg");
+    }
   }
 
   .effect-duration__content-block {
-    width: 320px;
+    width: 310px;
+    margin-top: 95px;
+    margin-bottom: 110px;
+    margin-left: 310px;
   }
 
   .effect-duration__title {
     width: 170px;
+    margin-bottom: 0;
     font-size: 30px;
     line-height: 36px;
     color: #000000;
   }
 
+  .effect-duration__tablet-space {
+    display: block;
+  }
+
   .effect-duration__description {
+    margin-top: 10px;
+    margin-bottom: 12px;
     font-size: 14px;
     line-height: 24px;
     color: #283645;
   }
 
   .effect-duration__link {
+    font-size: 14px;
     text-decoration: underline;
     color: #d22856;
+    cursor: pointer;
   }
 }
 
 @media (min-width: $desktop-width) {
   .effect-duration {
-    width: 960px;
-    padding: 0 120px;
     background-color: #f2f2f2;
   }
 
-  .effect-duration__title {
-    width: 420px;
+  .effect-duration__wrapper { //.effect-duration
+    width: 960px;
+    min-height: 425px;
+    padding: 0 120px;
+    background-color: #f2f2f2;
+
+    &::before {
+      top: 15px;
+      left: 130px;
+      width: 298px;
+      height: 345px;
+      background-image: url("../img/icon-timer-red-big.svg");
+    }
+
+    &::after {
+      top: 82px;
+      left: 153px;
+      width: 253px;
+      height: 253px;
+      font-size: 120px;
+      line-height: 240px;
+      background-image: url("../img/icon-editor-diagram-fill-red-big.svg");
+    }
+  }
+
+  .effect-duration__wrap {
+    display: inline;
+  }
+
+  .effect-duration__tablet-space {
+    display: none;
   }
 
   .effect-duration__content-block {
+    margin-top: 0;
+    margin-left: 375px;
+    padding-top: 105px;
     width: 570px;
+  }
+
+  .effect-duration__title {
+    margin-top: 0;
+    margin-bottom: 22px;
+    width: 420px;
+  }
+
+  .effect-duration__description {
+    width: 532px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+
+    &::first-line {
+      width: 490px;
+    }
+  }
+
+  .effect-duration__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

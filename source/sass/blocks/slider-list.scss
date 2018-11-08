@@ -5,5 +5,38 @@
 @media (min-width: $desktop-width) {
   .slider-list__slider-toggle {
     display: inline;
+    width: 60px;
+    box-sizing: content-box;
+    padding: 0;
+    border: 0;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  .slider-list__icon {
+    &:hover {
+      fill: #7e868f;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .slider-list__slider-toggle--prev .slider-list__icon {
+    position: relative;
+    top: -5px;
+    right: 8px;
+  }
+
+  .slider-list__slider-toggle--next {
+    position: relative;
+    left: 28px;
+  }
+
+  .slider-list__slider-toggle--next .slider-list__icon {
+    position: relative;
+    top: -4px;
+    // left: 30px;
   }
 }

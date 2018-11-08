@@ -1,4 +1,9 @@
 .page-description {
+  width: 320px;
+}
+
+.page-description__paragraph-2 {
+  margin-top: 47px;
   width: 280px;
   padding: 0 20px;
   font-size: 14px;
@@ -8,16 +13,121 @@
   background-color: #ffffff;
 }
 
+.page-description__no-mobile {
+  display: none;
+}
+
+.page-description__paragraph-1 {
+  margin: 0;
+  padding: 28px 20px 50px 20px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: #ffffff;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 50% 23%;
+}
+
+.page-description__paragraph-1--photo-page {
+  padding-bottom: 81px;
+}
+
+.page-description__paragraph-2--photo-page {
+  width: 247px;
+  padding: 0 35px;
+}
+
 @media (min-width: $tablet-width) {
-  .page-description {
-    width: 510px;
-    padding: 0 55px;
+  .page-description__paragraph-2 {
+    width: 492px;
+    margin: 0 auto;
+    margin-top: 94px;
+    font-size: 18px;
+  }
+
+  .page-description__no-mobile {
+    display: inline;
+  }
+
+  .page-description__paragraph-1 {
+    width: 660px;
+    padding: 70px 0 77px 0;
+    font-size: 50px;
+    line-height: 60px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 28%;
+  }
+
+  .page-description__paragraph-2--form-page {
+    margin-left: 65px;
+  }
+
+  .page-description__paragraph-1--photo-page {
+    width: 660px;
+    padding-bottom: 140px;
+  }
+
+  .page-description__paragraph-2--photo-page {
+    width: 445px;
+    margin-top: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 87px;
+    padding-right: 87px;
+  }
+
+  .page-description__description-wrapper {
+    display: block;
+    width: 475px;
+    margin: 0 auto;
+  }
+
+  .page-description__photo-wrapper {
+    display: block;
+    width: 630px;
+    margin-left: 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-description {
-    width: 820px;
+    width: 100%; //1200px
+  }
+
+  .page-description__paragraph-2 {
+    width: 760px;
+    margin-top: 90px;
     padding: 0 190px;
+  }
+
+  .page-description__paragraph-1 {
+    width: 100%; //1200px
+    padding-top: 172px;
+    padding-bottom: 105px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: 50% 0%;
+  }
+
+  .page-description__paragraph-2--form-page {
+    margin-left: 30px;
+  }
+
+  .page-description__paragraph-1--photo-page {
+    padding-bottom: 103px;
+  }
+
+  .page-description__photo-wrapper {
+    margin: 0 auto;
+  }
+
+  .page-description__description-wrapper {
+    width: 750px;
+  }
+
+  .page-description__paragraph-2--photo-page {
+    width: 580px;
+    margin-left: 120px;
+    margin-right: 120px;
   }
 }

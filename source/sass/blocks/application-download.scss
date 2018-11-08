@@ -1,27 +1,80 @@
-.application-download {
+.application-download-wrapper { //.application-download
   width: 320px;
   background-color: #1d2631;
 }
 
+.application-download__image-container {
+  margin-bottom: 28px;
+  height: 396px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: 50% 100%;
+}
+
 .image-container__application-image {
-  width: 320px;
-  height: 395px;
+  position: relative;
+  top: 110px;
+  width: 258px; //320px
+  height: 286px;  //396px
 }
 
 @media (min-width: $tablet-width) {
-  .application-download {
+  .application-download-wrapper { //.application-download
+    position: relative;
     display: flex;
+    overflow: hidden;
+    width: 660px;
+    min-height: 618px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 100%;
   }
 
   .application-download__image-container {
+    z-index: 1;
+    position: relative;
+    width: 840px;
+    height: 549px;
     order: 2;
+    background: none;
+  }
+
+  .image-container__application-image {
+    position: absolute;
+    top: 73px;
+    left: -340px;
+    width: 700px;
+    height: auto;
+  }
+
+  .application-download__download-section {
+    z-index: 2;
+    position: relative;
   }
 }
 
 @media (min-width: $desktop-width) {
   .application-download {
+    width: 100%;
+    // margin-left: auto;
+    // margin-right: auto;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: 50% 50%;
+  }
+
+  .image-container__application-image {
+    top: 210px;
+    left: -265px;
+    width: 1050px;
+  }
+
+  .application-download-wrapper { //.application-download
     justify-content: space-between;
-    width: 960px;
-    padding: 0 120px;
+    width: 940px;
+    min-height: 853px;
+    padding: 0 10px; // padding: 0 120px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    background-image: none;
+    // background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }

@@ -16,6 +16,7 @@
 
 .download-section__button {
   display: block;
+  margin-bottom: 32px;
   padding: 15px 35px;
   font-size: 18px;
   line-height: 18px;
@@ -24,17 +25,64 @@
   border: 3px solid #ffffff;
   border-radius: 50px;
   color: #ffffff;
+
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: #f1becc;
+  }
 }
 
 .download-section__list {
   display: flex;
-  justify-content: space-around;
-  margin: 0;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 17px;
   padding: 0;
+  width: 210px;
   list-style: none;
 }
 
+.download-section__item {
+  display: flex;
+  align-items: flex-end;
+  width: 50px;
+  height: 60px;
+}
+
+.download-section__item-link {
+  display: inline-block;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.download-section__item-link--ios-market {
+  width: 47px; //47
+  height: 56px; //56
+  background-image: url("../img/logo-apple.svg");
+  background-position: 50% 50%;
+}
+
+.download-section__item-link--android-market {
+  width: 43px;
+  height: 47px;
+  background-image: url("../img/logo-android.svg");
+  background-position: 50% 50%;
+}
+
+.download-section__item-link--windows-market {
+  width: 44px;
+  height: 41px;
+  background-image: url("../img/logo-microsoft.svg");
+  background-position: 50% 50%;
+}
+
 .download-section__description {
+  margin: 0;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -42,11 +90,66 @@
 }
 
 @media (min-width: $tablet-width) {
-  .download-section__slogan {
-    display: block;
-  }
-
   .download-section {
     order: 1;
+    display: block;
+    background-color: transparent;
+  }
+
+  .download-section__slogan {
+    width: 200px;
+    display: block;
+    margin-top: 90px;
+    margin-bottom: 33px;
+    padding-left: 50px;
+    text-align: center;
+    line-height: 48px;
+  }
+
+  .download-section__button {
+    width: 205px;
+    margin-bottom: 45px;
+    padding: 15px 45px 15px 45px;
+    font-weight: 700;
+  }
+
+  .download-section__list {
+    margin-left: 45px;
+    margin-bottom: 35px;
+  }
+
+  .download-section__description {
+    width: 300px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  @media (min-width: $desktop-width) {
+    .download-section {
+      padding: 0;
+      // padding-left: 10px;
+      min-height: 510px;
+    }
+
+    .download-section__slogan {
+      width: 260px;
+      margin-top: 215px;
+      margin-bottom: 50px;
+      padding-left: 20px;
+      font-size: 50px;
+      line-height: 62px; // для попадания в макет
+    }
+
+    .download-section__button {
+      width: 237px;
+      margin-bottom: 65px;
+      padding-left: 27px;
+      padding-right: 29px;
+      font-size: 21px;
+    }
+
+    .download-section__list {
+      margin-bottom: 52px;
+    }
   }
 }

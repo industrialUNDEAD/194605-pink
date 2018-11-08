@@ -1,27 +1,51 @@
 .application-tariffs {
   position: relative;
   width: 320px;
-  min-height: 375px;
+  min-height: 470px;
+  overflow: hidden;
   background-color: #f2f2f2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 320px;
+    height: 27px;
+    background-image: linear-gradient(to left top, #f2f2f2 50%, #ffffff 50%);
+  }
 }
 
 .application-tariffs__tariffs-table { //test
   position: absolute;
-  left: -250px;
+  left: -255px;
+  top: 90px;
   width: 620px;
+  table-layout: fixed;
 }
 
 .application-tariffs__toggles {
   position: absolute; //test
-  top: 300px;
-  left: 40%;
+  top: 395px;
+  left: 41%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 56px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .application-tariffs {
     width: 620px;
+    min-height: 375px;
     padding: 0 20px;
+
+    &::before {
+      width: 660px;
+      height: 55px;
+    }
   }
 
   .application-tariffs__tariffs-table {
@@ -35,11 +59,18 @@
 
 @media (min-width: $desktop-width) {
   .application-tariffs {
-    width: 960px;
-    padding: 0 120px;
+    width: 100%; //width: 960px;
+    min-height: 526px;
+    padding: 0;  // padding: 0 120px;
+
+    &::before {
+      width: 1200px;
+      height: 88px;
+    }
   }
 
   .application-tariffs__tariffs-table {
+    top: 150px;
     left: 130px;
     width: 940px;
   }

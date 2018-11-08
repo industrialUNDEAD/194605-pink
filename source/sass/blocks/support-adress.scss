@@ -4,6 +4,27 @@
   list-style: none;
 }
 
+.support-adress__item {
+  margin-bottom: 17px;
+}
+
+.support-adress__item:nth-child(2) { //так как в макете разные вертикальные отступы у элементов списка
+  margin-bottom: 20px;
+}
+
+.support-adress__feedback-method--mail {
+  &:hover {
+    text-decoration: underline;
+    color: #283645;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+}
+
 .support-adress__message {
   font-size: 18px;
   color: #283645;
@@ -11,18 +32,74 @@
 
 .support-adress__feedback-method {
   font-size: 24px;
+  font-weight: 300;
   color: #d22856;
 }
 
 @media (min-width: $tablet-width) {
   .support-adress {
     display: flex;
+    width: 620px;
+    margin: 0 auto;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .support-adress__item {
-    width: 300px;
-    margin-bottom: 50px;
+    width: 300px; //225
+    margin-bottom: 45px;
+  }
+
+  .support-adress__message {
+    // width: 85px;
+    margin: 0 auto;
+    margin-bottom: 2px;
+  }
+
+  .support-adress__item--mail .support-adress__message {
+    margin-bottom: 4px;
+  }
+
+  .support-adress__item--visit {
+    margin-left: 160px;
+
+    .support-adress__message {
+      margin-bottom: 4px;
+    }
+  }
+
+  .support-adress__feedback-method {
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .support-adress {
+    margin: 0;
+    width: 940px;
+    justify-content: flex-start;
+  }
+
+  .support-adress__item--call {
+    order: 1;
+    width: 210px;
+    margin-left: 45px; //55px
+  }
+
+  .support-adress__item--visit {
+    order: 2;
+    margin: 0;
+    width: 215px;
+    margin-left: 107px;
+  }
+
+  .support-adress__item--mail {
+    order: 3;
+    width: 240px;
+    margin-left: 92px;
+  }
+
+  .support-adress__feedback-method {
+    margin-top: 20px;
   }
 }

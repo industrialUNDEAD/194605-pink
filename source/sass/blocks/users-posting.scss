@@ -1,12 +1,15 @@
 .users-posting {
+  position: relative;
   width: 280px;
+  padding-top: 382px;
 }
 
 @media (min-width: $tablet-width) {
   .users-posting {
     display: flex;
     flex-wrap: wrap;
-    width: 620px;
+    width: 660px;
+    padding-top: 755px;
   }
 }
 
@@ -14,5 +17,6 @@
   .users-posting {
     width: 960px;
     padding: 0 120px;
+    padding-top: 743px;
   }
 }

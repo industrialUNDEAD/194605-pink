@@ -1,7 +1,28 @@
+.user-editor {
+  width: 320px;
+  // padding: 0 20px;
+  padding-top: 10px;
+}
+
+.user-editor__subtitle {
+  display: block;
+  text-align: center;
+}
+
 .user-editor__promo-text {
-  width: 280px;
-  padding: 0 20px;
+  width: 260px; // 280px
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 42px;
+  padding: 0 10px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
   background-color: #ffffff;
+}
+
+.user-editor__wrapper {
+  // padding: 0 20px;
 }
 
 .user-editor__tools-container {
@@ -9,26 +30,144 @@
 }
 
 .user-editor__user-photo {
-  widows: 300px;
-  padding: 0 20px;
+  margin-bottom: 35px;
+  padding: 20px 20px 0 20px;
+}
+
+.user-editor__edited-picture {
+  width: 280px;
+  height: 374px;
 }
 
 .user-editor__processing-tools {
-  width: 280px;
-  padding: 0 20px;
+  display: flex;
+  width: 240px;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 17px;
+  padding-left: 36px;
+}
+
+.processing-tools__toggle--toggle-one {
+  margin-right: 30px;
+}
+
+.processing-tools__toggle--toggle-two {
+  margin-right: 40px;
+}
+
+.processing-tools__icon-figures {
+  fill: #b5b9be;
+}
+
+.processing-tools__toggle:hover {
+  cursor: pointer;
+
+  .processing-tools__icon-figures {
+    fill: #8d949b;
+  }
+}
+
+.processing-tools__toggle:active {
+  .processing-tools__icon-figures {
+    fill: #d22856;
+  }
 }
 
 .user-editor__range-toggles {
-  width: 280px;
-  padding: 0 20px;
-  border-bottom: 1px solid #dddfe0;
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.range-toggles__range-field {
-  display: inline-block;
-  width: 200px;
+.range-toggles__input {
+  position: relative;
+  border-bottom: 2px solid #283645;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-top: -7px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+  }
 }
+
+.range-toggles__input:active {
+  &::before {
+    background: #d22856;
+  }
+}
+
+.range-toggles__range-field {
+  // -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+  display: inline-block;
+  // width: 200px;
+  width: 100%; /* Указание параметра ширины требуется для Firefox. */
+}
+
+// .range-toggles__range-field::-webkit-slider-thumb {
+//   // -webkit-appearance: none;
+// }
+
+// .range-toggles__range-field:focus {
+//   outline: none; /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
+// }
+
+// .range-toggles__range-field::-ms-track {
+//   width: 100%;
+//   cursor: pointer;
+//   background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+//   border-color: transparent;
+//   color: transparent;
+// }
+
+// .range-toggles__range-field::-webkit-slider-thumb {
+//   margin-top: -5px;
+//   width: 12px;
+//   height: 12px;
+//   border: 2px solid #d22856;
+//   border-radius: 50%;
+//   background: #ffffff;
+//   cursor: pointer;
+// }
+
+// .range-toggles__range-field::-moz-range-thumb {
+//   width: 12px;
+//   height: 12px;
+//   border: 2px solid #d22856;
+//   border-radius: 50%;
+//   background: #ffffff;
+//   cursor: pointer;
+// }
+
+// .range-toggles__range-field::-ms-thumb {
+//   width: 12px;
+//   height: 12px;
+//   border: 2px solid #d22856;
+//   border-radius: 50%;
+//   background: #ffffff;
+//   cursor: pointer;
+// }
+
+// .range-toggles__range-field::-webkit-slider-runnable-track {
+//   width: 240px;
+//   height: 2px;
+//   background: #000000;
+// }
+
+// .range-toggles__range-field::-moz-range-track {
+//   width: 240px;
+//   height: 2px;
+//   background: #000000;
+// }
 
 .range-toggles__range-field--toggle-two {
   display: none;
@@ -39,46 +178,132 @@
 }
 
 .user-editor__buttons {
-  width: 280px;
-  margin-top: 50px;
-  padding: 0 20px;
+  min-height: 163px;
+  padding-top: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top: 1px solid #dddfe0;
 }
 
 .user-editor__button {
   width: 100%;
   margin-bottom: 15px;
-  padding: 15px 95px 15px 95px;
+  padding: 15px 95px 15px 88px;
   background-color: #f2f2f2;
   border-width: 3px;
   border-style: solid;
-  border-radius: 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
 }
 
 .user-editor__button--button-submit {
   color: #d22856;
   border-color: #d22856;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #d22856;
+  }
+
+  &:active {
+    color: #e06989;
+  }
 }
 
 .user-editor__button--button-reset {
   color: #dddfe0;
   border-color: #dddfe0;
+  cursor: pointer;
+
+  &:hover {
+    color: #b5b9be;
+    border-color: #b5b9be;
+  }
+
+  &:active {
+    color: #cbced2;
+    background-color: #b5b9be;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .user-editor {
     width: 620px;
-    padding: 0 20px;
+    padding: 0;
+  }
+
+  .user-editor__promo-text {
+    width: 430px;
+    margin-top: 45px;
+    margin-left: 105px;
+    margin-right: 0;
+    margin-bottom: 68px;
+    font-size: 18px;
   }
 
   .user-editor__tools-container {
     display: flex;
     width: 620px;
-    padding: 20px;
+    min-height: 472px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #f2f2f2;
+  }
+
+  .user-editor__edited-picture {
+    width: 300px;
+    height: 400px;
+  }
+
+  .user-editor__user-photo {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .user-editor__range-toggles {
+    margin-bottom: 25px;
   }
 
   .range-toggles__range-field--toggle-two,
   .range-toggles__range-field--toggle-three {
     display: inline-block;
+  }
+
+  .range-toggles__range-field {
+    position: relative;
+    width: 202px;
+    margin-left: 62px;
+    // border-bottom: 1px solid #dddfe0;
+    background-color: #f2f2f2;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -18px;
+      bottom: 1px;
+      width: 275px;
+      height: 1px;
+      background-color: #dddfe0;
+    }
+  }
+
+  .range-toggles__range-field--toggle-one {
+    padding-top: 19px;
+    padding-bottom: 37px;
+  }
+
+  .range-toggles__range-field--toggle-two {
+    padding-top: 29px;
+    padding-bottom: 37px;
+  }
+
+  .range-toggles__range-field--toggle-three {
+    padding-top: 26px;
+    padding-bottom: 37px;
   }
 
   .user-editor__processing-tools {
@@ -89,43 +314,144 @@
     position: absolute;
   }
 
+  .processing-tools__icon {
+    width: 24px;
+    height: 24px;
+    fill: #d22856;
+  }
+
+  .processing-tools__icon--contrast {
+    width: 16px;
+    height: 16px;
+
+    // .processing-tools__icon-figures {
+    //   fill: #d22856;
+    // }
+  }
+
   .processing-tools__toggle--toggle-one {
-    left: -15px;
+    top: 27px;
+    left: 27px;
   }
 
   .processing-tools__toggle--toggle-two {
-    top: 25px;
-    left: -15px;
+    top: 102px;
+    left: 30px;
   }
 
   .processing-tools__toggle--toggle-three {
-    top: 50px;
-    left: -15px;
+    top: 173px;
+    left: 35px;
   }
 
   .user-editor__buttons {
     width: 260px;
+    padding-left: 45px;
+    padding-right: 0;
+  }
+
+  .user-editor__button--button-submit {
+    margin-bottom: 22px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .user-editor {
     width: 960px;
-    padding: 0 120px;
+    margin: 0 120px;
   }
 
   .user-editor__promo-text {
-    width: 800px;
+    width: 425px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
 
   .user-editor__tools-container {
     justify-content: space-between;
     width: 800px;
-    padding: 0 80px;
+    padding-left: 80px;
+    padding-right: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .user-editor__user-photo {
+    padding-top: 15px;
   }
 
   .user-editor__wrapper {
     width: 410px;
+  }
+
+  .processing-tools__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .processing-tools__icon--contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+  .processing-tools__toggle--toggle-one {
+    top: 12px;
+    left: -22px;
+  }
+
+  .processing-tools__toggle--toggle-two {
+    top: 86px;
+    left: -20px;
+  }
+
+  .processing-tools__toggle--toggle-three {
+    top: 163px;
+    left: -14px;
+  }
+
+  .range-toggles__range-field {
+    position: relative;
+    width: 288px;
+    margin-left: 8px;
+    border: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -28px;
+      bottom: 1px;
+      width: 410px;
+      height: 1px;
+      background-color: #dddfe0;
+    }
+  }
+
+  .range-toggles__range-field--toggle-one {
+    padding-top: 15px;
+  }
+
+  .user-editor__buttons {
+    width: 410px;
+    min-height: 80px;
+    padding-top: 115px;
+    padding-left: 0;
+    border: none;
+  }
+
+  .user-editor__button {
+    width: 183px;
+    padding-left: 42px;
+    padding-right: 38px;
+    box-sizing: border-box;
+  }
+
+  .user-editor__button--button-submit {
+    width: 183px;
+    margin-right: 38px;
+    padding-left: 42px;
+    padding-right: 38px;
+    box-sizing: border-box;
   }
 }

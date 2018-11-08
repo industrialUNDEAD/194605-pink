@@ -5,6 +5,10 @@
   background-color: #ffffff;
 }
 
+.feedback-contacts {
+  margin-top: 42px;
+}
+
 .support-adress__message {
   display: block;
   text-align: center;
@@ -16,7 +20,10 @@
 }
 
 .feedback__titel {
+  margin-bottom: 35px;
   font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
   text-align: center;
   color: #283645;
 }
@@ -26,24 +33,123 @@
   text-align: center;
 }
 
-.feedback__developer-location img {  //test
+.feedback__developer-location {
+  position: absolute;
+  left: 0;
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    z-index: 3;
+    position: absolute;
+    top: 115px;
+    left: 142px;
+    display: block;
+    width: 36px;
+    height: 35px;
+    background-image: url("../img/icon-map-marker.svg");
+  }
+}
+
+.developer-location__map-image {  //test  .feedback__developer-location img
+  z-index: 1;
   position: absolute;
   left: 1px;
+  top: -425px;
   width: 100%;
+}
+
+.developer-location__white-background { //.feedback__developer-location svg
+  z-index: 2;
+  position: absolute;
+  top: -70px;
+  left: -440px;
+  fill: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
     width: 620px;
-    margin-bottom: 470px; //test
+    height: 772px;
+    // margin-bottom: 470px; //test
     padding: 0 20px;
+  }
+
+  .feedback__titel {
+    margin-bottom: 50px;
+    padding-top: 15px;
+    font-size: 40px;
+  }
+
+  .feedback__sub-titel {
+    padding-top: 18px;
+  }
+
+  .feedback__developer-location {
+    top: 365px;
+    width: 660px;
+    height: 376px;
+  }
+
+  .developer-location__white-background { // .feedback__developer-location svg
+    top: -57px;
+    left: -274px;
+  }
+
+  .developer-location__map-image {
+    top: -320px;
+    left: 0;
+  }
+
+  .feedback__developer-location::before {
+    top: 190px;
+    left: 310px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback {
-    width: 960px;
-    margin-bottom: 840px; //test
-    padding: 0 120px;
+    width: 100%; // width: 960px;
+    margin-bottom: 100px; //test
+    padding: 0;  // padding: 0 120px;
+  }
+
+  .feedback-contacts {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .feedback__titel {
+    margin-top: 62px;
+    margin-bottom: 70px;
+    font-size: 50px;
+  }
+
+  .feedback__sub-titel {
+    margin-top: 12px;
+  }
+
+  .feedback__developer-location {
+    top: 305px;
+    width: 100%; // width: 1200px;
+    min-height: 502px;
+  }
+
+  .developer-location__white-background { // .feedback__developer-location svg
+    top: -5px; // -20px
+    left: 1px; // 1px
+  }
+
+  .developer-location__map-image {
+    top: -280px;
+  }
+
+  .feedback__developer-location::before {
+    top: 260px;
+    left: 580px;
   }
 }

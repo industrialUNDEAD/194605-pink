@@ -1,3 +1,69 @@
+.main-footer__glasses-logo {
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+.main-footer__footer-social {
+  margin-bottom: 35px;
+}
+
+.main-footer__developer-block {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.main-footer__academy-icon {
+  margin-top: 5px;
+  margin-left: 13px;
+  cursor: pointer;
+}
+
+.main-footer__academy-icon:hover .main-footer__academy-figure {
+  fill: #283645;
+}
+
+.main-footer__academy-icon:active .main-footer__academy-figure {
+  fill: #283645;
+  opacity: 0.3;
+}
+
+.main-footer__social-link {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.main-footer__social-link--twitter {
+  background-image: url("../img/icon-twitter-red.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.main-footer__social-link--facebook {
+  background-image: url("../img/icon-facebook-red.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.main-footer__social-link--youtube {
+  background-image: url("../img/icon-youtube-red.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .page-main + .main-footer {
   display: none;
 }
@@ -8,15 +74,54 @@
   align-items: center;
   align-content: center;
   width: 280px;
+  padding: 0 20px;
+  padding-top: 40px;
 }
 
-.footer-social__list {
+.main-footer--form-page {
+  padding-top: 55px;
+}
+
+.main-footer__list {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 180px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+// .main-footer__developer-block {
+//   display: flex;
+//   align-items: center;
+// }
+
+.main-footer__developer-service {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #283645;
+}
+
+.main-footer__logo-desktop {
+  display: none;
+}
+
+.main-footer__logo-tablet:hover .main-footer__logo-figure {
+  fill: #d22856;
+}
+
+.main-footer__logo-tablet:active .main-footer__logo-figure {
+  opacity: 0.3;
+}
+
+.main-footer__logo-desktop:hover .main-footer__logo-figure {
+  fill: #d22856;
+}
+
+.main-footer__logo-desktop:active .main-footer__logo-figure {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -25,16 +130,108 @@
   }
 
   .main-footer {
-    justify-content: space-between;
+    // justify-content: space-between;
     flex-direction: row;
+    align-items: flex-start;
     width: 620px;
+    min-height: 90px;
     padding: 0 20px;
+    // padding-bottom: 37px;
+  }
+
+  .main-footer--photo-page {
+    margin-top: 35px;
+  }
+
+  .main-footer__glasses-logo {
+    margin-right: 73px;
+  }
+
+  .main-footer__footer-social {
+    margin-right: 90px;
+    padding-top: 5px;
+  }
+
+  .main-footer__developer-block {
+    width: 130px;
+    padding-top: 13px;
+  }
+
+  .main-footer__developer-service {
+    margin-right: 15px;
+  }
+
+  .main-footer__academy-icon {
+    margin-left: 0;
+  }
+
+  .main-footer__social-link {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border: 3px solid #e9ebec;
+    border-radius: 50%;
+  }
+
+  .main-footer__social-link--twitter {
+    background-image: url("../img/icon-twitter-red.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .main-footer__social-link--facebook {
+    background-image: url("../img/icon-facebook-red.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .main-footer__social-link--youtube {
+    background-image: url("../img/icon-youtube-red.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-footer {
-    width: 960px;
-    padding: 0 120px;
+    width: 940px;
+    margin: 0 120px;
+    padding: 0 10px;
+  }
+
+  .main-footer__glasses-logo {
+    margin-right: 230px;
+  }
+
+  .main-footer__logo-tablet {
+    display: none;
+  }
+
+  .main-footer__logo-desktop {
+    display: block;
+  }
+
+  .main-footer__footer-social {
+    margin-right: 230px;
+  }
+
+  .main-footer__developer-block {
+    width: 155px;
+  }
+
+  .main-footer__developer-service {
+    font-size: 18px;
+  }
+
+  .main-footer--photo-page {
+    margin-top: 98px;
+
+    .main-footer__glasses-logo {
+      margin-right: 235px;
+    }
+
+    .main-footer__footer-social {
+      margin-right: 225px;
+    }
   }
 }
