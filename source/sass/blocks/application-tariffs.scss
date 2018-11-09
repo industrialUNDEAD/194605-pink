@@ -64,14 +64,25 @@
     padding: 0;  // padding: 0 120px;
 
     &::before {
-      width: 1200px;
+      width: 100%; //1200px
       height: 88px;
     }
   }
 
+  .application-tariffs__wrapper {
+    position: relative;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .application-tariffs__tariffs-table {
     top: 150px;
-    left: 130px;
+    left: 10px; //130px
     width: 940px;
+    // margin-left: auto;
+    // margin-right: auto;
   }
 }
