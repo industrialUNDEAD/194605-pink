@@ -222,7 +222,7 @@
 
   .application-features__block-wrapper {  //application-features
     width: 100%; // width: 940px;
-    padding: 0 auto; //
+    padding: 0; //
     // margin: 0 auto;
     min-height: 855px;
   }
@@ -232,20 +232,24 @@
   }
 
   .application-features__lead-block {
-    width: 960px;
+    width: 100%; // 960px
     margin-bottom: 115px;
-    padding: 0 120px;
+    padding: 0; // 0 120px
   }
 
   .application-features__title {
+    position: relative;
+    width: 745px; //
     margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 50px;
   }
 
   .application-features__supplementing-title {
     width: 420px;
     top: 19px;
-    left: 390px;
+    // left: 390px;
     font-size: 50px;
     line-height: 60px;
   }
