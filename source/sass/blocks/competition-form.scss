@@ -581,7 +581,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 960px;
-    padding: 0 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    // padding: 0 120px;
   }
 
   .competition-form__contacts-wrapper {

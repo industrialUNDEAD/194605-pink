@@ -125,7 +125,9 @@
   }
 
   .page-description__paragraph-2--form-page {
-    margin-left: 30px;
+    margin-left: auto; //30px
+    margin-right: auto; //
+    padding: 0; //
   }
 
   .page-description__paragraph-1--photo-page {
