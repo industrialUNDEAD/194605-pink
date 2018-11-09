@@ -144,7 +144,8 @@
 
   .page-description__paragraph-2--photo-page {
     width: 580px;
-    margin-left: 120px;
-    margin-right: 120px;
+    padding: 0;
+    margin-left: auto; //120px
+    margin-right: auto; //120px
   }
 }

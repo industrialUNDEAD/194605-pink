@@ -358,7 +358,7 @@
 @media (min-width: $desktop-width) {
   .user-editor {
     width: 960px;
-    margin: 0 120px;
+    margin: 0 auto; // 0 120px
   }
 
   .user-editor__promo-text {
