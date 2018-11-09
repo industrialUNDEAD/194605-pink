@@ -10,12 +10,12 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 100%;
   background-size: 320px auto;
+}
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    .application-download__image-container {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-      background-size: 320px auto;
-    }
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .application-download__image-container {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
   }
 }
 
@@ -36,12 +36,12 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 100%;
     background-size: 660px auto;
+  }
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      .application-download-wrapper {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 660px auto;
-      }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .application-download-wrapper {
+    background-image: url("../img/bg-back-tablet@2x.jpg");
+    background-size: 660px auto;
     }
   }
 
@@ -76,12 +76,12 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: 50% 50%;
     background-size: 1200px auto;
+  }
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      .application-download {
-        background-image: url("../img/bg-back-desktop@2x.jpg");
-        background-size: 1200px auto;
-      }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .application-download {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px auto;
     }
   }
 
