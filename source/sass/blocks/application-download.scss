@@ -5,9 +5,18 @@
 
 .application-download__image-container {
   margin-bottom: 28px;
+  width: 320px;
   height: 396px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 100%;
+  // background-size: 320px auto;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .application-download__image-container {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 700px auto;
+  }
 }
 
 .image-container__application-image {
@@ -25,7 +34,14 @@
     width: 660px;
     min-height: 618px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% 100%;
+    background-position: center top;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .application-download-wrapper {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .application-download__image-container {
@@ -58,6 +74,14 @@
     // margin-right: auto;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: 50% 50%;
+    // background-size: 1200px auto;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .application-download {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+    }
   }
 
   .image-container__application-image {

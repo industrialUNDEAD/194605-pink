@@ -195,7 +195,7 @@
 @media (min-width: $desktop-width) {
   .main-footer {
     width: 940px;
-    margin: 0 120px;
+    margin: 0 auto; // 0 120px
     padding: 0 10px;
   }
 

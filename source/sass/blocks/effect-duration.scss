@@ -87,14 +87,16 @@
   }
 
   .effect-duration__wrapper { //.effect-duration
-    width: 960px;
+    width: 940px; // 960px
     min-height: 425px;
-    padding: 0 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; //0 120px
     background-color: #f2f2f2;
 
     &::before {
       top: 15px;
-      left: 130px;
+      // left: 130px;
       width: 298px;
       height: 345px;
       background-image: url("../img/icon-timer-red-big.svg");
@@ -102,7 +104,7 @@
 
     &::after {
       top: 82px;
-      left: 153px;
+      // left: 153px;
       width: 253px;
       height: 253px;
       font-size: 120px;
@@ -120,10 +122,12 @@
   }
 
   .effect-duration__content-block {
+    width: 535px; //570px
     margin-top: 0;
     margin-left: 375px;
+    padding-left: 20px;
+    padding-right: 0;
     padding-top: 105px;
-    width: 570px;
   }
 
   .effect-duration__title {
