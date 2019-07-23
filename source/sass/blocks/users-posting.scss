@@ -1,7 +1,7 @@
 .users-posting {
   position: relative;
-  width: 280px;
-  padding-top: 382px;
+  width: 320px;
+  padding-top: 35px;
 }
 
 @media (min-width: $tablet-width) {
@@ -9,15 +9,16 @@
     display: flex;
     flex-wrap: wrap;
     width: 660px;
-    padding-top: 755px;
+    padding-top: 75px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .users-posting {
-    width: 960px;
+    width: 100%;
+    max-width: 2080px;
     // padding: 0 120px;
-    padding-top: 743px;
+    padding-top: 0;
     margin: 0 auto;
   }
 }

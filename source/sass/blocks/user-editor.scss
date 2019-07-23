@@ -69,7 +69,7 @@
   }
 }
 
-.processing-tools__toggle:active {
+.processing-tools__toggle--active {
   .processing-tools__icon-figures {
     fill: #d22856;
   }
@@ -89,7 +89,7 @@
   &::before {
     content: "";
     position: absolute;
-    left: 50%;
+    left: 80%;
     margin-top: -7px;
     width: 12px;
     height: 12px;
@@ -294,16 +294,28 @@
   .range-toggles__range-field--toggle-one {
     padding-top: 19px;
     padding-bottom: 37px;
+
+    .range-toggles__input::before {
+      left: 72%;
+    }
   }
 
   .range-toggles__range-field--toggle-two {
     padding-top: 29px;
     padding-bottom: 37px;
+
+    .range-toggles__input::before {
+      left: 12%;
+    }
   }
 
   .range-toggles__range-field--toggle-three {
     padding-top: 26px;
     padding-bottom: 37px;
+
+    .range-toggles__input::before {
+      left: 47%;
+    }
   }
 
   .user-editor__processing-tools {

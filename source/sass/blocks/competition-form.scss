@@ -162,7 +162,7 @@
   padding-left: 20px;
   padding-bottom: 14px;
   border: 2px solid #e5e5e5;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: inherit;
   line-height: 30px;
 
@@ -285,6 +285,7 @@
   width: 285px;
   margin-bottom: 35px;
   padding: 15px 45px 15px 45px;
+  border: none;
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 18px;
@@ -320,6 +321,10 @@
   text-transform: uppercase;
 }
 
+.competition-form__explanation-symbol {
+  color: #d22856;
+}
+
 .competition-form__no-mobile {
   display: none;
 }
@@ -343,6 +348,7 @@
   .competition-form__form-group { // возвращение дефолтных стилей групп формы
     position: relative;
     border: 2px solid #e5e5e5;
+    border-radius: 3px;
     background-color: #ffffff;
   }
 
@@ -456,6 +462,7 @@
       right: -1px;
       width: 60px;
       height: 60px;
+      border-radius: 2%;
       background-color: #e5e5e5;
       background-repeat: no-repeat;
       background-position: 50% 50%;
@@ -663,7 +670,11 @@
     margin-top: 35px;
 
     &::before {
+      top: 0;
       right: 8px;
+      width: 64px;
+      height: 64px;
+      border-radius: 3px;
     }
 
     .competition-form__text-field {
