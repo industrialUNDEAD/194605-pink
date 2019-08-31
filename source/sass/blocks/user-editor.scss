@@ -1,5 +1,6 @@
 .user-editor {
   width: 320px;
+  margin: 0 auto;
   // padding: 0 20px;
   padding-top: 10px;
 }
@@ -232,6 +233,7 @@
 @media (min-width: $tablet-width) {
   .user-editor {
     width: 620px;
+    margin: 0 auto;
     padding: 0;
   }
 

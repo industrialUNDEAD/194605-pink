@@ -1,11 +1,19 @@
 .competition-form {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
+  // display: flex;
+  // flex-direction: column;
+  // width: 320px;
   // padding: 0 20px;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+}
+
+.competition-form__centering-unit {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
+  // padding: 0 20px;
 }
 
 .competition-form__top-wrapper {
@@ -330,11 +338,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .competition-form {
+  .competition-form__centering-unit { /*.competition-form*/
     display: flex;
     flex-direction: column;
-    width: 620px;
+    margin: 0 auto;
     padding: 0 20px;
+    width: 620px;
   }
 
   .competition-form__no-mobile {
@@ -584,7 +593,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .competition-form {
+  .competition-form__centering-unit { /*.competition-form*/
     flex-direction: row;
     flex-wrap: wrap;
     width: 960px;

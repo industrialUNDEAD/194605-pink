@@ -14,8 +14,9 @@
   .effect-duration__wrapper { //.effect-duration
     position: relative;
     display: block;
-    width: 620px;
+    margin: 0 auto;
     padding: 0 20px;
+    width: 620px;
 
     &::before {
       content: "";

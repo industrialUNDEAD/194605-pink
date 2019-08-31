@@ -34,6 +34,7 @@
 
 .user-post--top-day {
   position: relative;
+  width: auto;
   // position: absolute;
   // top: 35px;
   .user-post__top-element {
@@ -56,15 +57,24 @@
 
   .post-image {
     width: 100%;
-    height: 137px;
+    height: auto;
     padding: 0;
     overflow: hidden;
     text-align: left;
   }
 
+  .user-post__top-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .user-post__post-content--top-day {
+    margin: 0 auto;
+  }
+
   .user-post__user-image { //
-    width: 320px;
-    height: 137px;
+    // width: 320px;
+    // height: 137px;
   }
 }
 
@@ -206,11 +216,12 @@
     margin-bottom: 50px;
     width: 100%;
     .post-image {
-      width: 660px;
-      height: 509px;
+      // width: 660px;
+      // height: 509px;
     }
 
     .user-post__post-content {
+      position: relative; /* для расположения счетчика лайков */
       width: 570px;
       padding-right: 48px;
 
@@ -221,8 +232,8 @@
 
     .user-post__likes-number {
       position: absolute;
-      top: 535px;
-      left: 462px;
+      top: 25px;
+      left: 440px;
 
       &::before {
         top: 4px;
@@ -232,8 +243,8 @@
 
     .user-post__likes-number {
       position: absolute;
-      top: 535px;
-      left: 462px;
+      top: 25px; /*535px*/
+      left: 440px; /*462px*/
 
       &::before {
         top: 4px;
@@ -326,13 +337,20 @@
     margin-bottom: 54px;
   }
 
+  .user-post:nth-child(3n) {
+    margin-right: 0;
+  }
+
   .user-post--top-day {
     top: 87px;
     left: 0;
-    width: 1200px;
+    margin-right: 0;
+    width: auto;
+    max-width: 2080px;
 
     .post-image {
-      width: 1200px;
+      width: auto;
+      max-width: 2080px;
       padding-left: 0;
     }
 
@@ -350,7 +368,7 @@
       }
 
       .user-post__likes-number {
-        left: 890px; //890px
+        left: 760px; //890px
         padding-top: 0;
       }
 
@@ -365,14 +383,14 @@
   }
 
   .users-posting__post-image {
-    padding-left: 10px;
+    padding-left: 0;
     padding-right: 0;
   }
 
   .user-post__post-content {
     min-height: 112px;
-    margin-top: 100px;
-    margin-left: 10px;
+    margin-top: 0;
+    margin-left: 0;
     // padding-bottom: 15px;
   }
 

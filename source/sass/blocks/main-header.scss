@@ -1,8 +1,12 @@
 .main-header {
+  background-color: #283645;
+}
+
+.main-header__centering-unit {
   position: relative;
   display: block;
+  margin: 0 auto;
   width: 320px;
-  background-color: #283645;
 }
 
 // .main-header__logo-image {
@@ -137,7 +141,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-header {
+  .main-header__centering-unit {
     width: $tablet-width;
   }
 
@@ -162,12 +166,17 @@
 
 @media (min-width: $desktop-width) {
   .main-header {
+    width: auto;
+    max-width: 4800px;
+  }
+
+  .main-header__centering-unit {
     z-index: 5; //2
     position: absolute; //test
     top: 0;
     width: 100%;
-    // padding: 0 120px;
     background-color: rgba(0, 0, 0, 0.5);
+    // padding: 0 120px;
   }
 
   .main-header__logo-tablet {
