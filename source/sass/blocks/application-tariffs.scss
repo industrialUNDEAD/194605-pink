@@ -28,10 +28,12 @@
 .application-tariffs__toggles {
   position: absolute; //test
   top: 400px;
-  left: 41%;
+  left: -28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 50%;
+  margin-right: 50%;
   width: 56px;
   text-align: center;
 }

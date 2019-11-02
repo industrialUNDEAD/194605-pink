@@ -138,6 +138,7 @@
       width: 268px;
       height: 558px;
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
+      background-repeat: no-repeat;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-screen-3-tablet@2x.png");
@@ -155,6 +156,7 @@
 
   .application-features__wrapper {
     display: flex;
+    overflow: visible;
     width: auto; //620px
     // margin-left: 280px;
     padding: 0 20px;
@@ -201,6 +203,7 @@
 
   .application-features__description {
     padding: 0;
+    max-width: 588px;
     text-align: left;
   }
 
@@ -251,7 +254,7 @@
   .application-features__supplementing-title {
     width: 420px;
     top: 19px;
-    // left: 390px;
+    left: calc(50% - 200px);
     font-size: 50px;
     line-height: 60px;
   }
