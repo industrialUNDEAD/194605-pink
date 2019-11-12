@@ -58,20 +58,20 @@
   margin-right: 40px;
 }
 
-.processing-tools__icon-figures {
+.processing-tools__icon {
   fill: #b5b9be;
 }
 
 .processing-tools__toggle:hover {
   cursor: pointer;
 
-  .processing-tools__icon-figures {
+  .processing-tools__icon {
     fill: #8d949b;
   }
 }
 
 .processing-tools__toggle--active {
-  .processing-tools__icon-figures {
+  .processing-tools__icon {
     fill: #d22856;
   }
 }
@@ -331,7 +331,7 @@
   .processing-tools__icon {
     width: 24px;
     height: 24px;
-    fill: #d22856;
+    // fill: #d22856;
   }
 
   .processing-tools__icon--contrast {

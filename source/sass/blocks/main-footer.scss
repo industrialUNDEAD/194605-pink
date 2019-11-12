@@ -20,11 +20,11 @@
   cursor: pointer;
 }
 
-.main-footer__academy-icon:hover .main-footer__academy-figure {
+.main-footer__academy-icon:hover {
   fill: #283645;
 }
 
-.main-footer__academy-icon:active .main-footer__academy-figure {
+.main-footer__academy-icon:active {
   fill: #283645;
   opacity: 0.3;
 }
@@ -109,19 +109,19 @@
   display: none;
 }
 
-.main-footer__logo-tablet:hover .main-footer__logo-figure {
+.main-footer__logo-tablet:hover {
   fill: #d22856;
 }
 
-.main-footer__logo-tablet:active .main-footer__logo-figure {
+.main-footer__logo-tablet:active {
   opacity: 0.3;
 }
 
-.main-footer__logo-desktop:hover .main-footer__logo-figure {
+.main-footer__logo-desktop:hover {
   fill: #d22856;
 }
 
-.main-footer__logo-desktop:active .main-footer__logo-figure {
+.main-footer__logo-desktop:active {
   opacity: 0.3;
 }
 

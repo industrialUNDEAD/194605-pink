@@ -9,42 +9,65 @@
   width: 320px;
 }
 
-// .main-header__logo-image {
-//   width: 75px;
-//   height: 22px;
+// .main-header__logo-mobile {
+//   display: block;
+//   cursor: pointer;
+
+//   &:hover .main-header__logo-figure {
+//     fill: #d22856;
+//   }
+
+//   &:active {
+//     opacity: 0.3;
+//   }
 // }
 
-.main-header__logo-mobile {
-  display: block;
-  cursor: pointer;
 
-  &:hover .main-header__logo-figure {
-    fill: #d22856;
-  }
+// .main-header__logo-tablet {
+//   display: none;
+//   cursor: pointer;
 
-  &:active {
-    opacity: 0.3;
-  }
-}
+//   &:hover .main-header__logo-figure {
+//     fill: #d22856;
+//   }
+
+//   &:active {
+//     opacity: 0.3;
+//   }
+// }
+
+// .main-header__logo-desktop {
+//   display: none;
+//   cursor: pointer;
+
+//   &:hover .main-header__logo-figure {
+//     fill: #d22856;
+//   }
+
+//   &:active {
+//     opacity: 0.3;
+//   }
+// }
+
 
 .main-header__logo-tablet {
   display: none;
-  cursor: pointer;
-
-  &:hover .main-header__logo-figure {
-    fill: #d22856;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
-.main-header__logo-desktop {
+.main-header__desktop-logo {
   display: none;
-  cursor: pointer;
+}
 
-  &:hover .main-header__logo-figure {
+.main-header__logo-mobile {
+  display: block;
+}
+
+.main-header__logo-mobile,
+.main-header__logo-tablet,
+.main-header__desktop-logo {
+   cursor: pointer;
+
+  &:hover {
     fill: #d22856;
   }
 
@@ -52,6 +75,7 @@
     opacity: 0.3;
   }
 }
+
 
 .main-header--nav-closed .main-header__toggle {
   position: relative;
@@ -183,7 +207,7 @@
     display: none;
   }
 
-  .main-header__logo-desktop {
+  .main-header__desktop-logo {
     display: block;
   }
 
