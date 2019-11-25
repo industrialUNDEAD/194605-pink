@@ -1,9 +1,11 @@
 .page-description {
-  width: 320px;
+  // width: 320px;
 }
 
 .page-description__paragraph-2 {
   margin-top: 47px;
+  margin-left: auto;
+  margin-right: auto;
   width: 280px;
   padding: 0 20px;
   font-size: 14px;
@@ -38,13 +40,17 @@
 }
 
 .page-description__paragraph-1--photo-page {
+  // width: 100%;
   padding-bottom: 81px;
 }
 
 .page-description__paragraph-2--photo-page {
+  margin-left: auto;
+  margin-right: auto;
   width: 247px;
   padding: 0 35px;
 }
+
 
 @media (min-width: $tablet-width) {
   .page-description__paragraph-2 {
@@ -59,36 +65,39 @@
   }
 
   .page-description__paragraph-1 {
-    width: 660px;
+    width: auto; /**/
     padding: 70px 0 77px 0;
     font-size: 50px;
     line-height: 60px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 28%;
-    background-size: 660px auto;
+    background-size: 1160px auto;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .page-description__paragraph-1 {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 660px auto;
+      background-size: 1160px auto;
     }
   }
 
-  .page-description__paragraph-2--form-page {
-    margin-left: 65px;
-  }
+  // .page-description__paragraph-2--form-page {
+  //   margin-left: 65px;
+  // }
 
   .page-description__paragraph-1--photo-page {
-    width: 660px;
+    // width: 660px;
+    width: 100%;
     padding-bottom: 140px;
   }
 
   .page-description__paragraph-2--photo-page {
     width: 445px;
     margin-top: 90px;
-    margin-left: 20px;
-    margin-right: 20px;
+    // margin-left: 20px;
+    // margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 87px;
     padding-right: 87px;
   }
@@ -101,8 +110,10 @@
 
   .page-description__photo-wrapper {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 630px;
-    margin-left: 15px;
+    // margin-left: 15px;
   }
 }
 
@@ -123,13 +134,13 @@
     padding-bottom: 105px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: 50% 0%;
-    background-size: 1200px auto;
+    background-size: 2600px auto;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     .page-description__paragraph-1 {
       background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: 1200px auto;
+      background-size: 2600px auto;
     }
   }
 

@@ -1,5 +1,6 @@
 .user-editor {
   width: 320px;
+  margin: 0 auto;
   // padding: 0 20px;
   padding-top: 10px;
 }
@@ -57,20 +58,20 @@
   margin-right: 40px;
 }
 
-.processing-tools__icon-figures {
+.processing-tools__icon {
   fill: #b5b9be;
 }
 
 .processing-tools__toggle:hover {
   cursor: pointer;
 
-  .processing-tools__icon-figures {
+  .processing-tools__icon {
     fill: #8d949b;
   }
 }
 
-.processing-tools__toggle:active {
-  .processing-tools__icon-figures {
+.processing-tools__toggle--active {
+  .processing-tools__icon {
     fill: #d22856;
   }
 }
@@ -89,7 +90,7 @@
   &::before {
     content: "";
     position: absolute;
-    left: 50%;
+    left: 80%;
     margin-top: -7px;
     width: 12px;
     height: 12px;
@@ -232,6 +233,7 @@
 @media (min-width: $tablet-width) {
   .user-editor {
     width: 620px;
+    margin: 0 auto;
     padding: 0;
   }
 
@@ -294,16 +296,28 @@
   .range-toggles__range-field--toggle-one {
     padding-top: 19px;
     padding-bottom: 37px;
+
+    .range-toggles__input::before {
+      left: 72%;
+    }
   }
 
   .range-toggles__range-field--toggle-two {
     padding-top: 29px;
     padding-bottom: 37px;
+
+    .range-toggles__input::before {
+      left: 12%;
+    }
   }
 
   .range-toggles__range-field--toggle-three {
     padding-top: 26px;
     padding-bottom: 37px;
+
+    .range-toggles__input::before {
+      left: 47%;
+    }
   }
 
   .user-editor__processing-tools {
@@ -317,7 +331,7 @@
   .processing-tools__icon {
     width: 24px;
     height: 24px;
-    fill: #d22856;
+    // fill: #d22856;
   }
 
   .processing-tools__icon--contrast {

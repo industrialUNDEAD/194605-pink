@@ -105,12 +105,14 @@
   height: 35px;
 }
 
-.tariffs-table__option-status--on svg {
-  fill: #3dc644;
+.tariffs-table__option-status--on {
+  background-image: url("../../img/icon-yes.svg"); //#3dc644/
+  background-repeat: no-repeat;
 }
 
-.tariffs-table__option-status--off svg {
-  fill: #f25b26;
+.tariffs-table__option-status--off {
+  background-image: url("../../img/icon-no.svg"); //#f25b26
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {

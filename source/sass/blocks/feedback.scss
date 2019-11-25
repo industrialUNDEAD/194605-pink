@@ -1,12 +1,14 @@
 .feedback {
   position: relative;  //test
-  width: 280px;
+  width: auto; /*280px*/
   padding: 0 20px;
   background-color: #ffffff;
 }
 
 .feedback-contacts {
-  margin-top: 42px;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .support-adress__message {
@@ -20,12 +22,19 @@
 }
 
 .feedback__titel {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
   text-align: center;
   color: #283645;
+}
+
+.feedback__support-adress {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 17px;
+  list-style: none;
 }
 
 .feedback__sub-titel {
@@ -36,7 +45,7 @@
 .feedback__developer-location {
   position: absolute;
   left: 0;
-  width: 320px;
+  width: 100%; /*320px*/
   height: 200px;
   overflow: hidden;
 
@@ -44,12 +53,13 @@
     content: "";
     z-index: 3;
     position: absolute;
-    top: 115px;
+    top: 95px;
     left: 142px;
     display: block;
     width: 36px;
     height: 35px;
     background-image: url("../img/icon-map-marker.svg");
+    cursor: pointer;
   }
 }
 
@@ -57,21 +67,21 @@
   z-index: 1;
   position: absolute;
   left: 1px;
-  top: -425px;
+  top: -445px;
   width: 100%;
 }
 
 .developer-location__white-background { //.feedback__developer-location svg
   z-index: 2;
   position: absolute;
-  top: -70px;
-  left: -440px;
+  top: -1px;
+  left: 1px;
   fill: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
-    width: 620px;
+    width: auto; /*620px*/
     height: 772px;
     // margin-bottom: 470px; //test
     padding: 0 20px;
@@ -89,13 +99,13 @@
 
   .feedback__developer-location {
     top: 365px;
-    width: 660px;
+    width: 100%; /**/
     height: 376px;
   }
 
   .developer-location__white-background { // .feedback__developer-location svg
-    top: -57px;
-    left: -274px;
+    top: 0;
+    left: 0;
   }
 
   .developer-location__map-image {
