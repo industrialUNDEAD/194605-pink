@@ -213,7 +213,7 @@
   }
 
   .main-footer__footer-social {
-    margin-right: 230px;
+    margin-right: 223px; // ie11 test margin-right: 230px;
   }
 
   .main-footer__developer-block {
@@ -232,7 +232,7 @@
     }
 
     .main-footer__footer-social {
-      margin-right: 225px;
+      margin-right: 223px;
     }
   }
 }
